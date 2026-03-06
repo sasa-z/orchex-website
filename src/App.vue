@@ -21,7 +21,33 @@
         compliance and reporting, all in one place.
       </p>
       <a href="mailto:hello@orchex.app" class="btn-primary">Request early access</a>
+    </section>
 
+    <!-- ALL TENANTS SHOWCASE -->
+    <section class="showcase">
+      <div class="showcase-header">
+        <span class="feature-label">Global Operations</span>
+        <h2>Every tenant. One view.</h2>
+        <p>Switch between single-tenant and all-tenant mode across every section of the portal. Security incidents, licenses, users, teams — all filterable across your entire client base simultaneously.</p>
+        <div class="showcase-badges">
+          <div class="badge-stat">
+            <span class="badge-num">70</span>
+            <span class="badge-label">Managed tenants</span>
+          </div>
+          <div class="badge-stat">
+            <span class="badge-num">54</span>
+            <span class="badge-label">Security incidents tracked</span>
+          </div>
+          <div class="badge-stat">
+            <span class="badge-num">206</span>
+            <span class="badge-label">Licenses across all clients</span>
+          </div>
+          <div class="badge-stat">
+            <span class="badge-num">244</span>
+            <span class="badge-label">Teams workspaces</span>
+          </div>
+        </div>
+      </div>
       <div class="mockup-wrap">
         <div class="browser-frame">
           <div class="browser-bar">
@@ -31,7 +57,7 @@
             <div class="browser-url">app.orchex.app</div>
           </div>
           <div class="browser-body">
-            <img src="/images/image.png" alt="ORCHEX Dashboard" />
+            <img src="/images/image.png" alt="ORCHEX — Security Incidents across all tenants" />
           </div>
         </div>
         <div class="mockup-fade"></div>
@@ -76,6 +102,23 @@
         </div>
       </div>
 
+      <div class="feature-row">
+        <div class="feature-text">
+          <span class="feature-label">User Actions</span>
+          <h2>All user actions, one panel.</h2>
+          <p>Click a user and a contextual action panel slides in — pinned actions at the top, everything else organised by category: Mailbox, Security, Licenses, Groups, and Danger Zone. A lock button keeps the panel open while you execute multiple actions on the same user, so you never lose context between operations.</p>
+          <ul class="feature-list">
+            <li>Lock button — stays open between actions on the same user</li>
+            <li>Pin your most-used actions for instant access</li>
+            <li>Organised by category: Mailbox, Security, Licenses, Groups and more</li>
+            <li>Search across all available actions</li>
+          </ul>
+        </div>
+        <div class="feature-img">
+          <img src="/images/UserAction.png" alt="ORCHEX User Actions panel" style="max-width: 400px; margin: 0 auto; display: block;" />
+        </div>
+      </div>
+
       <div class="feature-row feature-row-reverse">
         <div class="feature-text">
           <span class="feature-label">Dual-mode Modals</span>
@@ -107,6 +150,24 @@
         </div>
         <div class="feature-img">
           <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
+        </div>
+      </div>
+
+      <div class="feature-row feature-row-reverse">
+        <div class="feature-text">
+          <span class="feature-label">License Management</span>
+          <h2>Spot wasted spend at a glance.</h2>
+          <p>882 licenses across all tenants, and you instantly know how many are unused, which SKUs are over-provisioned, and what's expiring soon. Switch between table view and analytics view with one click — distribution charts, active SKU breakdown, and tenant-level warnings all in one place.</p>
+          <ul class="feature-list">
+            <li>97 unused licenses surfaced instantly — no manual counting</li>
+            <li>Smart filters: Unused, Expiring &lt;30d, Has Expired, Fully Suspended</li>
+            <li>Toggle between table view and analytics view per page</li>
+            <li>License distribution and status charts across all tenants</li>
+          </ul>
+        </div>
+        <div class="feature-img feature-img-stack">
+          <img src="/images/Licenses.png" alt="ORCHEX License Management — table view" />
+          <img src="/images/Overview.png" alt="ORCHEX License Analytics — overview" />
         </div>
       </div>
 
@@ -245,6 +306,64 @@ const year = new Date().getFullYear()
   box-shadow: 0 0 24px var(--accent-glow);
 }
 
+/* SHOWCASE */
+.showcase {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 2rem 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.showcase-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 680px;
+}
+.showcase-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.showcase-header p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+.showcase-badges {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.badge-stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 130px;
+}
+.badge-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+.badge-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
 /* MOCKUP */
 .mockup-wrap {
   position: relative;
@@ -323,11 +442,13 @@ const year = new Date().getFullYear()
   gap: 4rem;
   align-items: center;
 }
-.feature-row-reverse {
-  direction: rtl;
+.feature-row-reverse .feature-img {
+  grid-column: 1;
+  grid-row: 1;
 }
-.feature-row-reverse > * {
-  direction: ltr;
+.feature-row-reverse .feature-text {
+  grid-column: 2;
+  grid-row: 1;
 }
 .feature-label {
   display: inline-block;
@@ -383,6 +504,11 @@ const year = new Date().getFullYear()
   border: 1px solid var(--border);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
 }
+.feature-img-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .feature-img-placeholder .placeholder-screen {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -408,10 +534,14 @@ const year = new Date().getFullYear()
   .feature-row {
     grid-template-columns: 1fr;
     gap: 2rem;
-    direction: ltr;
   }
-  .feature-row-reverse {
-    direction: ltr;
+  .feature-row-reverse .feature-img {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .feature-row-reverse .feature-text {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
 
