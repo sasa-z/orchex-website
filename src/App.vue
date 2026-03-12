@@ -67,19 +67,36 @@
     <!-- FEATURES -->
     <section class="features">
 
-      <div class="feature-row">
-        <div class="feature-text">
+      <!-- Dashboard — wide layout -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Dashboard</span>
+          <h2>Everything you need, without leaving the dashboard.</h2>
+          <p>Click any card to expand a Quick View panel with detailed stats — right on the dashboard, without navigating away. Security and monitoring cards support per-portal and per-user thresholds: set your own alert conditions for Secure Score, Global Admins, MFA enrollment, and more.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Quick View expands inline — no page navigation required</li>
+            <li>Per-user threshold configuration for every monitoring card</li>
+            <li>Visual alert dots surface issues at a glance</li>
+            <li>Recent activity feed with the latest 5 actions per tenant</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/DashboardWithLicensedUsersQuickView.png" alt="ORCHEX Dashboard with Quick View panel" />
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Teams & SharePoint</span>
           <h2>Full visibility across all tenants</h2>
           <p>See every Microsoft Teams workspace and SharePoint site across all your client tenants in one place. Filter by visibility, storage size, activity, and more. Smart filters instantly surface inactive teams, guest-heavy workspaces, and storage outliers.</p>
-          <ul class="feature-list">
-            <li>244+ teams visible across all clients simultaneously</li>
+          <ul class="feature-list feature-list-cols">
             <li>Storage usage per team with file count</li>
             <li>Smart filters: inactive, new, multiple owners, has guests</li>
             <li>Export to CSV with one click</li>
           </ul>
         </div>
-        <div class="feature-img">
+        <div class="feature-wide-img">
           <img src="/images/Teams.png" alt="Teams management across all tenants" />
         </div>
       </div>
@@ -115,7 +132,7 @@
           </ul>
         </div>
         <div class="feature-img">
-          <img src="/images/UserAction.png" alt="ORCHEX User Actions panel" style="max-width: 400px; margin: 0 auto; display: block;" />
+          <img src="/images/UserAction.png" alt="ORCHEX User Actions panel" style="max-width: 320px; margin: 0 auto; display: block;" />
         </div>
       </div>
 
@@ -436,11 +453,37 @@ const year = new Date().getFullYear()
   flex-direction: column;
   gap: 100px;
 }
+.feature-wide {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.feature-wide-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feature-list-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+.feature-wide-img img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
 .feature-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+.feature-row-wide-img {
+  grid-template-columns: 2fr 3fr;
 }
 .feature-row-reverse .feature-img {
   grid-column: 1;
