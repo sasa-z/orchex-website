@@ -195,7 +195,7 @@
     <section class="contact">
       <h2>Interested in ORCHEX?</h2>
       <p>The product is currently in development. Reach out to get on the early access list.</p>
-      <a href="mailto:hello@orchex.app" class="btn-primary">hello@orchex.app</a>
+      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
     <!-- FOOTER -->
