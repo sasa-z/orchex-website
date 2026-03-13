@@ -29,24 +29,6 @@
         <span class="feature-label">Global Operations</span>
         <h2>Every tenant. One view.</h2>
         <p>Switch between single-tenant and all-tenant mode across every section of the portal. Security incidents, licenses, users, teams — all filterable across your entire client base simultaneously.</p>
-        <div class="showcase-badges">
-          <div class="badge-stat">
-            <span class="badge-num">70</span>
-            <span class="badge-label">Managed tenants</span>
-          </div>
-          <div class="badge-stat">
-            <span class="badge-num">54</span>
-            <span class="badge-label">Security incidents tracked</span>
-          </div>
-          <div class="badge-stat">
-            <span class="badge-num">206</span>
-            <span class="badge-label">Licenses across all clients</span>
-          </div>
-          <div class="badge-stat">
-            <span class="badge-num">244</span>
-            <span class="badge-label">Teams workspaces</span>
-          </div>
-        </div>
       </div>
       <div class="mockup-wrap">
         <div class="browser-frame">
@@ -57,10 +39,24 @@
             <div class="browser-url">app.orchex.app</div>
           </div>
           <div class="browser-body">
-            <img src="/images/image.png" alt="ORCHEX — Security Incidents across all tenants" />
+            <img src="/images/Incidents.png" alt="ORCHEX — Security Incidents across all tenants" />
           </div>
         </div>
         <div class="mockup-fade"></div>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats-showcase">
+      <div class="stats-showcase-inner">
+        <div class="feature-wide-header" style="text-align: center; align-items: center;">
+          <span class="feature-label">Analytics</span>
+          <h2>Built-in analytics, across every section.</h2>
+          <p>Every section of ORCHEX has a dedicated analytics view — switch between current tenant and all-tenants mode with one click. Track license changes, user activity, security posture, and more, without leaving the portal.</p>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Statistics.png" alt="ORCHEX — Built-in analytics across all sections" />
+        </div>
       </div>
     </section>
 
@@ -101,12 +97,12 @@
         </div>
       </div>
 
-      <div class="feature-row feature-row-reverse">
-        <div class="feature-text">
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Quick Actions</span>
           <h2>Every action, one keystroke away.</h2>
-          <p>A command palette for M365 management. Search and execute any action instantly — reset a password, offboard a user, manage MFA, assign licenses — without navigating through menus. Quick Actions are context-aware: opened from a user page they auto-load tenant and user data; opened standalone, you pick the tenant and target yourself.</p>
-          <ul class="feature-list">
+          <p>A command palette for M365 management. Search and execute any of 50+ built-in actions instantly — reset a password, offboard a user, manage MFA, assign licenses — without navigating through menus. Quick Actions are context-aware: opened from a user page they auto-load tenant and user data; opened standalone, you pick the tenant and target yourself. The bar is fully customizable — show, hide, and reorder actions to fit your workflow.</p>
+          <ul class="feature-list feature-list-cols">
             <li>Search across all available actions instantly</li>
             <li>Context-aware — auto-fills tenant and user when opened in context</li>
             <li>Pinnable quick action bar with your most-used actions</li>
@@ -114,8 +110,8 @@
             <li>Configurable — show, hide and reorder actions to fit your workflow</li>
           </ul>
         </div>
-        <div class="feature-img">
-          <img src="/images/QuickActions.png" alt="ORCHEX Quick Actions command palette" />
+        <div class="feature-wide-img">
+          <img src="/images/QuickActionsv1.png" alt="ORCHEX Quick Actions command palette" />
         </div>
       </div>
 
@@ -153,54 +149,53 @@
         </div>
       </div>
 
-      <div class="feature-row">
-        <div class="feature-text">
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Identity Management</span>
           <h2>One row. Complete picture.</h2>
           <p>Most M365 portals split user details, mailbox configuration, and MFA status across three separate pages. ORCHEX consolidates it all — every user row shows identity, mailbox health, and security posture together. Less clicking, faster decisions.</p>
-          <ul class="feature-list">
+          <ul class="feature-list feature-list-cols">
             <li>User identity, mailbox and MFA status in a single view</li>
             <li>Cross-tenant user search and filtering</li>
             <li>License assignment and usage tracking</li>
             <li>Sign-in activity and last active status</li>
           </ul>
         </div>
-        <div class="feature-img">
+        <div class="feature-wide-img">
           <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
         </div>
       </div>
 
-      <div class="feature-row feature-row-reverse">
-        <div class="feature-text">
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">License Management</span>
           <h2>Spot wasted spend at a glance.</h2>
-          <p>882 licenses across all tenants, and you instantly know how many are unused, which SKUs are over-provisioned, and what's expiring soon. Switch between table view and analytics view with one click — distribution charts, active SKU breakdown, and tenant-level warnings all in one place.</p>
-          <ul class="feature-list">
-            <li>97 unused licenses surfaced instantly — no manual counting</li>
+          <p>See exactly how many licenses are unused, which SKUs are over-provisioned, and what's expiring soon — across all your client tenants at once. Switch between table view and analytics view with one click.</p>
+          <ul class="feature-list feature-list-cols">
             <li>Smart filters: Unused, Expiring &lt;30d, Has Expired, Fully Suspended</li>
             <li>Toggle between table view and analytics view per page</li>
             <li>License distribution and status charts across all tenants</li>
+            <li>Tenant-level warnings surfaced instantly</li>
           </ul>
         </div>
-        <div class="feature-img feature-img-stack">
+        <div class="feature-wide-img">
           <img src="/images/Licenses.png" alt="ORCHEX License Management — table view" />
-          <img src="/images/Overview.png" alt="ORCHEX License Analytics — overview" />
         </div>
       </div>
 
-      <div class="feature-row">
-        <div class="feature-text">
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Analytics</span>
           <h2>See exactly what changed, and when.</h2>
-          <p>Pick any date range and instantly see every change across all your client tenants — new users, offboarded users, license increases, assignment changes, and which tenants were affected. All of it in a single view, without running manual reports or digging through individual admin portals.</p>
-          <ul class="feature-list">
+          <p>Pick date range and instantly see every change across all your client tenants — new users, offboarded users, license increases, assignment changes, and which tenants were affected. All of it in a single view, without running manual reports or digging through individual admin portals.</p>
+          <ul class="feature-list feature-list-cols">
             <li>License increases and decreases across all tenants</li>
             <li>Users onboarded and offboarded per period</li>
             <li>Per-tenant drill-down: Subscription Changes and User Changes</li>
             <li>Filter tenants instantly to show only those with activity</li>
           </ul>
         </div>
-        <div class="feature-img">
+        <div class="feature-wide-img">
           <img src="/images/Analytics.png" alt="ORCHEX Analytics — cross-tenant change tracking" />
         </div>
       </div>
@@ -444,6 +439,18 @@ const year = new Date().getFullYear()
   pointer-events: none;
 }
 
+/* STATISTICS */
+.stats-showcase {
+  padding: 0 2rem 80px;
+}
+.stats-showcase-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 /* FEATURES */
 .features {
   max-width: 1100px;
@@ -462,6 +469,11 @@ const year = new Date().getFullYear()
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.feature-wide-header p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-muted);
 }
 .feature-list-cols {
   display: grid;
