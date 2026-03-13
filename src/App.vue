@@ -30,19 +30,8 @@
         <h2>Every tenant. One view.</h2>
         <p>Switch between single-tenant and all-tenant mode across every section of the portal. Security incidents, licenses, users, teams — all filterable across your entire client base simultaneously.</p>
       </div>
-      <div class="mockup-wrap">
-        <div class="browser-frame">
-          <div class="browser-bar">
-            <div class="browser-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="browser-url">app.orchex.app</div>
-          </div>
-          <div class="browser-body">
-            <img src="/images/Incidents.png" alt="ORCHEX — Security Incidents across all tenants" />
-          </div>
-        </div>
-        <div class="mockup-fade"></div>
+      <div class="feature-wide-img">
+        <img src="/images/Incidents.png" alt="ORCHEX — Security Incidents across all tenants" />
       </div>
     </section>
 
