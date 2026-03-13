@@ -20,7 +20,7 @@
         One portal to manage every client tenant — licensing, security policies,
         compliance and reporting, all in one place.
       </p>
-      <a href="mailto:hello@orchex.app" class="btn-primary">Request early access</a>
+      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
     <!-- ALL TENANTS SHOWCASE -->
