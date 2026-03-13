@@ -175,7 +175,7 @@
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Enterprise Applications</span>
-          <h2>Never miss an expiring credential again.</h2>
+          <h2>Every app credential, across every tenant.</h2>
           <p>See every enterprise app and app registration across all your client tenants — certificates, secrets, owner counts, and next expiry date, all in one table. Quick filters instantly surface apps with fully expired or partially expired credentials, so you can act before something breaks.</p>
           <ul class="feature-list feature-list-cols">
             <li>Certificate and secret counts per app, per tenant</li>
