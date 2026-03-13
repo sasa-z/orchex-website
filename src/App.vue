@@ -174,6 +174,23 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">Enterprise Applications</span>
+          <h2>Never miss an expiring credential again.</h2>
+          <p>See every enterprise app and app registration across all your client tenants — certificates, secrets, owner counts, and next expiry date, all in one table. Quick filters instantly surface apps with fully expired or partially expired credentials, so you can act before something breaks.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Certificate and secret counts per app, per tenant</li>
+            <li>Next expiry date with expired / expiring-soon indicators</li>
+            <li>Quick filters: All Creds Expired, Has Creds Expired</li>
+            <li>Drill into credentials or owners directly from any row</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/EnterpriseApps.png" alt="ORCHEX Enterprise Applications — credential expiry across all tenants" />
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Analytics</span>
           <h2>See exactly what changed, and when.</h2>
           <p>Pick date range and instantly see every change across all your client tenants — new users, offboarded users, license increases, assignment changes, and which tenants were affected. All of it in a single view, without running manual reports or digging through individual admin portals.</p>
