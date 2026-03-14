@@ -206,6 +206,41 @@
         </div>
       </div>
 
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Standards</span>
+          <h2>Define once. Enforce across every tenant, automatically.</h2>
+          <p>Create templates that group together any combination of settings and policies — security baselines, compliance requirements, mail configurations. Assign a template to one tenant or all of them, set an enforcement schedule, and ORCHEX keeps everything in sync. Templates can also provision resources like shared accounts and distribution groups, so onboarding a new tenant to your baseline takes minutes, not hours.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Assign templates to individual tenants or all tenants at once</li>
+            <li>Scheduled enforcement or manual-only execution per template</li>
+            <li>Tag and organise templates — Core, Onboarding, and custom tags</li>
+            <li>Multiple standards per template, any combination of categories</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Standards.png" alt="ORCHEX Standards Templates — enforce settings across all tenants" />
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Portal Health</span>
+          <h2>A dedicated page for what's happening inside your portal.</h2>
+          <p>Standards enforcement, scheduled tasks, background operations — ORCHEX runs a lot on your behalf. Portal Health gives you a dedicated view to see exactly what's active, what's been resolved, and how the system has been behaving over the last 30 days. No log hunting required.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Critical and Warning severity — at a glance</li>
+            <li>Active / Resolved / All tabs with live counts</li>
+            <li>30-day trend chart for incident history</li>
+            <li>Search and filter across all notifications</li>
+            <li>Auto-resolves when the system recovers</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Health.png" alt="ORCHEX Portal Health — system task monitoring" />
+        </div>
+      </div>
+
     </section>
 
     <!-- CONTACT -->
