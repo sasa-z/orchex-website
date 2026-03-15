@@ -108,9 +108,10 @@
         <div class="feature-text">
           <span class="feature-label">User Actions</span>
           <h2>All user actions, one panel.</h2>
-          <p>Click a user and a contextual action panel slides in — pinned actions at the top, everything else organised by category: Mailbox, Security, Licenses, Groups, and Danger Zone. A lock button keeps the panel open while you execute multiple actions on the same user, so you never lose context between operations.</p>
+          <p>Click a user and a contextual action panel slides in — pinned actions at the top, everything else organised by category: Mailbox, Security, Licenses, Groups, and Danger Zone. A lock button keeps the panel open while you execute multiple actions on the same user, so you never lose context between operations. Switch to a different user directly from the panel without closing it.</p>
           <ul class="feature-list">
             <li>Lock button — stays open between actions on the same user</li>
+            <li>Switch users without closing the panel</li>
             <li>Pin your most-used actions for instant access</li>
             <li>Organised by category: Mailbox, Security, Licenses, Groups and more</li>
             <li>Search across all available actions</li>
