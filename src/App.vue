@@ -230,7 +230,7 @@
         <div class="feature-wide-header">
           <span class="feature-label">Security Alerting</span>
           <h2>Detect it. Investigate it. Fix it. All in one place.</h2>
-          <p>Enable the alert types you care about and ORCHEX monitors all your client tenants automatically — admins without MFA, risky users, expiring app secrets, blocked senders, unused licenses, and more. What makes it different: every alert row connects directly to the rest of the portal. Suspicious sign-in flagged? Open the full sign-in history inline. Admin without MFA? Launch MFA management from the same row. No tab switching, no copy-pasting UPNs into other portals.</p>
+          <p>Enable the alert types you care about and ORCHEX monitors all your client tenants automatically — admins without MFA, risky users, expiring app secrets, blocked senders, unused licenses, and more. What makes it different: every alert row connects directly to the rest of the portal. Suspicious sign-in flagged? Open the full sign-in history inline. Admin without MFA? Launch MFA management from the same row. No tab switching, no copy-pasting UPNs into other portals. </p>
           <ul class="feature-list feature-list-cols">
             <li>Snooze for 7, 14, or 30 days — auto-re-activates if the issue persists</li>
             <li>Email and webhook on first detection — one summary per tenant, not per individual alert</li>
