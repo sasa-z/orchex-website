@@ -66,7 +66,7 @@
           </ul>
         </div>
         <div class="feature-wide-img">
-          <img src="/images/DashboardWithLicensedUsersQuickView.png" alt="ORCHEX Dashboard with Quick View panel" />
+          <img src="/images/Dashboard.png" alt="ORCHEX Dashboard with Quick View panel" />
         </div>
       </div>
 
