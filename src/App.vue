@@ -23,6 +23,34 @@
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+      <div class="how-it-works-inner">
+        <div class="how-header">
+          <span class="feature-label">How it works</span>
+          <h2>Built for MSPs who take data ownership seriously.</h2>
+          <p>ORCHEX runs entirely in your own Azure subscription. No shared infrastructure, no third-party servers — your client data never leaves your environment.</p>
+        </div>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="how-step-num">01</div>
+            <h3>One script, full infrastructure</h3>
+            <p>Run the ORCHEX setup script and your Azure infrastructure is ready — Static Web App, Function App, and Key Vault, all provisioned in your own subscription automatically.</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">02</div>
+            <h3>Connect your client tenants</h3>
+            <p>Authenticate each tenant via OAuth 2.0. No passwords stored anywhere — tokens are secured in your Key Vault, in your own environment.</p>
+          </div>
+          <div class="how-step">
+            <div class="how-step-num">03</div>
+            <h3>Your data, your infrastructure</h3>
+            <p>Everything runs in your Azure subscription. Client data never touches third-party servers. Updates to the portal and API flow in automatically — no maintenance on your end.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- DASHBOARD SHOWCASE -->
     <section class="stats-showcase">
       <div class="stats-showcase-inner">
@@ -514,6 +542,72 @@ const year = new Date().getFullYear()
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+/* HOW IT WORKS */
+.how-it-works {
+  padding: 80px 2rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-card);
+}
+.how-it-works-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.how-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.how-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.how-header p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.how-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.how-step-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  opacity: 0.4;
+}
+.how-step h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.how-step p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+@media (max-width: 768px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* FEATURES */
