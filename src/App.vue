@@ -23,6 +23,20 @@
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
+    <!-- DASHBOARD SHOWCASE -->
+    <section class="stats-showcase">
+      <div class="stats-showcase-inner">
+        <div class="feature-wide-header" style="text-align: center; align-items: center;">
+          <span class="feature-label">Dashboard</span>
+          <h2>Everything you need, without leaving the dashboard.</h2>
+          <p>Click any card to expand a Quick View panel with detailed stats — right on the dashboard, without navigating away. Security and monitoring cards support per-portal and per-user thresholds: set your own alert conditions for Secure Score, Global Admins, MFA enrollment, and more.</p>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Dashboard.png" alt="ORCHEX Dashboard with Quick View panel" />
+        </div>
+      </div>
+    </section>
+
     <!-- STATISTICS -->
     <section class="stats-showcase">
       <div class="stats-showcase-inner">
@@ -39,24 +53,6 @@
 
     <!-- FEATURES -->
     <section class="features">
-
-      <!-- Dashboard — wide layout -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Dashboard</span>
-          <h2>Everything you need, without leaving the dashboard.</h2>
-          <p>Click any card to expand a Quick View panel with detailed stats — right on the dashboard, without navigating away. Security and monitoring cards support per-portal and per-user thresholds: set your own alert conditions for Secure Score, Global Admins, MFA enrollment, and more.</p>
-          <ul class="feature-list feature-list-cols">
-            <li>Quick View expands inline — no page navigation required</li>
-            <li>Per-user threshold configuration for every monitoring card</li>
-            <li>Visual alert dots surface issues at a glance</li>
-            <li>Recent activity feed with the latest 5 actions per tenant</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/Dashboard.png" alt="ORCHEX Dashboard with Quick View panel" />
-        </div>
-      </div>
 
       <div class="feature-wide">
         <div class="feature-wide-header">
