@@ -28,7 +28,7 @@
       <div class="stats-showcase-inner">
         <div class="feature-wide-header" style="text-align: center; align-items: center;">
           <span class="feature-label">Dashboard</span>
-          <h2>Everything you need, without leaving the dashboard.</h2>
+          <h2>The metrics that matter, always within reach.</h2>
           <p>Click any card to expand a Quick View panel with detailed stats — right on the dashboard, without navigating away. Security and monitoring cards support per-portal and per-user thresholds: set your own alert conditions for Secure Score, Global Admins, MFA enrollment, and more.</p>
         </div>
         <div class="feature-wide-img">
