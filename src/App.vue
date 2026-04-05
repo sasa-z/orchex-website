@@ -23,18 +23,6 @@
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
-    <!-- ALL TENANTS SHOWCASE -->
-    <section class="showcase">
-      <div class="showcase-header">
-        <span class="feature-label">Global Operations</span>
-        <h2>Every tenant. One view.</h2>
-        <p>Switch between single-tenant and all-tenant mode across every section of the portal. Security incidents, licenses, users, teams — all filterable across your entire client base simultaneously.</p>
-      </div>
-      <div class="feature-wide-img">
-        <img src="/images/Incidents.png" alt="ORCHEX — Security Incidents across all tenants" />
-      </div>
-    </section>
-
     <!-- STATISTICS -->
     <section class="stats-showcase">
       <div class="stats-showcase-inner">
