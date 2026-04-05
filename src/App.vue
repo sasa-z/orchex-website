@@ -506,7 +506,7 @@ const year = new Date().getFullYear()
 
 /* STATISTICS */
 .stats-showcase {
-  padding: 0 2rem 80px;
+  padding: 60px 2rem 80px;
 }
 .stats-showcase-inner {
   max-width: 1100px;
