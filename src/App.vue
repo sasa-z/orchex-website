@@ -158,6 +158,24 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">User Details</span>
+          <h2>Every detail about a user, in one place.</h2>
+          <p>Open any user and get a complete picture instantly — mailbox health, MFA status, assigned roles, licenses, sign-in history, and more, all in a single tabbed view. Edit contact and work information inline, without opening a separate form. Status cards surface the most important signals at a glance so you know exactly what needs attention before you start.</p>
+          <p>Each portal user controls which tabs auto-load on open and which load on demand. Auto-load the tabs you use every day; leave the rest on-demand so the page opens fast and only fetches what you actually need. It's a per-user preference — two people on the same team can have completely different load profiles without affecting each other.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Tabbed layout: Overview, Mailbox, MFA, Licenses, Sign-Ins, Roles, and more</li>
+            <li>Per-user tab preferences — auto-load or on-demand, per tab</li>
+            <li>Inline editing for display name, job title, department, phone, and office</li>
+            <li>Quick status cards for mailbox usage, MFA, privileged roles, and license count</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/UserDetails.png" alt="ORCHEX User Details — tabbed per-user view with inline editing" />
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">License Management</span>
           <h2>Spot wasted spend at a glance.</h2>
           <p>See exactly how many licenses are unused, which SKUs are over-provisioned, and what's expiring soon — across all your client tenants at once. Switch between table view and analytics view with one click.</p>
