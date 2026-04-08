@@ -153,6 +153,38 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">User Lifecycle</span>
+          <h2>Onboard a new user in minutes. Offboard safely with one guided flow.</h2>
+          <p>ORCHEX walks you through every step — user details, organisation, permissions, licenses, group assignments — and shows a full review before anything is created. Offboarding is the same: a structured checklist that reassigns mailboxes, removes licenses, disables accounts, and cleans up access in the right order. No steps missed, no tenants forgotten.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Step-by-step wizard with progress indicator</li>
+            <li>Full review screen before any changes are applied</li>
+            <li>Assign licenses, groups, Teams and Distribution Lists in one flow</li>
+            <li>Offboarding checklist — mailbox reassignment, license reclaim, access removal</li>
+            <li>Works across any tenant directly from the portal</li>
+            <li>Copy settings from an existing user to match their setup instantly</li>
+          </ul>
+        </div>
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — review step" />
+            <div class="feature-sub-caption">
+              <strong>Onboarding — Review & Confirm</strong>
+              <span>Every detail reviewed before anything is created — user info, licenses, group memberships, Teams and Distribution Lists all in one screen.</span>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
+            <div class="feature-sub-caption">
+              <strong>Offboarding — Configure Actions</strong>
+              <span>Pick a quick template or configure each action individually — disable sign-in, convert mailbox, remove from groups, wipe devices, and more.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Identity Management</span>
           <h2>One row. Complete picture.</h2>
           <p>Most M365 portals split user details, mailbox configuration, and MFA status across three separate pages. ORCHEX consolidates it all — every user row shows identity, mailbox health, and security posture together. Less clicking, faster decisions.</p>
