@@ -254,6 +254,23 @@
         <div class="feature-wide-img">
           <img src="/images/Standards.png" alt="ORCHEX Standards Templates — enforce settings across all tenants" />
         </div>
+
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/StandardsCompliance.png" alt="ORCHEX Standards Compliance — track compliance across all tenants" />
+            <div class="feature-sub-caption">
+              <strong>Standards Compliance</strong>
+              <span>Track compliance across every tenant — filter by standard or tenant, instantly spot non-compliant settings, errors, and skipped items.</span>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/EffectiveStandards.png" alt="ORCHEX Effective Standards — inspect what is applied to a tenant" />
+            <div class="feature-sub-caption">
+              <strong>Effective Standards</strong>
+              <span>See exactly what's active on any tenant — which template each setting comes from, and detect shadowed or conflicting standards instantly.</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="feature-wide">
@@ -291,6 +308,10 @@
         <div class="feature-wide-img">
           <img src="/images/Health.png" alt="ORCHEX Portal Health — system task monitoring" />
         </div>
+      </div>
+
+      <div class="features-more">
+        <p>And much more — mailbox management, Teams & SharePoint, conditional access, transport rules, quarantine, app registrations, risky users, sign-in logs, and more. ORCHEX covers the full M365 stack across all your tenants from a single portal.</p>
       </div>
 
     </section>
@@ -646,6 +667,52 @@ const year = new Date().getFullYear()
   border-radius: 10px;
   border: 1px solid var(--border);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+.features-more {
+  text-align: center;
+  padding: 2rem 3rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-card);
+}
+.features-more p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.feature-sub-screenshots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.feature-sub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feature-sub-item img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+.feature-sub-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.feature-sub-caption strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.feature-sub-caption span {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-muted);
 }
 .feature-row {
   display: grid;
