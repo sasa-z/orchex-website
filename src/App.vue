@@ -379,6 +379,20 @@
 
     </section>
 
+    <!-- FOUNDER -->
+    <section class="founder">
+      <div class="founder-inner">
+        <span class="feature-label">About the founder</span>
+        <h2>Built by someone who's been there.</h2>
+        <p>My name is Sasa Zelic. With 16+ years in IT — the last 8 spent in the MSP industry — I've managed Microsoft 365 environments at scale, led automation, and worked hands-on with the same tools MSPs rely on every day.</p>
+        <p>ORCHEX is what I wished existed back then.</p>
+        <a href="https://www.linkedin.com/in/sasa-zelic-14a1533b/" target="_blank" class="founder-linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Sasa Zelic on LinkedIn
+        </a>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact">
       <h2>Interested in ORCHEX?</h2>
@@ -887,6 +901,44 @@ const year = new Date().getFullYear()
     grid-column: auto;
     grid-row: auto;
   }
+}
+
+/* FOUNDER */
+.founder {
+  padding: 80px 2rem;
+  border-top: 1px solid var(--border);
+}
+.founder-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.founder-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.founder-inner p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+.founder-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.founder-linkedin:hover {
+  color: var(--accent-hover);
 }
 
 /* CONTACT */
