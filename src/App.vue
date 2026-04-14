@@ -11,7 +11,7 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-badge">Coming Soon</div>
+      <div class="hero-badge">Launching Soon</div>
       <h1 class="hero-title">
         Microsoft 365 management,<br />
         <span class="accent">simplified for MSPs.</span>
@@ -237,6 +237,37 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">Tenant Capabilities</span>
+          <h2>Know exactly which tenants have what — before it becomes a problem.</h2>
+          <p>See Entra ID P1/P2, MDO, Intune, and Defender XDR license status across every client tenant in a single matrix view. No manual checks, no digging through individual admin portals. Drill into any tenant to see exactly which SKUs provide each capability — and what to purchase to fill the gaps.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>License matrix across all tenants: Entra P1/P2, MDO, Intune P1/P2, Defender XDR</li>
+            <li>Smart filters: Missing Entra P1, Missing Entra P2, Fully covered</li>
+            <li>Per-tenant capability drill-down with source SKUs and unit counts</li>
+            <li>Purchase recommendations for missing capabilities</li>
+            <li>Scheduled background checks — always up to date without manual refresh</li>
+          </ul>
+        </div>
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/TenantCapabilities.png" alt="ORCHEX Tenant Capabilities — license matrix across all tenants" />
+            <div class="feature-sub-caption">
+              <strong>Capability Matrix</strong>
+              <span>Entra ID, MDO, Intune, and Defender XDR status across every client — with smart filters to instantly surface gaps.</span>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/TenantCapabilitiesSidebar.png" alt="ORCHEX License Details — source SKUs and recommendations per tenant" />
+            <div class="feature-sub-caption">
+              <strong>License Details</strong>
+              <span>Drill into any tenant to see which SKUs provide each capability and what to add to fill the gaps — including unit counts.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Enterprise Applications</span>
           <h2>Every app credential, across every tenant.</h2>
           <p>See every enterprise app and app registration across all your client tenants — certificates, secrets, owner counts, and next expiry date, all in one table. Quick filters instantly surface apps with fully expired or partially expired credentials, so you can act before something breaks.</p>
@@ -351,7 +382,7 @@
     <!-- CONTACT -->
     <section class="contact">
       <h2>Interested in ORCHEX?</h2>
-      <p>The product is currently in development. Reach out to get on the early access list.</p>
+      <p>ORCHEX is approaching its first pilot deployment. If you're an MSP managing Microsoft 365 tenants and want to be among the first to try it, get in touch.</p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
