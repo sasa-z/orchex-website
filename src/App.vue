@@ -5,9 +5,14 @@
     <nav class="nav">
       <div class="nav-inner">
         <span class="wordmark">ORCHEX</span>
-        <a href="mailto:hello@orchex.app" class="nav-cta">Get in touch</a>
+        <!-- nav-tabs hidden until pricing is live -->
+
+        <a href="https://tally.so/r/dWABZA" target="_blank" class="nav-cta">Get in touch</a>
       </div>
     </nav>
+
+    <!-- FEATURES PAGE -->
+    <template v-if="activePage === 'features'">
 
     <!-- HERO -->
     <section class="hero">
@@ -357,6 +362,32 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">Conditional Access Health</span>
+          <h2>27 CA checks. Instant results. Step-by-step fix guides.</h2>
+          <p>Conditional Access misconfigurations are one of the most common entry points for attackers — and one of the hardest to spot manually. ORCHEX runs 27 checks per tenant on demand: MFA gaps, legacy auth bypasses, platform bypass risks, sign-in risk policy coverage, break-glass exclusions, geo-blocking, and more. Every finding includes a severity rating, a plain-language explanation, and a step-by-step fix guide — no need to cross-reference Microsoft docs.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>27 checks across Critical, High, Medium, and Info severity</li>
+            <li>Grouped by severity — drill into issues without scrolling through passing checks</li>
+            <li>Step-by-step "How to Fix" guide for every finding, directly in the portal</li>
+            <li>MS Zero Trust Baseline tab — instant status of the 5 foundation policies every tenant should have</li>
+            <li>P2-dependent checks (sign-in risk, user risk) auto-skipped on non-P2 tenants — no false positives</li>
+            <li>Results cached per tenant — switch back and forth without re-running the scan</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img" style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div>
+            <img src="/images/CAHealth.png" alt="ORCHEX CA Health — 27 checks grouped by severity with How to Fix guides" />
+            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;"><strong style="color: var(--text);">On-demand health scan</strong> — failing checks grouped by severity with affected policy details and a direct fix guide per finding.</p>
+          </div>
+          <div>
+            <img src="/images/CABaseline.png" alt="ORCHEX CA Baseline — MS Zero Trust foundation policy status" />
+            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;"><strong style="color: var(--text);">MS Zero Trust Baseline</strong> — instant status of the 5 Microsoft-recommended foundation policies, with a progress indicator and Set Up shortcut for anything missing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Portal Health</span>
           <h2>A dedicated page for what's happening inside your portal.</h2>
           <p>Standards enforcement, scheduled tasks, background operations — ORCHEX runs a lot on your behalf. Portal Health gives you a dedicated view to see exactly what's active, what's been resolved, and how the system has been behaving over the last 30 days. No log hunting required.</p>
@@ -379,13 +410,143 @@
 
     </section>
 
+    </template><!-- end features page -->
+
+    <!-- PRICING PAGE (hidden until launch) -->
+    <template v-if="false /* activePage === 'pricing' */">
+    <section class="pricing-page">
+
+      <!-- Header -->
+      <div class="pricing-header">
+        <div class="hero-badge">Early Access</div>
+        <h1>Simple, transparent pricing.</h1>
+        <p>ORCHEX is currently onboarding its first MSP partners at a locked-in founding rate. Early adopters keep this price for life — no increases, ever.</p>
+      </div>
+
+      <!-- Card -->
+      <div class="pricing-card-wrap">
+        <div class="pricing-card">
+          <div class="pricing-card-top">
+            <div>
+              <span class="pricing-plan-name">Founding Partner</span>
+              <p class="pricing-plan-desc">Everything included. No feature tiers during early access.</p>
+            </div>
+            <div class="pricing-spots">
+              <span class="pricing-spots-dot"></span>
+              Limited spots available
+            </div>
+          </div>
+
+          <div class="pricing-amount">
+            <div class="pricing-amount-main">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-price">49</span>
+              <span class="pricing-period">/mo</span>
+            </div>
+            <div class="pricing-per-tenant">+ $3 per tenant / mo</div>
+          </div>
+
+          <div class="pricing-example">
+            <div class="pricing-example-row">
+              <span>10 tenants</span>
+              <span>$79 / mo</span>
+            </div>
+            <div class="pricing-example-row">
+              <span>25 tenants</span>
+              <span>$124 / mo</span>
+            </div>
+            <div class="pricing-example-row">
+              <span>50 tenants</span>
+              <span>$199 / mo</span>
+            </div>
+          </div>
+
+          <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary pricing-cta">Request early access</a>
+
+          <p class="pricing-annual">Pay annually and get 2 months free.</p>
+        </div>
+      </div>
+
+      <!-- What's included -->
+      <div class="pricing-includes">
+        <h2>Everything included</h2>
+        <p class="pricing-includes-sub">All features, all tenants, no add-ons.</p>
+        <div class="pricing-features-grid">
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Full M365 management — users, mailboxes, groups, licenses, Teams, SharePoint</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>JIT Admin Access — grant time-limited admin roles with automatic expiration</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Security alerting — risky users, MFA gaps, expiring credentials, and more</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Standards engine — define, enforce, and track compliance across all tenants</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Portal health monitoring — background tasks, enforcement runs, audit trail</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>User onboarding & offboarding workflows</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Conditional access, Intune, device management</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Runs in your own Azure subscription — your data, your environment</span>
+          </div>
+          <div class="pricing-feature-item">
+            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Direct founder support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="pricing-faq">
+        <h2>Common questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>What does "runs in my Azure" mean?</h3>
+            <p>ORCHEX deploys to your own Azure subscription — Function App, Static Web App, and Key Vault are all provisioned in your environment. Client data never touches any shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is the founding price really locked in?</h3>
+            <p>Yes. Early adopters keep this rate for as long as they stay subscribed. When we move to standard pricing, existing partners are never affected.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How many tenants can I connect?</h3>
+            <p>There is no hard cap on tenant count. You pay $3 per tenant per month, so the cost scales naturally with your business.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What kind of support do I get?</h3>
+            <p>Direct access to the founder — email and async chat. As an early adopter you'll get faster, more personal support than you would from any support queue. Your feedback also directly shapes what gets built next.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What happens after the early access period?</h3>
+            <p>Your price stays the same. Standard pricing for new customers will be higher. Early adopters are never migrated to a higher tier without explicit opt-in.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    </template><!-- end pricing page -->
+
     <!-- FOUNDER -->
-    <section class="founder">
+    <section class="founder" v-if="activePage === 'features'">
       <div class="founder-inner">
         <span class="feature-label">About the founder</span>
         <h2>Built by someone who's been there.</h2>
         <p>My name is Sasa Zelic. With 16+ years in IT — the last 8 spent in the MSP industry — I've managed Microsoft 365 environments at scale, led automation, and worked hands-on with the same tools MSPs rely on every day.</p>
-        <p>ORCHEX is what I wished existed back then.</p>
         <a href="https://www.linkedin.com/in/sasa-zelic-14a1533b/" target="_blank" class="founder-linkedin">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           Sasa Zelic on LinkedIn
@@ -410,7 +571,9 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 const year = new Date().getFullYear()
+const activePage = ref('features')
 </script>
 
 <style scoped>
@@ -906,7 +1069,9 @@ const year = new Date().getFullYear()
 /* FOUNDER */
 .founder {
   padding: 80px 2rem;
-  border-top: 1px solid var(--border);
+  background: rgba(79, 142, 247, 0.05);
+  border-top: 1px solid rgba(79, 142, 247, 0.15);
+  border-bottom: 1px solid rgba(79, 142, 247, 0.15);
 }
 .founder-inner {
   max-width: 620px;
@@ -983,6 +1148,258 @@ const year = new Date().getFullYear()
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+}
+
+/* NAV TABS */
+.nav-tabs {
+  display: flex;
+  gap: 0.25rem;
+}
+.nav-tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-tab:hover {
+  color: var(--text);
+  background: rgba(255,255,255,0.05);
+}
+.nav-tab-active {
+  color: var(--text);
+  background: rgba(255,255,255,0.08);
+}
+
+/* PRICING PAGE */
+.pricing-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 72px 2rem 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.pricing-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 600px;
+}
+.pricing-header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.pricing-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.pricing-card-wrap {
+  width: 100%;
+  max-width: 480px;
+}
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.pricing-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.pricing-plan-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.pricing-plan-desc {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  line-height: 1.5;
+}
+.pricing-spots {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #f59e0b;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.pricing-spots-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f59e0b;
+  flex-shrink: 0;
+}
+
+.pricing-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.pricing-amount-main {
+  display: flex;
+  align-items: baseline;
+  gap: 0.15rem;
+}
+.pricing-currency {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  align-self: flex-start;
+  margin-top: 0.4rem;
+}
+.pricing-price {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1;
+}
+.pricing-period {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.pricing-per-tenant {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.pricing-example {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.875rem 1rem;
+}
+.pricing-example-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.pricing-example-row span:last-child {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.pricing-cta {
+  text-align: center;
+}
+.pricing-annual {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* INCLUDES */
+.pricing-includes {
+  width: 100%;
+  text-align: center;
+}
+.pricing-includes h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.pricing-includes-sub {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+.pricing-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem;
+  text-align: left;
+}
+.pricing-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.pricing-check {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* FAQ */
+.pricing-faq {
+  width: 100%;
+}
+.pricing-faq h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.faq-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
+}
+.faq-item h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.faq-item p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .pricing-features-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-card-top {
+    flex-direction: column;
+  }
+  .nav-tabs {
+    display: none;
   }
 }
 </style>
