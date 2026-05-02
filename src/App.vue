@@ -291,8 +291,8 @@
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Analytics</span>
-          <h2>See exactly what changed, and when.</h2>
-          <p>Pick date range and instantly see every change across all your client tenants — new users, offboarded users, license increases, assignment changes, and which tenants were affected. All of it in a single view, without running manual reports or digging through individual admin portals.</p>
+          <h2>See what changed between any two points in time.</h2>
+          <p>Pick two dates and instantly compare snapshots across all your client tenants — new users, offboarded users, license increases, assignment changes, and which tenants were affected. All of it in a single view, without running manual reports or digging through individual admin portals.</p>
           <ul class="feature-list feature-list-cols">
             <li>License increases and decreases across all tenants</li>
             <li>Users onboarded and offboarded per period</li>
