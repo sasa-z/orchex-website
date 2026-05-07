@@ -364,20 +364,21 @@
         <div class="feature-wide-header">
           <span class="feature-label">Conditional Access Health</span>
           <h2>27 CA checks. Instant results. Step-by-step fix guides.</h2>
-          <p>Conditional Access misconfigurations are one of the most common entry points for attackers — and one of the hardest to spot manually. ORCHEX runs 27 checks per tenant on demand: MFA gaps, legacy auth bypasses, platform bypass risks, sign-in risk policy coverage, break-glass exclusions, geo-blocking, and more. Every finding includes a severity rating, a plain-language explanation, and a step-by-step fix guide — no need to cross-reference Microsoft docs.</p>
+          <p>Conditional Access misconfigurations are one of the most common entry points for attackers — and one of the hardest to spot manually. ORCHEX runs 27 checks per tenant on demand: MFA gaps, legacy auth bypasses, platform bypass risks, sign-in risk policy coverage, break-glass exclusions, geo-blocking, and more. Every finding includes a severity rating, a plain-language explanation, and a step-by-step fix guide — no need to cross-reference Microsoft docs. A Sign-in Coverage tab rounds out the picture: see exactly what percentage of real interactive sign-ins over the past 30 days were protected by CA policies enforcing MFA — and which users are regularly signing in without any policy applied.</p>
           <ul class="feature-list feature-list-cols">
             <li>27 checks across Critical, High, Medium, and Info severity</li>
             <li>Grouped by severity — drill into issues without scrolling through passing checks</li>
             <li>Step-by-step "How to Fix" guide for every finding, directly in the portal</li>
             <li>MS Zero Trust Baseline tab — instant status of the 5 foundation policies every tenant should have</li>
+            <li>Sign-in Coverage tab — real sign-in data from the past 30 days split by CA Applied / No CA, with a per-user breakdown of unprotected sign-ins sorted by risk</li>
             <li>P2-dependent checks (sign-in risk, user risk) auto-skipped on non-P2 tenants — no false positives</li>
             <li>Results cached per tenant — switch back and forth without re-running the scan</li>
           </ul>
         </div>
         <div class="feature-wide-img" style="display: flex; flex-direction: column; gap: 1.5rem;">
           <div>
-            <img src="/images/CAHealth.png" alt="ORCHEX CA Health — 27 checks grouped by severity with How to Fix guides" />
-            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;"><strong style="color: var(--text);">On-demand health scan</strong> — failing checks grouped by severity with affected policy details and a direct fix guide per finding.</p>
+            <img src="/images/CAHealth.png" alt="ORCHEX CA Health — 27 checks grouped by severity with How to Fix guides and Sign-in Coverage" />
+            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;"><strong style="color: var(--text);">On-demand health scan + Sign-in Coverage</strong> — failing checks grouped by severity with fix guides, plus a real sign-in breakdown showing which users are signing in without CA protection.</p>
           </div>
           <div>
             <img src="/images/CABaseline.png" alt="ORCHEX CA Baseline — MS Zero Trust foundation policy status" />
