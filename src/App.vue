@@ -374,8 +374,21 @@
             <li>Per-user bell subscriptions — subscribe only to the alert types you care about</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — resolve, snooze and investigate from one view" />
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — active alerts across all tenants" />
+            <div class="feature-sub-caption">
+              <strong>Active Alerts</strong>
+              <span>All active alerts across every tenant in one view — snooze, resolve, or investigate directly from the alert row without switching portals.</span>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
+            <div class="feature-sub-caption">
+              <strong>Alert Configuration</strong>
+              <span>Configure each alert type independently — check frequency, severity, excluded tenants, notification methods, and which specific checks are active.</span>
+            </div>
+          </div>
         </div>
       </div>
 
