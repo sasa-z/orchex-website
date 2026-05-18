@@ -343,9 +343,28 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">Tenant Management</span>
+          <h2>Full control over every tenant connection.</h2>
+          <p>One place to manage access to all your client tenants — CPV consent status, GDAP relationship health, app registration permissions, and access check results. Get instant visibility into which tenants are current and which need attention, without digging through individual admin portals. Daily automated checks surface issues before they cause failures — missing consent, expiring GDAP relationships, and stale access checks appear as Portal Health notifications automatically.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>CPV tab — consent status per tenant, re-run consent directly from the portal</li>
+            <li>Permissions tab — verify all app registration roles and delegated scopes are assigned</li>
+            <li>Access Check tab — verify portal access to each tenant on demand or on a schedule</li>
+            <li>GDAP Health tab — relationship status, expiry dates, and assigned roles per tenant</li>
+            <li>Daily automated checks — expiring GDAP, stale CPV consent, and access failures surface as Portal Health warnings</li>
+            <li>Schedule Apply Permissions — push updated app permissions to all tenants with one click</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Tenants.png" alt="ORCHEX Tenant Management — permissions, CPV, GDAP and access check" />
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Security Alerting</span>
           <h2>Detect it. Investigate it. Fix it. All in one place.</h2>
-          <p>Enable the alert types you care about and ORCHEX monitors all your client tenants automatically — admins without MFA, risky users, expiring app secrets, blocked senders, unused licenses, and more. What makes it different: every alert row connects directly to the rest of the portal. Suspicious sign-in flagged? Open the full sign-in history inline. Admin without MFA? Launch MFA management from the same row. No tab switching, no copy-pasting UPNs into other portals. </p>
+          <p>Enable the alert types you care about and ORCHEX monitors all your client tenants automatically — admins without MFA, risky users, expiring app secrets, blocked senders, break-glass account sign-ins, tenant operations issues (CPV consent, GDAP expiry, access failures), unused licenses, and more. What makes it different: every alert row connects directly to the rest of the portal. Suspicious sign-in flagged? Open the full sign-in history inline. Admin without MFA? Launch MFA management from the same row. No tab switching, no copy-pasting UPNs into other portals.</p>
           <ul class="feature-list feature-list-cols">
             <li>Snooze for 7, 14, or 30 days — auto-re-activates if the issue persists</li>
             <li>Email and webhook on first detection — one summary per tenant, not per individual alert</li>
