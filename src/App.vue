@@ -163,18 +163,17 @@
       <div class="feature-row">
         <div class="feature-text">
           <span class="feature-label">Bulk Operations</span>
-          <h2>Act on many users at once — safely.</h2>
-          <p>Select any number of users and run an action across all of them in a single pass. ORCHEX shows a live per-user breakdown as it works, so a single failure never hides behind a green checkmark. Generated passwords can be revealed and copied inline straight from the results, or exported as CSV. The same bulk actions run in both single-tenant and All Tenants mode.</p>
+          <h2>Act on many records at once — safely.</h2>
+          <p>Select multiple rows and run an action across all of them in a single pass. ORCHEX shows a live per-item breakdown as it works, so a single failure never hides behind a green checkmark. Sensitive results — like generated credentials — can be revealed and copied inline straight from the results, or exported as CSV. Bulk runs in both single-tenant and All Tenants mode.</p>
           <ul class="feature-list">
-            <li>Live per-user success / failure breakdown</li>
-            <li>Reveal and copy each generated password inline</li>
-            <li>Export the full result set to CSV</li>
+            <li>Live per-item success / failure breakdown</li>
+            <li>Reveal and copy sensitive results inline, or export everything to CSV</li>
             <li>Admin-configurable guardrails — type-to-confirm threshold and a hard maximum on selected items</li>
             <li>Runs in single-tenant and All Tenants mode</li>
           </ul>
         </div>
         <div class="feature-img">
-          <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — per-user results with inline password copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
+          <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — live per-item results with inline copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
         </div>
       </div>
 
