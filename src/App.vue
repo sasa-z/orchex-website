@@ -5,8 +5,12 @@
     <nav class="nav">
       <div class="nav-inner">
         <span class="wordmark">ORCHEX</span>
-        <!-- nav-tabs hidden until pricing is live -->
-
+        <div class="nav-tabs">
+          <button class="nav-tab" :class="activePage === 'features' && 'nav-tab-active'" @click="activePage = 'features'">Features</button>
+          <button class="nav-tab" :class="activePage === 'pricing' && 'nav-tab-active'" @click="activePage = 'pricing'">Pricing</button>
+          <button class="nav-tab" :class="activePage === 'faq' && 'nav-tab-active'" @click="activePage = 'faq'">FAQ</button>
+          <button class="nav-tab" :class="activePage === 'about' && 'nav-tab-active'" @click="activePage = 'about'">About</button>
+        </div>
         <a href="https://tally.so/r/dWABZA" target="_blank" class="nav-cta">Get in touch</a>
       </div>
     </nav>
@@ -153,6 +157,23 @@
         </div>
         <div class="feature-img">
           <img src="/images/Modal.png" alt="ORCHEX dual-mode modal — Mailbox Permissions" style="max-width: 420px; margin: 0 auto; display: block;" />
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature-text">
+          <span class="feature-label">Bulk Operations</span>
+          <h2>Act on many users at once — safely.</h2>
+          <p>Select any number of users and run an action across all of them in a single pass. ORCHEX shows a live per-user breakdown as it works, so a single failure never hides behind a green checkmark. Generated passwords can be revealed and copied inline straight from the results, or exported as CSV. The same bulk actions run in both single-tenant and All Tenants mode.</p>
+          <ul class="feature-list">
+            <li>Live per-user success / failure breakdown</li>
+            <li>Reveal and copy each generated password inline</li>
+            <li>Export the full result set to CSV</li>
+            <li>Runs in single-tenant and All Tenants mode</li>
+          </ul>
+        </div>
+        <div class="feature-img">
+          <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — per-user results with inline password copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
         </div>
       </div>
 
@@ -394,6 +415,41 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">User Forensics</span>
+          <h2>Investigate smarter. Analysis that knows your environment, not just the logs.</h2>
+          <p>When an alert fires or something looks off, open Forensics and get a structured investigation across sign-in history, file activity, inbox rule changes, mailbox events, authentication methods, and SharePoint sharing — all pulled live, all in one place. Sign-ins are risk-scored on a timeline and the scoring reflects what you've already told ORCHEX to trust: Safe Locations, per-user expected countries, and trusted IP exceptions are all applied automatically. A user who regularly works across two countries won't generate noise — an attacker who exploits that same pattern will.</p>
+          <p>Azure IP geolocation is cross-checked against a local MaxMind database and silently corrected when it's off. Impossible travel detection accounts for geolocation uncertainty — two IPs from the same office that resolve to different cities won't false-flag, but a genuine 7,000 km jump in 15 minutes will. Every sign-in card shows which trust rule applied and why, so you're never left wondering why something scored the way it did.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Risk-scored timeline — Critical, High, Medium, Low, Safe per event with inline trust context</li>
+            <li>Impossible travel — geolocation-aware, suppressed when both locations are in the user's expected countries</li>
+            <li>Trust enrichment — Safe Locations, User Exceptions, and Global IP Exceptions applied to each sign-in</li>
+            <li>IP geolocation correction — Azure coordinates cross-checked and corrected via local MaxMind database</li>
+            <li>Interactive map — sign-in locations plotted geographically, synced with timeline filters</li>
+            <li>Inbox rules audit — new and modified rules flagged for review</li>
+            <li>File activity — SharePoint and OneDrive operations in the investigation window</li>
+            <li>Mailbox activity — Exchange events and access patterns</li>
+          </ul>
+        </div>
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/Forensic-impossible_travel.png" alt="ORCHEX User Forensics — sign-in timeline with impossible travel detection" />
+            <div class="feature-sub-caption">
+              <strong>Sign-In Analysis</strong>
+              <span>Risk-scored timeline with trust context built in — Safe Locations, User Exceptions, and Global IP Exceptions are applied to each sign-in automatically. Impossible travel, unfamiliar devices, and unsafe countries are flagged inline. What you've configured as trusted stays quiet; what's genuinely suspicious doesn't.</span>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/Forensic.png" alt="ORCHEX User Forensics — structured investigation checklist" />
+            <div class="feature-sub-caption">
+              <strong>Forensic Checklist</strong>
+              <span>A guided investigation flow covering sign-ins, file activity, inbox rules, mailbox events, authentication methods, and sharing actions — structured so nothing gets missed.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Conditional Access Health</span>
           <h2>27 CA checks. Instant results. Step-by-step fix guides.</h2>
           <p>Conditional Access misconfigurations are one of the most common entry points for attackers — and one of the hardest to spot manually. ORCHEX runs 27 checks per tenant on demand: MFA gaps, legacy auth bypasses, platform bypass risks, sign-in risk policy coverage, break-glass exclusions, geo-blocking, and more. Every finding includes a severity rating, a plain-language explanation, and a step-by-step fix guide — no need to cross-reference Microsoft docs. A Sign-in Coverage tab rounds out the picture: see exactly what percentage of real interactive sign-ins over the past 30 days were protected by CA policies enforcing MFA — and which users are regularly signing in without any policy applied.</p>
@@ -446,58 +502,101 @@
     </template><!-- end features page -->
 
     <!-- PRICING PAGE (hidden until launch) -->
-    <template v-if="false /* activePage === 'pricing' */">
+    <template v-if="activePage === 'pricing'">
     <section class="pricing-page">
 
       <!-- Header -->
       <div class="pricing-header">
-        <div class="hero-badge">Early Access</div>
-        <h1>Simple, transparent pricing.</h1>
-        <p>ORCHEX is currently onboarding its first MSP partners at a locked-in founding rate. Early adopters keep this price for life — no increases, ever.</p>
+        <h1>Early access program.</h1>
+        <p>ORCHEX is currently onboarding its first MSP partners. No feature tiers, no add-ons — everything included. Pricing will be announced after the pilot phase.</p>
       </div>
 
-      <!-- Card -->
-      <div class="pricing-card-wrap">
-        <div class="pricing-card">
+
+      <!-- Cards -->
+      <div class="pricing-cards">
+
+        <!-- Pilot card -->
+        <div class="pricing-card pricing-card--pilot">
           <div class="pricing-card-top">
-            <div>
-              <span class="pricing-plan-name">Founding Partner</span>
-              <p class="pricing-plan-desc">Everything included. No feature tiers during early access.</p>
+            <span class="pricing-plan-name">Pilot Program</span>
+            <p class="pricing-plan-desc">For MSPs that want to be involved early. Limited spots.</p>
+          </div>
+          <div class="pricing-amount">
+            <div class="pricing-amount-main">
+              <span class="pricing-price-free">Free</span>
             </div>
-            <div class="pricing-spots">
-              <span class="pricing-spots-dot"></span>
-              Limited spots available
+            <div class="pricing-per-tenant-note">for the pilot period</div>
+          </div>
+
+          <!-- Pilot conversion rate callout -->
+          <!-- PRICING TO RESTORE AFTER PILOT:
+            $6 / tenant / mo pilot rate (vs $10 standard annual) · minimum $99 / mo
+            Re-add pricing-pilot-rate-price, pricing-pilot-rate-compare, pricing-pilot-rate-min divs
+          -->
+          <div class="pricing-pilot-rate">
+            <div class="pricing-pilot-rate-label">Then convert at your pilot rate</div>
+            <div class="pricing-pilot-rate-compare">
+              <span>Preferential rate — locked in for 5 years</span>
             </div>
+          </div>
+
+          <ul class="pricing-pilot-list">
+            <li>All features fully unlocked</li>
+            <li>Unlimited tenants</li>
+            <li>Direct onboarding — we set it up together</li>
+            <li>Your feedback shapes the roadmap</li>
+          </ul>
+          <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-secondary pricing-cta">Request Early Access</a>
+          <p class="pricing-pilot-note">Each application is reviewed manually.</p>
+        </div>
+
+        <!-- Standard card — hidden during pilot; pricing to be set after pilot feedback (remove v-if="false" to restore) -->
+        <div v-if="false" class="pricing-card pricing-card--standard pricing-card--disabled">
+          <div class="pricing-card-top">
+            <span class="pricing-plan-name">Standard</span>
+            <p class="pricing-plan-desc">Everything included. Scales with your tenant count.</p>
+          </div>
+
+          <!-- Billing tabs inside card -->
+          <div class="pricing-billing-tabs">
+            <button
+              class="pricing-billing-tab"
+              :class="billingCycle === 'annual' && 'pricing-billing-tab--active'"
+              @click="billingCycle = 'annual'"
+            >Annual <span class="pricing-save-badge">Save 33%</span></button>
+            <button
+              class="pricing-billing-tab"
+              :class="billingCycle === 'monthly' && 'pricing-billing-tab--active'"
+              @click="billingCycle = 'monthly'"
+            >Monthly</button>
           </div>
 
           <div class="pricing-amount">
             <div class="pricing-amount-main">
               <span class="pricing-currency">$</span>
-              <span class="pricing-price">49</span>
-              <span class="pricing-period">/mo</span>
+              <span class="pricing-price">{{ billingCycle === 'annual' ? '10' : '15' }}</span>
+              <span class="pricing-period">/ tenant / mo</span>
             </div>
-            <div class="pricing-per-tenant">+ $3 per tenant / mo</div>
+            <div class="pricing-per-tenant-note">minimum $99 / mo{{ billingCycle === 'annual' ? ' · billed annually' : '' }}</div>
           </div>
-
           <div class="pricing-example">
             <div class="pricing-example-row">
               <span>10 tenants</span>
-              <span>$79 / mo</span>
+              <span>{{ billingCycle === 'annual' ? '$100' : '$150' }} / mo</span>
             </div>
             <div class="pricing-example-row">
               <span>25 tenants</span>
-              <span>$124 / mo</span>
+              <span>{{ billingCycle === 'annual' ? '$250' : '$375' }} / mo</span>
             </div>
             <div class="pricing-example-row">
               <span>50 tenants</span>
-              <span>$199 / mo</span>
+              <span>{{ billingCycle === 'annual' ? '$500' : '$750' }} / mo</span>
             </div>
           </div>
-
-          <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary pricing-cta">Request early access</a>
-
-          <p class="pricing-annual">Pay annually and get 2 months free.</p>
+          <button class="btn-primary pricing-cta pricing-cta--disabled" disabled>Available after pilot phase</button>
+          <p class="pricing-pilot-note">Direct signup opens when the pilot program ends.</p>
         </div>
+
       </div>
 
       <!-- What's included -->
@@ -539,7 +638,7 @@
           </div>
           <div class="pricing-feature-item">
             <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Direct founder support</span>
+            <span>Email & async chat support — direct access to the founder</span>
           </div>
         </div>
       </div>
@@ -553,20 +652,20 @@
             <p>ORCHEX deploys to your own Azure subscription — Function App, Static Web App, and Key Vault are all provisioned in your environment. Client data never touches any shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us.</p>
           </div>
           <div class="faq-item">
-            <h3>Is the founding price really locked in?</h3>
-            <p>Yes. Early adopters keep this rate for as long as they stay subscribed. When we move to standard pricing, existing partners are never affected.</p>
+            <h3>What is the pilot program?</h3>
+            <p>The pilot is a partner program for MSPs that want to be involved early — not a self-serve trial. Each application is reviewed manually. Pilot partners get full access free of charge during the pilot period, direct setup support, and a locked-in rate when they convert to paid.</p>
           </div>
           <div class="faq-item">
             <h3>How many tenants can I connect?</h3>
-            <p>There is no hard cap on tenant count. You pay $3 per tenant per month, so the cost scales naturally with your business.</p>
+            <p>There is no hard cap. Standard pricing will be announced after the pilot program. Pilot partners convert at a preferential rate — locked in for 5 years.</p>
           </div>
           <div class="faq-item">
             <h3>What kind of support do I get?</h3>
-            <p>Direct access to the founder — email and async chat. As an early adopter you'll get faster, more personal support than you would from any support queue. Your feedback also directly shapes what gets built next.</p>
+            <p>Email and async chat — direct access to the founder. You'll get faster, more personal support than any ticket queue, and your feedback directly shapes what gets built next.</p>
           </div>
           <div class="faq-item">
-            <h3>What happens after the early access period?</h3>
-            <p>Your price stays the same. Standard pricing for new customers will be higher. Early adopters are never migrated to a higher tier without explicit opt-in.</p>
+            <h3>Is the pilot rate locked in?</h3>
+            <p>Yes. Pilot partners convert to paid at a preferential rate — locked in for 5 years regardless of future pricing changes. You keep it as long as you stay subscribed within that period.</p>
           </div>
         </div>
       </div>
@@ -574,23 +673,60 @@
     </section>
     </template><!-- end pricing page -->
 
+    <!-- FAQ PAGE -->
+    <template v-if="activePage === 'faq'">
+    <section class="faq-page">
+
+      <div class="faq-page-header">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know before getting started with ORCHEX.</p>
+      </div>
+
+      <div class="faq-accordion">
+        <div
+          v-for="(item, i) in faqItems"
+          :key="i"
+          class="faq-accordion-item"
+          :class="{ 'faq-accordion-item--open': openFaq === i }"
+          @click="openFaq = openFaq === i ? null : i"
+        >
+          <div class="faq-accordion-trigger">
+            <span>{{ item.q }}</span>
+            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-accordion-body" v-show="openFaq === i" v-html="item.a" />
+        </div>
+      </div>
+
+      <div class="faq-page-cta">
+        <p>Still have questions?</p>
+        <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Get in touch</a>
+      </div>
+
+    </section>
+    </template><!-- end faq page -->
+
     <!-- FOUNDER -->
-    <section class="founder" v-if="activePage === 'features'">
+    <template v-if="activePage === 'about'">
+    <section class="founder founder--page">
       <div class="founder-inner">
         <span class="feature-label">About the founder</span>
         <h2>Built by someone who's been there.</h2>
         <p>My name is Sasa Zelic. With 16+ years in IT — the last 8 spent in the MSP industry — I've managed Microsoft 365 environments at scale, led automation, and worked hands-on with the same tools MSPs rely on every day.</p>
+        <p>Over the years I built and deployed a number of custom automations and tools to fill the gaps that off-the-shelf products couldn't. Many of those solutions — tested in real MSP environments — became the foundation of what ORCHEX is today.</p>
+        <p>ORCHEX exists because I couldn't find a tool that actually fit how MSPs work — one that combined management, security, and automation without requiring a patchwork of separate platforms. So I built it.</p>
         <a href="https://www.linkedin.com/in/sasa-zelic-14a1533b/" target="_blank" class="founder-linkedin">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           Sasa Zelic on LinkedIn
         </a>
       </div>
     </section>
+    </template>
 
     <!-- CONTACT -->
     <section class="contact">
       <h2>Interested in ORCHEX?</h2>
-      <p>ORCHEX is approaching its first pilot deployment. If you're an MSP managing Microsoft 365 tenants and want to be among the first to try it, get in touch.</p>
+      <p>The pilot is live. If you're an MSP managing Microsoft 365 tenants and want early access — and a direct line to the founder — apply below.</p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
     </section>
 
@@ -607,6 +743,43 @@
 import { ref } from 'vue'
 const year = new Date().getFullYear()
 const activePage = ref('features')
+const openFaq = ref(null)
+const billingCycle = ref('annual')
+
+const faqItems = [
+  {
+    q: 'Is ORCHEX right for my business?',
+    a: `<p>ORCHEX is built specifically for <strong>Microsoft CSP (Cloud Solution Provider) partners</strong> who manage multiple client Microsoft 365 tenants. To use ORCHEX you need:</p>
+        <ul>
+          <li>An active Microsoft Partner Center account</li>
+          <li>GDAP (Granular Delegated Admin Privileges) relationships established with each client tenant you want to manage</li>
+          <li>An Azure subscription to host the ORCHEX infrastructure</li>
+        </ul>
+        <p>If you manage only your own organization's tenant, or you are not a Microsoft CSP partner, ORCHEX is not the right fit.</p>`
+  },
+  {
+    q: 'What infrastructure does ORCHEX deploy?',
+    a: `<p>ORCHEX deploys five Azure resources into your own Azure subscription using a single ARM/Bicep script:</p>
+        <ul>
+          <li><strong>Static Web App</strong> — hosts the ORCHEX portal, connected directly to the ORCHEX frontend repository. Updates deploy automatically whenever a new version is released.</li>
+          <li><strong>Function App</strong> — the ORCHEX backend, connected directly to the ORCHEX API repository. Updates deploy automatically alongside the frontend.</li>
+          <li><strong>Storage Account</strong> — used by the Function App and for portal data (Azure Table Storage)</li>
+          <li><strong>Key Vault</strong> — stores all secrets: app credentials and refresh tokens. Only your Function App has access.</li>
+          <li><strong>Application Insights</strong> — telemetry and logging for the Function App</li>
+        </ul>
+        <p>Everything runs in your environment. Client data never touches our servers or any shared infrastructure. Your Azure costs for these resources are typically <strong>$20–60/month</strong> depending on the number of tenants and usage.</p>`
+  },
+  {
+    q: 'Do I need GitHub or developer knowledge to run ORCHEX?',
+    a: `<p>No. ORCHEX does not require you to fork any repositories or manage a GitHub pipeline. Your Static Web App and Function App connect directly to the ORCHEX repositories — updates deploy automatically whenever a new version is released.</p>
+        <p>The only technical requirement on your side is an <strong>Azure subscription</strong>.</p>`
+  },
+  {
+    q: 'How does the setup work? Do I need to do it myself?',
+    a: `<p>During the pilot phase, setup is handled together with the founder — you won't be left to figure it out alone. As ORCHEX moves toward general availability, full self-service documentation will be available.</p>
+        <p>Either way, setup typically takes <strong>under an hour</strong> once the prerequisites are in place.</p>`
+  },
+]
 </script>
 
 <style scoped>
@@ -1106,8 +1279,13 @@ const activePage = ref('features')
   border-top: 1px solid rgba(79, 142, 247, 0.15);
   border-bottom: 1px solid rgba(79, 142, 247, 0.15);
 }
+.founder--page {
+  min-height: calc(100vh - 64px);
+  border: none;
+  padding: 120px 2rem;
+}
 .founder-inner {
-  max-width: 620px;
+  max-width: 780px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1145,7 +1323,7 @@ const activePage = ref('features')
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   text-align: center;
-  padding: 80px 2rem;
+  padding: 52px 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1157,7 +1335,7 @@ const activePage = ref('features')
 }
 .contact p {
   color: var(--text-muted);
-  max-width: 440px;
+  max-width: 580px;
   line-height: 1.7;
 }
 
@@ -1245,6 +1423,275 @@ const activePage = ref('features')
   width: 100%;
   max-width: 480px;
 }
+
+/* Two-card layout */
+.pricing-cards {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: center;
+}
+.pricing-card--pilot {
+  flex: none;
+  width: 420px;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 32px rgba(99,102,241,0.10);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.pricing-card--pilot:hover {
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 20px rgba(99,102,241,0.10);
+}
+.pricing-card--standard {
+  flex: 1;
+  border-color: var(--border);
+}
+.pricing-card--disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.pricing-plan-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.pricing-early-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: rgba(99,102,241,0.15);
+  color: var(--accent);
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.pricing-future-note {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  opacity: 0.8;
+}
+.pricing-cta--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: var(--border);
+  color: var(--text-muted);
+  box-shadow: none;
+}
+
+/* Billing tabs inside card */
+.pricing-billing-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+  padding: 0.25rem;
+}
+.pricing-billing-tab {
+  flex: 1;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.pricing-billing-tab--active {
+  background: var(--bg-card);
+  color: var(--text);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Billing toggle */
+.pricing-toggle-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.pricing-toggle-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.pricing-toggle-label--active {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.pricing-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: var(--border);
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.pricing-toggle--on {
+  background: var(--accent);
+}
+.pricing-toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  display: block;
+}
+.pricing-toggle--on .pricing-toggle-knob {
+  transform: translateX(20px);
+}
+.pricing-save-badge {
+  background: rgba(99,102,241,0.12);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  letter-spacing: 0.02em;
+}
+
+/* Pilot-specific */
+.pricing-price-free {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1;
+}
+.pricing-per-tenant-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.pricing-pilot-rate {
+  background: rgba(99,102,241,0.08);
+  border: 1px solid rgba(99,102,241,0.2);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.pricing-pilot-rate-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pricing-pilot-rate-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+.pricing-pilot-rate-amount {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.pricing-pilot-rate-period {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.pricing-pilot-rate-compare {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.pricing-pilot-rate-strike {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.pricing-pilot-rate-min {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+  margin-top: 0.1rem;
+}
+
+.pricing-pilot-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.pricing-pilot-list li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.pricing-pilot-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.pricing-pilot-note {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: -0.75rem;
+}
+
+/* btn-secondary */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(99,102,241,0.05);
+}
 .pricing-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -1256,9 +1703,8 @@ const activePage = ref('features')
 }
 .pricing-card-top {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 .pricing-plan-name {
   font-size: 1rem;
@@ -1316,11 +1762,6 @@ const activePage = ref('features')
 .pricing-period {
   font-size: 1.1rem;
   color: var(--text-muted);
-  font-weight: 500;
-}
-.pricing-per-tenant {
-  font-size: 0.9rem;
-  color: var(--accent);
   font-weight: 500;
 }
 
@@ -1434,5 +1875,111 @@ const activePage = ref('features')
   .nav-tabs {
     display: none;
   }
+}
+
+/* FAQ PAGE */
+.faq-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 72px 2rem 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.faq-page-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faq-page-header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.faq-page-header p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.faq-accordion-item {
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+}
+.faq-accordion-item:first-child {
+  border-top: 1px solid var(--border);
+}
+.faq-accordion-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.15s, background 0.15s;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  margin: 4px 0;
+}
+.faq-accordion-item--open .faq-accordion-trigger {
+  color: var(--accent);
+}
+.faq-chevron {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+.faq-accordion-item--open .faq-chevron {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+.faq-accordion-body {
+  padding: 0.5rem 1.25rem 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.faq-accordion-body :deep(p) {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+}
+.faq-accordion-body :deep(ul) {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.faq-accordion-body :deep(li) {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.38);
+  line-height: 1.7;
+  display: list-item;
+}
+.faq-accordion-body :deep(strong) {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+.faq-page-cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.faq-page-cta p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 </style>
