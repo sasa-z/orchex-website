@@ -169,6 +169,7 @@
             <li>Live per-user success / failure breakdown</li>
             <li>Reveal and copy each generated password inline</li>
             <li>Export the full result set to CSV</li>
+            <li>Admin-configurable guardrails — type-to-confirm threshold and a hard maximum on selected items</li>
             <li>Runs in single-tenant and All Tenants mode</li>
           </ul>
         </div>
