@@ -493,6 +493,23 @@
         </div>
       </div>
 
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">AI Integration</span>
+          <h2>Ask your AI about any tenant.</h2>
+          <p>ORCHEX exposes its data through the Model Context Protocol (MCP) — the open standard for connecting AI assistants to external tools. Any MCP-compatible AI client (Claude Desktop, Cursor, and others) can connect to your ORCHEX instance and query your M365 environment in plain language, using the same permissions and security boundaries as the portal itself.</p>
+          <p>Your data stays where it always has — in your own Azure subscription. The AI has read access to what you expose; nothing more.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>"Who are the Global Admins in tenant X?"</li>
+            <li>"Find all users named Smith across all tenants"</li>
+            <li>"Does user@contoso.com have MFA enabled?"</li>
+            <li>"List disabled users that still have licenses assigned"</li>
+            <li>"Which tenant does josh@fabrikam.com belong to?"</li>
+            <li>"Show me the mailbox size and forwarding config for this user"</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="features-more">
         <p>And much more — mailbox management, Teams & SharePoint, conditional access, transport rules, quarantine, app registrations, risky users, sign-in logs, and more. ORCHEX covers the full M365 stack across all your tenants from a single portal.</p>
       </div>
