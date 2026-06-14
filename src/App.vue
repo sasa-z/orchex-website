@@ -559,12 +559,13 @@
 
           <ul class="pricing-pilot-list">
             <li>All features fully unlocked</li>
-            <li>Unlimited tenants</li>
+            <li>Unlimited tenants for the pilot period</li>
             <li>Direct onboarding — we set it up together</li>
             <li>Your feedback shapes the roadmap</li>
           </ul>
           <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-secondary pricing-cta">Request Early Access</a>
           <p class="pricing-pilot-note">Each application is reviewed manually.</p>
+          <p class="pricing-pilot-note">Pilot partners commit to actively using ORCHEX and sharing feedback — a short monthly check-in and honest input on what works and what doesn't. This is a partnership, not a free trial.</p>
         </div>
 
         <!-- Standard card — hidden during pilot; pricing to be set after pilot feedback (remove v-if="false" to restore) -->
@@ -614,50 +615,6 @@
           <p class="pricing-pilot-note">Direct signup opens when the pilot program ends.</p>
         </div>
 
-      </div>
-
-      <!-- What's included -->
-      <div class="pricing-includes">
-        <h2>Everything included</h2>
-        <p class="pricing-includes-sub">All features, all tenants, no add-ons.</p>
-        <div class="pricing-features-grid">
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Full M365 management — users, mailboxes, groups, licenses, Teams, SharePoint</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>JIT Admin Access — grant time-limited admin roles with automatic expiration</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Security alerting — risky users, MFA gaps, expiring credentials, and more</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Standards engine — define, enforce, and track compliance across all tenants</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Portal health monitoring — background tasks, enforcement runs, audit trail</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>User onboarding & offboarding workflows</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Conditional access, Intune, device management</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Runs in your own Azure subscription — your data, your environment</span>
-          </div>
-          <div class="pricing-feature-item">
-            <svg class="pricing-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Email & async chat support — direct access to the founder</span>
-          </div>
-        </div>
       </div>
 
       <!-- FAQ -->
@@ -729,9 +686,9 @@
       <div class="founder-inner">
         <span class="feature-label">About the founder</span>
         <h2>Built by someone who's been there.</h2>
-        <p>My name is Sasa Zelic. With 16+ years in IT — the last 8 spent in the MSP industry — I've managed Microsoft 365 environments at scale, led automation, and worked hands-on with the same tools MSPs rely on every day.</p>
+        <p>My name is Sasa Zelic. With 18+ years in IT — the last 9 spent in the MSP industry — I've worked almost exclusively in the Microsoft ecosystem: from on-premises infrastructure and Exchange to Microsoft 365 and Azure at MSP scale.</p>
         <p>Over the years I built and deployed a number of custom automations and tools to fill the gaps that off-the-shelf products couldn't. Many of those solutions — tested in real MSP environments — became the foundation of what ORCHEX is today.</p>
-        <p>ORCHEX exists because I couldn't find a tool that actually fit how MSPs work — one that combined management, security, and automation without requiring a patchwork of separate platforms. So I built it.</p>
+        <p>ORCHEX exists because I couldn't find a tool that actually fit how MSPs work — one that combined management, security, and automation without requiring a patchwork of separate platforms. So I built it. I'm someone who notices the small things — details most people skim past. That attention goes into every part of ORCHEX: every interaction deliberate, every screen considered — because I believe powerful software and simple software are not opposites. Getting them to coexist is just harder to build.</p>
         <a href="https://www.linkedin.com/in/sasa-zelic-14a1533b/" target="_blank" class="founder-linkedin">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           Sasa Zelic on LinkedIn
@@ -785,6 +742,11 @@ const faqItems = [
           <li><strong>Application Insights</strong> — telemetry and logging for the Function App</li>
         </ul>
         <p>Everything runs in your environment. Client data never touches our servers or any shared infrastructure. Your Azure costs for these resources are typically <strong>$20–60/month</strong> depending on the number of tenants and usage.</p>`
+  },
+  {
+    q: 'Is my data secure?',
+    a: `<p>Yes — and the architecture is designed so you don't have to take our word for it. ORCHEX runs entirely in <strong>your own Azure subscription</strong>. Client data never touches our servers or any shared infrastructure. All secrets and refresh tokens are stored in <strong>your Key Vault</strong>, accessible only to your own Function App.</p>
+        <p>The ORCHEX codebase — both the API and frontend — is maintained in a private repository and goes through regular security reviews. The founder spent several years working exclusively in security architecture and holds a Certified Ethical Hacker certification — the codebase is reviewed with the same mindset: looking for what an attacker would.</p>`
   },
   {
     q: 'Do I need GitHub or developer knowledge to run ORCHEX?',
