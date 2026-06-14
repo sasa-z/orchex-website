@@ -672,11 +672,6 @@
         </div>
       </div>
 
-      <div class="faq-page-cta">
-        <p>Still have questions?</p>
-        <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Get in touch</a>
-      </div>
-
     </section>
     </template><!-- end faq page -->
 
@@ -708,6 +703,7 @@
     <footer class="footer">
       <span class="wordmark wordmark-sm">ORCHEX</span>
       <span class="footer-copy">&copy; {{ year }} Orchex. All rights reserved.</span>
+      <a href="mailto:hello@orchex.app" class="footer-email">hello@orchex.app</a>
     </footer>
 
   </div>
@@ -1331,6 +1327,15 @@ const faqItems = [
 .footer-copy {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+.footer-email {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-email:hover {
+  color: var(--accent);
 }
 
 @media (max-width: 600px) {
