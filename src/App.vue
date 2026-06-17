@@ -74,19 +74,7 @@
       </div>
     </section>
 
-    <!-- STATISTICS -->
-    <section class="stats-showcase">
-      <div class="stats-showcase-inner">
-        <div class="feature-wide-header" style="text-align: center; align-items: center;">
-          <span class="feature-label">Analytics</span>
-          <h2>Built-in analytics, across every section.</h2>
-          <p>Every section of ORCHEX has a dedicated analytics view — switch between current tenant and all-tenants mode with one click. Track license changes, user activity, security posture, and more, without leaving the portal.</p>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/Statistics.png" alt="ORCHEX — Built-in analytics across all sections" />
-        </div>
-      </div>
-    </section>
+
 
     <!-- FEATURES -->
     <section class="features">
@@ -402,7 +390,19 @@
         </div>
       </div>
 
-      <!-- 14. User Forensics — advanced investigation -->
+      <!-- 14. Built-in Analytics — per-section analytics -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Analytics</span>
+          <h2>Built-in analytics, across every section.</h2>
+          <p>Every section of ORCHEX has a dedicated analytics view — switch between current tenant and all-tenants mode with one click. Track license changes, user activity, security posture, and more, without leaving the portal.</p>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Statistics.png" alt="ORCHEX — Built-in analytics across all sections" />
+        </div>
+      </div>
+
+      <!-- 15. User Forensics — advanced investigation -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">User Forensics</span>
@@ -438,7 +438,7 @@
         </div>
       </div>
 
-      <!-- 15. AI Integration — advanced/future -->
+      <!-- 16. AI Integration — advanced/future -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">AI Integration</span>
@@ -456,7 +456,7 @@
         </div>
       </div>
 
-      <!-- 16. Tenant Management — setup/admin -->
+      <!-- 17. Tenant Management — setup/admin -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Tenant Management</span>
@@ -476,7 +476,7 @@
         </div>
       </div>
 
-      <!-- 17. Teams & SharePoint — niche -->
+      <!-- 18. Teams & SharePoint — niche -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Teams & SharePoint</span>
@@ -493,7 +493,7 @@
         </div>
       </div>
 
-      <!-- 18. Portal Health — internal ops -->
+      <!-- 19. Portal Health — internal ops -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Portal Health</span>
@@ -512,7 +512,7 @@
         </div>
       </div>
 
-      <!-- 19. User Actions — UI detail -->
+      <!-- 20. User Actions — UI detail -->
       <div class="feature-row">
         <div class="feature-text">
           <span class="feature-label">User Actions</span>
@@ -531,7 +531,7 @@
         </div>
       </div>
 
-      <!-- 20. Dual-mode Modals — UI detail -->
+      <!-- 21. Dual-mode Modals — UI detail -->
       <div class="feature-row feature-row-reverse">
         <div class="feature-text">
           <span class="feature-label">Dual-mode Modals</span>
