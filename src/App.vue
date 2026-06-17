@@ -193,10 +193,10 @@
         </div>
         <div class="feature-sub-screenshots">
           <div class="feature-sub-item">
-            <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — review step" />
+            <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
             <div class="feature-sub-caption">
-              <strong>Onboarding — Review & Confirm</strong>
-              <span>Every detail reviewed before anything is created — user info, licenses, group memberships, Teams and Distribution Lists all in one screen.</span>
+              <strong>Onboarding — Results</strong>
+              <span>Every action confirmed at a glance — user details, assigned licenses, group memberships, email aliases, and mailbox delegations, all in one screen. Export or email the report instantly.</span>
             </div>
           </div>
           <div class="feature-sub-item">
