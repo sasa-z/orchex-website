@@ -211,6 +211,25 @@
 
       <div class="feature-wide">
         <div class="feature-wide-header">
+          <span class="feature-label">User Lifecycle</span>
+          <h2>Let clients submit requests. You stay in control.</h2>
+          <p>Connect your clients' HR portals, intranets, or ticketing systems to ORCHEX. When a new hire is approved or someone leaves, the request lands in your queue — pre-filled with everything you need. You review it, open the wizard, and execute. Nothing touches a tenant until a technician confirms it.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>Onboarding and offboarding requests from any external system</li>
+            <li>Pre-fills the wizard — name, job title, tenant, copy-from user, notes</li>
+            <li>API-key authentication — one key per client portal, revocable instantly</li>
+            <li>Keys stored as hashes — a breach exposes nothing reusable</li>
+            <li>Human in the loop — no automatic tenant changes, ever</li>
+            <li>Requester name and timestamp visible in the queue for follow-up</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/ClientRequests.png" alt="ORCHEX Client Requests — onboarding and offboarding intake queue" />
+        </div>
+      </div>
+
+      <div class="feature-wide">
+        <div class="feature-wide-header">
           <span class="feature-label">Identity Management</span>
           <h2>One row. Complete picture.</h2>
           <p>Most M365 portals split user details, mailbox configuration, and MFA status across three separate pages. ORCHEX consolidates it all — every user row shows identity, mailbox health, and security posture together. Less clicking, faster decisions.</p>
