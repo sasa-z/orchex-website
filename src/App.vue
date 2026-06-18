@@ -667,15 +667,15 @@
     <section class="founder founder--page">
       <div class="founder-inner">
         <span class="feature-label">About the founder</span>
-<h2>Built by someone who's been there.</h2>
+        <h2>Built by someone who's been there.</h2>
 
         <p>My name is Sasa Zelic. I've spent nearly two decades in IT, including the last 8 years working in the MSP industry, almost entirely within the Microsoft ecosystem — from on-premises infrastructure and Exchange to Microsoft 365 and Azure at MSP scale.</p>
 
         <p>Throughout those years, I built and deployed numerous custom automations and internal tools to solve problems that off-the-shelf products couldn't. Many of those solutions were tested, refined, and used in production long before ORCHEX existed, eventually becoming its foundation.</p>
 
-        <p>ORCHEX was created around a simple principle: build the platform I always wished existed. Years of working inside MSP environments shaped a very clear — and admittedly opinionated — vision of what software should and shouldn't do, and every decision in ORCHEX follows that philosophy.</p>
+        <p>ORCHEX was created around a simple principle: build the platform I always wished existed. Years of working inside MSP environments gave me a very clear — and admittedly opinionated — perspective on how software should work. ORCHEX is simply an expression of that perspective.</p>
 
-        <p>I never set out to create software for everyone. I built the platform I genuinely enjoy using myself. If other MSPs recognize the same frustrations and appreciate the same approach, that's exactly who ORCHEX is for.</p>
+        <p>I never set out to create software for everyone. I built the platform I always wished I had. If other MSPs recognize the same frustrations and appreciate the same approach, that's exactly who ORCHEX is for.</p>
 
         <p>I'm someone who pays close attention to details others often overlook — unnecessary clicks, inconsistent experiences, and small inefficiencies that slowly add up over time. That mindset shapes every part of ORCHEX. Every workflow, interaction, and screen is designed with intention, because I believe the best tools aren't the ones that look the most powerful — they're the ones that make complex work feel effortless.</p>
 
