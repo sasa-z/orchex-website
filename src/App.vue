@@ -66,7 +66,6 @@
         <div class="feature-wide-header" style="text-align: center; align-items: center;">
           <span class="feature-label">Dashboard</span>
           <h2>The metrics that matter, always within reach.</h2>
-          <p>Click any card to expand a Quick View panel with detailed stats — right on the dashboard, without navigating away. Security and monitoring cards support per-portal and per-user thresholds: set your own alert conditions for Secure Score, Global Admins, MFA enrollment, and more.</p>
         </div>
         <div class="feature-wide-img">
           <img src="/images/Dashboard.png" alt="ORCHEX Dashboard with Quick View panel" />
@@ -84,7 +83,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">User Lifecycle</span>
           <h2>Onboard a new user in minutes. Offboard safely with one guided flow.</h2>
-          <p>ORCHEX walks you through every step — user details, organisation, permissions, licenses, group assignments — and shows a full review before anything is created. Offboarding is the same: a structured checklist that reassigns mailboxes, removes licenses, disables accounts, and cleans up access in the right order. No steps missed, no tenants forgotten.</p>
           <ul class="feature-list feature-list-cols">
             <li>Step-by-step wizard with progress indicator</li>
             <li>Full review screen before any changes are applied</li>
@@ -115,7 +113,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">User Lifecycle</span>
           <h2>Let clients submit requests. You stay in control.</h2>
-          <p>Connect your clients' HR portals, intranets, or ticketing systems to ORCHEX. When a new hire is approved or someone leaves, the request lands in your queue — pre-filled with everything you need. You review it, open the wizard, and execute. Nothing touches a tenant until a technician confirms it.</p>
           <ul class="feature-list feature-list-cols">
             <li>Onboarding and offboarding requests from any external system</li>
             <li>Pre-fills the wizard — name, job title, tenant, copy-from user, notes</li>
@@ -135,7 +132,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Standards</span>
           <h2>Define once. Enforce across every tenant, automatically.</h2>
-          <p>Create templates that group together any combination of settings and policies — security baselines, compliance requirements, mail configurations. Assign a template to one tenant or all of them, set an enforcement schedule, and ORCHEX keeps everything in sync. Templates can also provision resources like shared accounts and distribution groups, so onboarding a new tenant to your baseline takes minutes, not hours.</p>
           <ul class="feature-list feature-list-cols">
             <li>Assign templates to individual tenants or all tenants at once</li>
             <li>Scheduled enforcement or manual-only execution per template</li>
@@ -170,7 +166,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Security Alerting</span>
           <h2>Detect it. Investigate it. Fix it. All in one place.</h2>
-          <p>Enable the alert types you care about and ORCHEX monitors all your client tenants automatically — admins without MFA, risky users, expiring app secrets, blocked senders, break-glass account sign-ins, tenant operations issues (CPV consent, GDAP expiry, access failures), unused licenses, and more. What makes it different: every alert row connects directly to the rest of the portal. Suspicious sign-in flagged? Open the full sign-in history inline. Admin without MFA? Launch MFA management from the same row. No tab switching, no copy-pasting UPNs into other portals.</p>
           <ul class="feature-list feature-list-cols">
             <li>Snooze for 7, 14, or 30 days — auto-re-activates if the issue persists</li>
             <li>Email and webhook on first detection — one summary per tenant, not per individual alert</li>
@@ -201,7 +196,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Conditional Access Health</span>
           <h2>27 CA checks. Instant results. Step-by-step fix guides.</h2>
-          <p>Conditional Access misconfigurations are one of the most common entry points for attackers — and one of the hardest to spot manually. ORCHEX runs 27 checks per tenant on demand: MFA gaps, legacy auth bypasses, platform bypass risks, sign-in risk policy coverage, break-glass exclusions, geo-blocking, and more. Every finding includes a severity rating, a plain-language explanation, and a step-by-step fix guide — no need to cross-reference Microsoft docs. A Sign-in Coverage tab rounds out the picture: see exactly what percentage of real interactive sign-ins over the past 30 days were protected by CA policies enforcing MFA — and which users are regularly signing in without any policy applied.</p>
           <ul class="feature-list feature-list-cols">
             <li>27 checks across Critical, High, Medium, and Info severity</li>
             <li>Grouped by severity — drill into issues without scrolling through passing checks</li>
@@ -229,7 +223,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">License Management</span>
           <h2>Spot wasted spend at a glance.</h2>
-          <p>See exactly how many licenses are unused, which SKUs are over-provisioned, and what's expiring soon — across all your client tenants at once. Switch between table view and analytics view with one click.</p>
           <ul class="feature-list feature-list-cols">
             <li>Smart filters: Unused, Expiring &lt;30d, Has Expired, Fully Suspended</li>
             <li>Toggle between table view and analytics view per page</li>
@@ -247,7 +240,7 @@
         <div class="feature-wide-header">
           <span class="feature-label">Identity Management</span>
           <h2>One row. Complete picture.</h2>
-          <p>Most M365 portals split user details, mailbox configuration, and MFA status across three separate pages. ORCHEX consolidates it all — every user row shows identity, mailbox health, and security posture together. Less clicking, faster decisions.</p>
+          <p>Most M365 portals split user details, mailbox, and MFA across three separate pages. ORCHEX consolidates it all in one row.</p>
           <ul class="feature-list feature-list-cols">
             <li>User identity, mailbox and MFA status in a single view</li>
             <li>Cross-tenant user search and filtering</li>
@@ -265,8 +258,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">User Details</span>
           <h2>Every detail about a user, in one place.</h2>
-          <p>Open any user and get a complete picture instantly — mailbox health, MFA status, assigned roles, licenses, sign-in history, and more, all in a single tabbed view. Edit contact and work information inline, without opening a separate form. Status cards surface the most important signals at a glance so you know exactly what needs attention before you start.</p>
-          <p>Each portal user controls which tabs auto-load on open and which load on demand. Auto-load the tabs you use every day; leave the rest on-demand so the page opens fast and only fetches what you actually need. It's a per-user preference — two people on the same team can have completely different load profiles without affecting each other.</p>
           <ul class="feature-list feature-list-cols">
             <li>Tabbed layout: Overview, Mailbox, MFA, Licenses, Sign-Ins, Roles, and more</li>
             <li>Per-user tab preferences — auto-load or on-demand, per tab</li>
@@ -284,7 +275,7 @@
         <div class="feature-wide-header">
           <span class="feature-label">Quick Actions</span>
           <h2>Every action, one keystroke away.</h2>
-          <p>A command palette for M365 management. Search and execute any of 50+ built-in actions instantly — reset a password, offboard a user, manage MFA, assign licenses — without navigating through menus. Quick Actions are context-aware: opened from a user page they auto-load tenant and user data; opened standalone, you pick the tenant and target yourself. The bar is fully customizable — show, hide, and reorder actions to fit your workflow.</p>
+          <p>A command palette for M365 management — 50+ actions, instantly searchable.</p>
           <ul class="feature-list feature-list-cols">
             <li>Search across all available actions instantly</li>
             <li>Context-aware — auto-fills tenant and user when opened in context</li>
@@ -303,7 +294,6 @@
         <div class="feature-text">
           <span class="feature-label">Bulk Operations</span>
           <h2>Act on many records at once — safely.</h2>
-          <p>Select multiple rows and run an action across all of them in a single pass. ORCHEX shows a live per-item breakdown as it works, so a single failure never hides behind a green checkmark. Sensitive results — like generated credentials — can be revealed and copied inline straight from the results, or exported as CSV. Bulk runs in both single-tenant and All Tenants mode.</p>
           <ul class="feature-list">
             <li>Live per-item success / failure breakdown</li>
             <li>Reveal and copy sensitive results inline, or export everything to CSV</li>
@@ -321,7 +311,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Tenant Capabilities</span>
           <h2>Know exactly which tenants have what — before it becomes a problem.</h2>
-          <p>See Entra ID P1/P2, MDO, Intune, and Defender XDR license status across every client tenant in a single matrix view. No manual checks, no digging through individual admin portals. Drill into any tenant to see exactly which SKUs provide each capability — and what to purchase to fill the gaps.</p>
           <ul class="feature-list feature-list-cols">
             <li>License matrix across all tenants: Entra P1/P2, MDO, Intune P1/P2, Defender XDR</li>
             <li>Smart filters: Missing Entra P1, Missing Entra P2, Fully covered</li>
@@ -351,7 +340,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Enterprise Applications</span>
           <h2>Every app credential, across every tenant.</h2>
-          <p>See every enterprise app and app registration across all your client tenants — certificates, secrets, owner counts, and next expiry date, all in one table. Quick filters instantly surface apps with fully expired or partially expired credentials, so you can act before something breaks.</p>
           <ul class="feature-list feature-list-cols">
             <li>Certificate and secret counts per app, per tenant</li>
             <li>Next expiry date with expired / expiring-soon indicators</li>
@@ -369,7 +357,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Analytics</span>
           <h2>See what changed between two points in time.</h2>
-          <p>Pick two dates and instantly compare snapshots across all your client tenants — new users, offboarded users, license increases, assignment changes, and which tenants were affected. All of it in a single view, without running manual reports or digging through individual admin portals.</p>
           <ul class="feature-list feature-list-cols">
             <li>License increases and decreases across all tenants</li>
             <li>Users onboarded and offboarded per period</li>
@@ -387,7 +374,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Analytics</span>
           <h2>Built-in analytics, across every section.</h2>
-          <p>Every section of ORCHEX has a dedicated analytics view — switch between current tenant and all-tenants mode with one click. Track license changes, user activity, security posture, and more, without leaving the portal.</p>
         </div>
         <div class="feature-wide-img">
           <img src="/images/Statistics.png" alt="ORCHEX — Built-in analytics across all sections" />
@@ -399,8 +385,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">User Forensics</span>
           <h2>Investigate smarter. Analysis that knows your environment, not just the logs.</h2>
-          <p>When an alert fires or something looks off, open Forensics and get a structured investigation across sign-in history, file activity, inbox rule changes, mailbox events, authentication methods, and SharePoint sharing — all pulled live, all in one place. Sign-ins are risk-scored on a timeline and the scoring reflects what you've already told ORCHEX to trust: Safe Locations, per-user expected countries, and trusted IP exceptions are all applied automatically. A user who regularly works across two countries won't generate noise — an attacker who exploits that same pattern will.</p>
-          <p>Azure IP geolocation is cross-checked against a local MaxMind database and silently corrected when it's off. Impossible travel detection accounts for geolocation uncertainty — two IPs from the same office that resolve to different cities won't false-flag, but a genuine 7,000 km jump in 15 minutes will. Every sign-in card shows which trust rule applied and why, so you're never left wondering why something scored the way it did.</p>
           <ul class="feature-list feature-list-cols">
             <li>Risk-scored timeline — Critical, High, Medium, Low, Safe per event with inline trust context</li>
             <li>Impossible travel — geolocation-aware, suppressed when both locations are in the user's expected countries</li>
@@ -433,8 +417,7 @@
         <div class="feature-wide-header">
           <span class="feature-label">AI Integration</span>
           <h2>Ask your AI about any tenant.</h2>
-          <p>ORCHEX exposes its data through the Model Context Protocol (MCP) — the open standard for connecting AI assistants to external tools. Any MCP-compatible AI client (Claude Desktop, Cursor, and others) can connect to your ORCHEX instance and query your M365 environment in plain language, using the same permissions and security boundaries as the portal itself.</p>
-          <p>Your data stays where it always has — in your own Azure subscription. The AI has read access to what you expose; nothing more.</p>
+          <p>Connects via MCP — any compatible AI client queries your M365 environment in plain language. Your data stays in your own Azure subscription.</p>
           <ul class="feature-list feature-list-cols">
             <li>"Who are the Global Admins in tenant X?"</li>
             <li>"Find all users named Smith across all tenants"</li>
@@ -451,7 +434,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Tenant Management</span>
           <h2>Full control over every tenant connection.</h2>
-          <p>One place to manage access to all your client tenants — CPV consent status, GDAP relationship health, app registration permissions, and access check results. Get instant visibility into which tenants are current and which need attention, without digging through individual admin portals. Daily automated checks surface issues before they cause failures — missing consent, expiring GDAP relationships, and stale access checks appear as Portal Health notifications automatically.</p>
           <ul class="feature-list feature-list-cols">
             <li>CPV tab — consent status per tenant, re-run consent directly from the portal</li>
             <li>Permissions tab — verify all app registration roles and delegated scopes are assigned</li>
@@ -471,7 +453,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Teams & SharePoint</span>
           <h2>Full visibility across all tenants</h2>
-          <p>See every Microsoft Teams workspace and SharePoint site across all your client tenants in one place. Filter by visibility, storage size, activity, and more. Smart filters instantly surface inactive teams, guest-heavy workspaces, and storage outliers.</p>
           <ul class="feature-list feature-list-cols">
             <li>Storage usage per team with file count</li>
             <li>Smart filters: inactive, new, multiple owners, has guests</li>
@@ -488,7 +469,6 @@
         <div class="feature-wide-header">
           <span class="feature-label">Portal Health</span>
           <h2>A dedicated page for what's happening inside your portal.</h2>
-          <p>Standards enforcement, scheduled tasks, background operations — ORCHEX runs a lot on your behalf. Portal Health gives you a dedicated view to see exactly what's active, what's been resolved, and how the system has been behaving over the last 30 days. No log hunting required.</p>
           <ul class="feature-list feature-list-cols">
             <li>Critical and Warning severity — at a glance</li>
             <li>Active / Resolved / All tabs with live counts</li>
@@ -507,7 +487,6 @@
         <div class="feature-text">
           <span class="feature-label">User Actions</span>
           <h2>All user actions, one panel.</h2>
-          <p>Click a user and a contextual action panel slides in — pinned actions at the top, everything else organised by category: Mailbox, Security, Licenses, Groups, and Danger Zone. A lock button keeps the panel open while you execute multiple actions on the same user, so you never lose context between operations. Switch to a different user directly from the panel without closing it.</p>
           <ul class="feature-list">
             <li>Lock button — stays open between actions on the same user</li>
             <li>Switch users without closing the panel</li>
@@ -526,7 +505,6 @@
         <div class="feature-text">
           <span class="feature-label">Dual-mode Modals</span>
           <h2>Context-aware actions, everywhere.</h2>
-          <p>Every action modal in ORCHEX works in two modes. Opened from a user or mailbox page — tenant, user and resource are pre-filled, ready to go. Opened from Quick Actions — you pick the tenant and target yourself, enabling the same action from anywhere in the portal without navigating first.</p>
           <ul class="feature-list">
             <li>Pre-filled context when opened from a resource page</li>
             <li>Tenant switcher available when opened standalone</li>
