@@ -20,7 +20,7 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-badge">Launching Soon</div>
+      <div class="hero-badge">In Pilot</div>
       <h1 class="hero-title">
         Microsoft 365 management,<br />
         <span class="accent">simplified for MSPs.</span>
@@ -29,7 +29,7 @@
         One portal to manage every client tenant — licensing, security policies,
         compliance and reporting, all in one place.
       </p>
-      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
+      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
 
     <!-- HOW IT WORKS -->
@@ -592,7 +592,7 @@
             <li>Direct onboarding — we set it up together</li>
             <li>Your feedback shapes the roadmap</li>
           </ul>
-          <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-secondary pricing-cta">Request Early Access</a>
+          <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-secondary pricing-cta">Apply for Pilot</a>
           <p class="pricing-pilot-note">Each application is reviewed manually.</p>
           <p class="pricing-pilot-note">Pilot partners commit to actively using ORCHEX and sharing feedback — a short monthly check-in and honest input on what works and what doesn't. This is a partnership, not a free trial.</p>
         </div>
@@ -725,7 +725,7 @@
     <section class="contact">
       <h2>Interested in ORCHEX?</h2>
       <p>The pilot is live. If you're an MSP managing Microsoft 365 tenants and want early access — and a direct line to the founder — apply below.</p>
-      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Request early access</a>
+      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
 
     <!-- FOOTER -->
