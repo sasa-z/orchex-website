@@ -44,7 +44,7 @@
           <div class="how-step">
             <div class="how-step-num">01</div>
             <h3>One script, full infrastructure</h3>
-            <p>One script provisions your full Azure infrastructure — ready in minutes, in your own subscription.</p>
+            <p>One script. Full Azure infrastructure, ready in minutes.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
