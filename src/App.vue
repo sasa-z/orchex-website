@@ -84,11 +84,9 @@
           <span class="feature-label">User Lifecycle</span>
           <h2>Onboard a new user in minutes. Offboard safely with one guided flow.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>Step-by-step wizard with progress indicator</li>
             <li>Full review screen before any changes are applied</li>
             <li>Assign licenses, groups, Teams and Distribution Lists in one flow</li>
             <li>Offboarding checklist — mailbox reassignment, license reclaim, access removal</li>
-            <li>Works across any tenant directly from the portal</li>
             <li>Copy settings from an existing user to match their setup instantly</li>
           </ul>
         </div>
