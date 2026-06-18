@@ -206,15 +206,8 @@
             <li>Results cached per tenant — switch back and forth without re-running the scan</li>
           </ul>
         </div>
-        <div class="feature-wide-img" style="display: flex; flex-direction: column; gap: 1.5rem;">
-          <div>
-            <img src="/images/CAHealth.png" alt="ORCHEX CA Health — 27 checks grouped by severity with How to Fix guides and Sign-in Coverage" />
-            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;"><strong style="color: var(--text);">On-demand health scan + Sign-in Coverage</strong> — failing checks grouped by severity with fix guides, plus a real sign-in breakdown showing which users are signing in without CA protection.</p>
-          </div>
-          <div>
-            <img src="/images/CABaseline.png" alt="ORCHEX CA Baseline — MS Zero Trust foundation policy status" />
-            <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted); text-align: center;"><strong style="color: var(--text);">MS Zero Trust Baseline</strong> — instant status of the 5 Microsoft-recommended foundation policies, with a progress indicator and Set Up shortcut for anything missing.</p>
-          </div>
+        <div class="feature-wide-img">
+          <img src="/images/CAHealth.png" alt="ORCHEX CA Health — 27 checks grouped by severity with How to Fix guides and Sign-in Coverage" />
         </div>
       </div>
 
