@@ -112,12 +112,9 @@
           <span class="feature-label">User Lifecycle</span>
           <h2>Let clients submit requests. You stay in control.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>Onboarding and offboarding requests from any external system</li>
             <li>Pre-fills the wizard — name, job title, tenant, copy-from user, notes</li>
             <li>API-key authentication — one key per client portal, revocable instantly</li>
-            <li>Keys stored as hashes — a breach exposes nothing reusable</li>
             <li>Human in the loop — no automatic tenant changes, ever</li>
-            <li>Requester name and timestamp visible in the queue for follow-up</li>
           </ul>
         </div>
         <div class="feature-wide-img">
@@ -195,13 +192,11 @@
           <span class="feature-label">Conditional Access Health</span>
           <h2>27 CA checks. Instant results. Step-by-step fix guides.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>27 checks across Critical, High, Medium, and Info severity</li>
             <li>Grouped by severity — drill into issues without scrolling through passing checks</li>
             <li>Step-by-step "How to Fix" guide for every finding, directly in the portal</li>
             <li>MS Zero Trust Baseline tab — instant status of the 5 foundation policies every tenant should have</li>
             <li>Sign-in Coverage tab — real sign-in data from the past 30 days split by CA Applied / No CA, with a per-user breakdown of unprotected sign-ins sorted by risk</li>
             <li>P2-dependent checks (sign-in risk, user risk) auto-skipped on non-P2 tenants — no false positives</li>
-            <li>Results cached per tenant — switch back and forth without re-running the scan</li>
           </ul>
         </div>
         <div class="feature-wide-img">
@@ -268,10 +263,8 @@
           <h2>Every action, one keystroke away.</h2>
           <p>A command palette for M365 management — 50+ actions, instantly searchable.</p>
           <ul class="feature-list feature-list-cols">
-            <li>Search across all available actions instantly</li>
             <li>Context-aware — auto-fills tenant and user when opened in context</li>
             <li>Pinnable quick action bar with your most-used actions</li>
-            <li>Three display modes: always show labels, labels on hover, or icons only</li>
             <li>Configurable — show, hide and reorder actions to fit your workflow</li>
           </ul>
         </div>
@@ -380,7 +373,6 @@
             <li>Risk-scored timeline — Critical, High, Medium, Low, Safe per event with inline trust context</li>
             <li>Impossible travel — geolocation-aware, suppressed when both locations are in the user's expected countries</li>
             <li>Trust enrichment — Safe Locations, User Exceptions, and Global IP Exceptions applied to each sign-in</li>
-            <li>IP geolocation correction — Azure coordinates cross-checked and corrected via local MaxMind database</li>
             <li>Interactive map — sign-in locations plotted geographically, synced with timeline filters</li>
             <li>Inbox rules audit — new and modified rules flagged for review</li>
             <li>File activity — SharePoint and OneDrive operations in the investigation window</li>
@@ -462,9 +454,7 @@
           <h2>A dedicated page for what's happening inside your portal.</h2>
           <ul class="feature-list feature-list-cols">
             <li>Critical and Warning severity — at a glance</li>
-            <li>Active / Resolved / All tabs with live counts</li>
             <li>30-day trend chart for incident history</li>
-            <li>Search and filter across all notifications</li>
             <li>Auto-resolves when the system recovers</li>
           </ul>
         </div>
@@ -482,7 +472,6 @@
             <li>Lock button — stays open between actions on the same user</li>
             <li>Switch users without closing the panel</li>
             <li>Pin your most-used actions for instant access</li>
-            <li>Organised by category: Mailbox, Security, Licenses, Groups and more</li>
             <li>Search across all available actions</li>
           </ul>
         </div>
