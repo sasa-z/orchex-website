@@ -669,7 +669,7 @@
         <span class="feature-label">About the founder</span>
 <h2>Built by someone who's been there.</h2>
 
-        <p>My name is Sasa Zelic. I've spent nearly two decades in IT, including the last 9 years working in the MSP industry, almost entirely within the Microsoft ecosystem — from on-premises infrastructure and Exchange to Microsoft 365 and Azure at MSP scale.</p>
+        <p>My name is Sasa Zelic. I've spent nearly two decades in IT, including the last 8 years working in the MSP industry, almost entirely within the Microsoft ecosystem — from on-premises infrastructure and Exchange to Microsoft 365 and Azure at MSP scale.</p>
 
         <p>Throughout those years, I built and deployed numerous custom automations and internal tools to solve problems that off-the-shelf products couldn't. Many of those solutions were tested, refined, and used in production long before ORCHEX existed, eventually becoming its foundation.</p>
 
