@@ -554,7 +554,7 @@
       <!-- Header -->
       <div class="pricing-header">
         <h1>Early access program.</h1>
-        <p>ORCHEX is currently onboarding its first MSP partners. No feature tiers, no add-ons — everything included. Pricing will be announced after the pilot phase.</p>
+        <p>The pilot is live. A US-based MSP has been running ORCHEX in production for the past month. A few additional slots are open — everything included, preferential pricing locked in for 5 years.</p>
       </div>
 
 
@@ -724,7 +724,7 @@
     <!-- CONTACT -->
     <section class="contact">
       <h2>Interested in ORCHEX?</h2>
-      <p>The pilot is live. If you're an MSP managing Microsoft 365 tenants and want early access — and a direct line to the founder — apply below.</p>
+      <p>The pilot is live. A US-based MSP has been running ORCHEX in production for the past month. If you're managing Microsoft 365 tenants and want in — a few slots are still open.</p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
 
