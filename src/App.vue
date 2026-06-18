@@ -38,23 +38,23 @@
         <div class="how-header">
           <span class="feature-label">How it works</span>
           <h2>Built for MSPs who take data ownership seriously.</h2>
-          <p>ORCHEX runs entirely in your own Azure subscription. No shared infrastructure, no third-party servers — your client data never leaves your environment.</p>
+          <p>ORCHEX runs entirely in your own Azure subscription — no shared infrastructure, no third-party servers.</p>
         </div>
         <div class="how-steps">
           <div class="how-step">
             <div class="how-step-num">01</div>
             <h3>One script, full infrastructure</h3>
-            <p>Run the ORCHEX setup script and your Azure infrastructure is ready — Static Web App, Function App, and Key Vault, all provisioned in your own subscription automatically.</p>
+            <p>One script provisions your Azure infrastructure — Static Web App, Function App, and Key Vault, all in your own subscription.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
             <h3>Connect your client tenants</h3>
-            <p>Authenticate each tenant via OAuth 2.0. No passwords stored anywhere — tokens are secured in your Key Vault, in your own environment.</p>
+            <p>Authenticate tenants via OAuth 2.0. No passwords stored — tokens stay in your Key Vault.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">03</div>
             <h3>Your data, your infrastructure</h3>
-            <p>Everything runs in your Azure subscription. Client data never touches third-party servers. Updates to the portal and API flow in automatically — no maintenance on your end.</p>
+            <p>Updates deploy automatically from GitHub. No maintenance, no manual upgrades.</p>
           </div>
         </div>
       </div>
