@@ -54,7 +54,7 @@
           <div class="how-step">
             <div class="how-step-num">03</div>
             <h3>Your data, your infrastructure</h3>
-            <p>Updates deploy automatically from GitHub. No maintenance, no manual upgrades.</p>
+            <p>Updates deploy automatically — no maintenance on your end.</p>
           </div>
         </div>
       </div>
