@@ -677,7 +677,7 @@
 
         <p>I never set out to create software for everyone. I built the platform I always wished I had. If other MSPs recognize the same frustrations and appreciate the same approach, that's exactly who ORCHEX is for.</p>
 
-        <p>I'm someone who pays close attention to details others often overlook — unnecessary clicks, inconsistent experiences, and small inefficiencies that slowly add up over time. That mindset shapes every part of ORCHEX. Every workflow, interaction, and screen is designed with intention, because I believe the best tools aren't the ones that look the most powerful — they're the ones that make complex work feel effortless.</p>
+        <p>That philosophy naturally extends into how I build. I'm someone who pays close attention to details others often overlook — unnecessary clicks, inconsistent experiences, and small inefficiencies that slowly add up over time.</p>
 
 
         <a href="https://www.linkedin.com/in/sasa-zelic-14a1533b/" target="_blank" class="founder-linkedin">
