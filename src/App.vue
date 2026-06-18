@@ -99,14 +99,12 @@
             <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
             <div class="feature-sub-caption">
               <strong>Onboarding — Results</strong>
-              <span>Every action confirmed at a glance — user details, assigned licenses, group memberships, email aliases, and mailbox delegations, all in one screen. Export or email the report instantly.</span>
             </div>
           </div>
           <div class="feature-sub-item">
             <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
             <div class="feature-sub-caption">
               <strong>Offboarding — Configure Actions</strong>
-              <span>Pick a quick template or configure each action individually — disable sign-in, convert mailbox, remove from groups, wipe devices, and more.</span>
             </div>
           </div>
         </div>
@@ -156,14 +154,12 @@
             <img src="/images/StandardsCompliance.png" alt="ORCHEX Standards Compliance — track compliance across all tenants" />
             <div class="feature-sub-caption">
               <strong>Standards Compliance</strong>
-              <span>Track compliance across every tenant — filter by standard or tenant, instantly spot non-compliant settings, errors, and skipped items.</span>
             </div>
           </div>
           <div class="feature-sub-item">
             <img src="/images/EffectiveStandards.png" alt="ORCHEX Effective Standards — inspect what is applied to a tenant" />
             <div class="feature-sub-caption">
               <strong>Effective Standards</strong>
-              <span>See exactly what's active on any tenant — which template each setting comes from, and detect shadowed or conflicting standards instantly.</span>
             </div>
           </div>
         </div>
@@ -189,14 +185,12 @@
             <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — active alerts across all tenants" />
             <div class="feature-sub-caption">
               <strong>Active Alerts</strong>
-              <span>All active alerts across every tenant in one view — snooze, resolve, or investigate directly from the alert row without switching portals.</span>
             </div>
           </div>
           <div class="feature-sub-item">
             <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
             <div class="feature-sub-caption">
               <strong>Alert Configuration</strong>
-              <span>Configure each alert type independently — check frequency, severity, excluded tenants, notification methods, and which specific checks are active.</span>
             </div>
           </div>
         </div>
@@ -341,14 +335,12 @@
             <img src="/images/TenantCapabilities.png" alt="ORCHEX Tenant Capabilities — license matrix across all tenants" />
             <div class="feature-sub-caption">
               <strong>Capability Matrix</strong>
-              <span>Entra ID, MDO, Intune, and Defender XDR status across every client — with smart filters to instantly surface gaps.</span>
             </div>
           </div>
           <div class="feature-sub-item">
             <img src="/images/TenantCapabilitiesSidebar.png" alt="ORCHEX License Details — source SKUs and recommendations per tenant" />
             <div class="feature-sub-caption">
               <strong>License Details</strong>
-              <span>Drill into any tenant to see which SKUs provide each capability and what to add to fill the gaps — including unit counts.</span>
             </div>
           </div>
         </div>
@@ -425,14 +417,12 @@
             <img src="/images/Forensic-impossible_travel.png" alt="ORCHEX User Forensics — sign-in timeline with impossible travel detection" />
             <div class="feature-sub-caption">
               <strong>Sign-In Analysis</strong>
-              <span>Risk-scored timeline with trust context built in — Safe Locations, User Exceptions, and Global IP Exceptions are applied to each sign-in automatically. Impossible travel, unfamiliar devices, and unsafe countries are flagged inline. What you've configured as trusted stays quiet; what's genuinely suspicious doesn't.</span>
             </div>
           </div>
           <div class="feature-sub-item">
             <img src="/images/Forensic.png" alt="ORCHEX User Forensics — structured investigation checklist" />
             <div class="feature-sub-caption">
               <strong>Forensic Checklist</strong>
-              <span>A guided investigation flow covering sign-ins, file activity, inbox rules, mailbox events, authentication methods, and sharing actions — structured so nothing gets missed.</span>
             </div>
           </div>
         </div>
@@ -1160,19 +1150,14 @@ const faqItems = [
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
 }
 .feature-sub-caption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-.feature-sub-caption strong {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text);
-}
-.feature-sub-caption span {
+  display: block;
   font-size: 0.85rem;
   line-height: 1.65;
-  color: var(--text-muted);
+  text-align: center;
+}
+.feature-sub-caption strong {
+  font-weight: 600;
+  color: var(--text);
 }
 .feature-row {
   display: grid;
