@@ -44,7 +44,7 @@
           <div class="how-step">
             <div class="how-step-num">01</div>
             <h3>One script, full infrastructure</h3>
-            <p>One script provisions your Azure infrastructure — Static Web App, Function App, and Key Vault, all in your own subscription.</p>
+            <p>One script provisions your full Azure infrastructure — ready in minutes, in your own subscription.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
@@ -975,7 +975,7 @@ const faqItems = [
 
 /* HOW IT WORKS */
 .how-it-works {
-  padding: 80px 2rem;
+  padding: 40px 2rem;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--bg-card);
@@ -983,33 +983,30 @@ const faqItems = [
 .how-it-works-inner {
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 3rem;
+  align-items: center;
 }
 .how-header {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  max-width: 640px;
-  margin: 0 auto;
+  gap: 0.75rem;
 }
 .how-header h2 {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 .how-header p {
-  font-size: 0.95rem;
-  line-height: 1.75;
+  font-size: 0.9rem;
+  line-height: 1.7;
   color: var(--text-muted);
 }
 .how-steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .how-step {
   display: flex;
@@ -1280,7 +1277,7 @@ const faqItems = [
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   text-align: center;
-  padding: 52px 2rem;
+  padding: 20px 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
