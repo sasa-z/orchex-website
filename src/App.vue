@@ -667,17 +667,20 @@
     <section class="founder founder--page">
       <div class="founder-inner">
         <span class="feature-label">About the founder</span>
-          <h2>Built by someone who's been there.</h2>
+<h2>Built by someone who's been there.</h2>
 
-          <p>My name is Sasa Zelic. I've spent nearly two decades in IT, including the last 9 years working in the MSP industry, almost entirely within the Microsoft ecosystem — from on-premises infrastructure and Exchange to Microsoft 365 and Azure at MSP scale.</p>
+        <p>My name is Sasa Zelic. I've spent nearly two decades in IT, including the last 9 years working in the MSP industry, almost entirely within the Microsoft ecosystem — from on-premises infrastructure and Exchange to Microsoft 365 and Azure at MSP scale.</p>
 
-          <p>Throughout those years, I built and deployed numerous custom automations and internal tools to solve problems that off-the-shelf products couldn't. Many of those solutions were tested, refined, and used in production long before ORCHEX existed, and eventually became its foundation.</p>
+        <p>Throughout those years, I built and deployed numerous custom automations and internal tools to solve problems that off-the-shelf products couldn't. Many of those solutions were tested, refined, and used in production long before ORCHEX existed, eventually becoming its foundation.</p>
 
-          <p>After years of working inside MSP operations, I came to a simple conclusion: the problem wasn't a lack of tools — it was a lack of cohesion. Important tasks were spread across multiple platforms, workflows were fragmented, and too much time was spent switching contexts instead of getting work done.</p>
+        <p>After years of working inside MSP operations, I came to a simple conclusion: the problem wasn't a lack of tools — it was a lack of cohesion. Important tasks were spread across multiple platforms, workflows were fragmented, and too much time was spent switching contexts instead of getting work done.</p>
 
-          <p>ORCHEX was built around a simple principle: software should adapt to how MSPs actually work, not the other way around. The goal was never to build another platform with the longest feature list, but to create one place where management, security, and automation work together naturally.</p>
+        <p>ORCHEX was created around a simple principle: build the platform I always wished existed. Years of working inside MSP environments shaped a very clear — and admittedly opinionated — vision of what software should and shouldn't do, and every decision in ORCHEX follows that philosophy.</p>
 
-          <p>I'm someone who pays close attention to details others often overlook — unnecessary clicks, inconsistent experiences, and small inefficiencies that slowly add up over time. That mindset shapes every part of ORCHEX. Every workflow, interaction, and screen is designed with intention, because I believe the best software isn't the one that looks the most powerful — it's the one that makes complex work feel effortless.</p>
+        <p>I never set out to create software for everyone. I built the platform I genuinely enjoy using myself. If other MSPs recognize the same frustrations and appreciate the same approach, that's exactly who ORCHEX is for.</p>
+
+        <p>I'm someone who pays close attention to details others often overlook — unnecessary clicks, inconsistent experiences, and small inefficiencies that slowly add up over time. That mindset shapes every part of ORCHEX. Every workflow, interaction, and screen is designed with intention, because I believe the best tools aren't the ones that look the most powerful — they're the ones that make complex work feel effortless.</p>
+
 
         <a href="https://www.linkedin.com/in/sasa-zelic-14a1533b/" target="_blank" class="founder-linkedin">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
