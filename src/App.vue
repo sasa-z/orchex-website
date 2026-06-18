@@ -673,8 +673,6 @@
 
         <p>Throughout those years, I built and deployed numerous custom automations and internal tools to solve problems that off-the-shelf products couldn't. Many of those solutions were tested, refined, and used in production long before ORCHEX existed, eventually becoming its foundation.</p>
 
-        <p>After years of working inside MSP operations, I came to a simple conclusion: the problem wasn't a lack of tools — it was a lack of cohesion. Important tasks were spread across multiple platforms, workflows were fragmented, and too much time was spent switching contexts instead of getting work done.</p>
-
         <p>ORCHEX was created around a simple principle: build the platform I always wished existed. Years of working inside MSP environments shaped a very clear — and admittedly opinionated — vision of what software should and shouldn't do, and every decision in ORCHEX follows that philosophy.</p>
 
         <p>I never set out to create software for everyone. I built the platform I genuinely enjoy using myself. If other MSPs recognize the same frustrations and appreciate the same approach, that's exactly who ORCHEX is for.</p>
