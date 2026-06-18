@@ -49,7 +49,7 @@
           <div class="how-step">
             <div class="how-step-num">02</div>
             <h3>Connect your client tenants</h3>
-            <p>Authenticate tenants via OAuth 2.0. No passwords stored — tokens stay in your Key Vault.</p>
+            <p>OAuth 2.0 authentication — no passwords stored, tokens stay in your Key Vault.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">03</div>
