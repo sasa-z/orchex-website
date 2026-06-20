@@ -363,21 +363,11 @@
             <li>Users onboarded and offboarded per period</li>
             <li>Per-tenant drill-down: Subscription Changes and User Changes</li>
             <li>Filter tenants instantly to show only those with activity</li>
+            <li>Built-in chart view in every section — switch between table and analytics without leaving the page</li>
           </ul>
         </div>
         <div class="feature-wide-img">
           <img src="/images/Analytics.png" alt="ORCHEX Analytics — cross-tenant change tracking" />
-        </div>
-      </div>
-
-      <!-- 14. Built-in Analytics — per-section analytics -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Analytics</span>
-          <h2>Built-in analytics, across every section.</h2>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/Statistics.png" alt="ORCHEX — Built-in analytics across all sections" />
         </div>
       </div>
 
