@@ -38,7 +38,7 @@
       <div class="how-it-works-inner">
         <div class="how-header">
           <span class="feature-label">Why ORCHEX is different</span>
-          <h2>Three things that don't change.</h2>
+          <h2>What sets ORCHEX apart.</h2>
         </div>
         <div class="how-steps">
           <div class="how-step">
@@ -186,7 +186,38 @@
         </div>
       </div>
 
-      <!-- 5. CA Health — security continues -->
+      <!-- 5. User Forensics — moved up: strong differentiator -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">User Forensics</span>
+          <h2>Investigate smarter. Analysis that knows your environment, not just the logs.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Risk-scored timeline — Critical, High, Medium, Low, Safe per event with inline trust context</li>
+            <li>Impossible travel — geolocation-aware, suppressed when both locations are in the user's expected countries</li>
+            <li>Trust enrichment — Safe Locations, User Exceptions, and Global IP Exceptions applied to each sign-in</li>
+            <li>Interactive map — sign-in locations plotted geographically, synced with timeline filters</li>
+            <li>Inbox rules audit — new and modified rules flagged for review</li>
+            <li>File activity — SharePoint and OneDrive operations in the investigation window</li>
+            <li>Mailbox activity — Exchange events and access patterns</li>
+          </ul>
+        </div>
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/Forensic-impossible_travel.png" alt="ORCHEX User Forensics — sign-in timeline with impossible travel detection" />
+            <div class="feature-sub-caption">
+              <strong>Sign-In Analysis</strong>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/Forensic.png" alt="ORCHEX User Forensics — structured investigation checklist" />
+            <div class="feature-sub-caption">
+              <strong>Forensic Checklist</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. CA Health — security continues -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Conditional Access Health</span>
@@ -368,37 +399,6 @@
         </div>
         <div class="feature-wide-img">
           <img src="/images/Analytics.png" alt="ORCHEX Analytics — cross-tenant change tracking" />
-        </div>
-      </div>
-
-      <!-- 15. User Forensics — advanced investigation -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">User Forensics</span>
-          <h2>Investigate smarter. Analysis that knows your environment, not just the logs.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Risk-scored timeline — Critical, High, Medium, Low, Safe per event with inline trust context</li>
-            <li>Impossible travel — geolocation-aware, suppressed when both locations are in the user's expected countries</li>
-            <li>Trust enrichment — Safe Locations, User Exceptions, and Global IP Exceptions applied to each sign-in</li>
-            <li>Interactive map — sign-in locations plotted geographically, synced with timeline filters</li>
-            <li>Inbox rules audit — new and modified rules flagged for review</li>
-            <li>File activity — SharePoint and OneDrive operations in the investigation window</li>
-            <li>Mailbox activity — Exchange events and access patterns</li>
-          </ul>
-        </div>
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
-            <img src="/images/Forensic-impossible_travel.png" alt="ORCHEX User Forensics — sign-in timeline with impossible travel detection" />
-            <div class="feature-sub-caption">
-              <strong>Sign-In Analysis</strong>
-            </div>
-          </div>
-          <div class="feature-sub-item">
-            <img src="/images/Forensic.png" alt="ORCHEX User Forensics — structured investigation checklist" />
-            <div class="feature-sub-caption">
-              <strong>Forensic Checklist</strong>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -697,8 +697,8 @@
 
     <!-- CONTACT -->
     <section class="contact">
-      <h2>Interested in ORCHEX?</h2>
-      <p>The pilot is live. A US-based MSP has been running ORCHEX in production for the past month. If you're managing Microsoft 365 tenants and want in — a few slots are still open.</p>
+      <h2>If this is the portal you've been looking for —</h2>
+      <p>The pilot is live. A US-based MSP has been running ORCHEX in production for the past month. A few slots are still open.</p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
 
