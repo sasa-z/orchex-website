@@ -522,7 +522,7 @@
       <!-- Header -->
       <div class="pricing-header">
         <h1>Early access program.</h1>
-        <p>The pilot is live. A US-based MSP with 9 engineers managing 100+ tenants has been running ORCHEX in production for 30 days. A few additional slots are open — everything included, preferential pricing locked in for 5 years.</p>
+        <p>The pilot is live. A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days. A few additional slots are open — everything included, preferential pricing locked in for 5 years.</p>
       </div>
 
 
@@ -553,7 +553,7 @@
               <span>Preferential rate — locked in for 5 years</span>
             </div>
           </div>
-          <p class="pricing-pilot-note" style="text-align:left; margin-top:-0.5rem;">A US-based MSP with 9 engineers managing 100+ tenants has been running ORCHEX in production for 30 days.</p>
+          <p class="pricing-pilot-note" style="text-align:left; margin-top:-0.5rem;">A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days.</p>
 
           <ul class="pricing-pilot-list">
             <li>All features fully unlocked</li>
@@ -702,7 +702,7 @@
     <!-- CONTACT -->
     <section class="contact">
       <h2>If this is the portal you've been looking for —</h2>
-      <p>The pilot is live. A US-based MSP with 9 engineers managing 100+ tenants has been running ORCHEX in production for the past 30 days. A few slots are still open.</p>
+      <p>The pilot is live. A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for the past 30 days. A few slots are still open.</p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
 
