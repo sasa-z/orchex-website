@@ -47,17 +47,17 @@
           <div class="how-step">
             <div class="how-step-num">01</div>
             <h3>Cross-tenant from day one</h3>
-            <p>Every view, every action works across all your client tenants — not bolted on as an afterthought.</p>
+            <p>Every view and every action works across all your client tenants — not bolted on as an afterthought.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
             <h3>Opinionated by design</h3>
-            <p>ORCHEX doesn't expose every Microsoft setting. It focuses on what MSPs actually use every day — then makes those things excellent.</p>
+            <p>ORCHEX intentionally doesn't try to be everything Microsoft can do. It focuses on what MSPs actually use every day — and makes those workflows exceptional.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">03</div>
-            <h3>Built around how MSP work actually happens</h3>
-            <p>Information dense by design. Tasks in context, not three clicks away. Every screen built by someone who spent years doing this work — it shows.</p>
+            <h3>Built around how MSPs actually work</h3>
+            <p>Information-dense by design. Tasks stay in context instead of being buried three clicks away. Every screen is shaped by years of real-world Microsoft 365 administration experience.</p>
           </div>
         </div>
       </div>
