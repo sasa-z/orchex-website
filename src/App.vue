@@ -516,7 +516,7 @@
       </div>
 
       <div class="features-more">
-        <p>And much more — mailbox management, Teams & SharePoint, conditional access, transport rules, quarantine, app registrations, risky users, sign-in logs, and more. ORCHEX covers the full M365 stack across all your tenants from a single portal.</p>
+        <p>And more — mailbox management, transport rules, quarantine, app registrations, risky users, sign-in logs, and others. Not a mirror of every Microsoft admin portal, but a deliberate selection of what MSPs actually reach for every day.</p>
       </div>
 
     </section>
