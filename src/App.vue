@@ -56,8 +56,8 @@
           </div>
           <div class="how-step">
             <div class="how-step-num">03</div>
-            <h3>Your infrastructure, your data</h3>
-            <p>Runs entirely in your own Azure subscription. One deployment script, automatic updates, no shared servers.</p>
+            <h3>Built around how MSP work actually happens</h3>
+            <p>Information dense by design. Tasks in context, not three clicks away. Every screen built by someone who spent years doing this work — it shows.</p>
           </div>
         </div>
       </div>
