@@ -22,12 +22,13 @@
     <section class="hero">
       <div class="hero-badge">In Pilot</div>
       <h1 class="hero-title">
-        Microsoft 365 management,<br />
-        <span class="accent">simplified for MSPs.</span>
+        The M365 portal<br />
+        <span class="accent">I always wished existed.</span>
       </h1>
       <p class="hero-sub">
-        One portal to manage every client tenant — licensing, security policies,
-        compliance and reporting, all in one place.
+        Built after 8 years inside MSP environments. Cross-tenant from day one,
+        opinionated by design — focused on what you actually do every day,
+        not everything Microsoft exposes.
       </p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
