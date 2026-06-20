@@ -37,25 +37,24 @@
     <section class="how-it-works">
       <div class="how-it-works-inner">
         <div class="how-header">
-          <span class="feature-label">How it works</span>
-          <h2>Built for MSPs who take data ownership seriously.</h2>
-          <p>ORCHEX runs entirely in your own Azure subscription — no shared infrastructure, no third-party servers.</p>
+          <span class="feature-label">Why ORCHEX is different</span>
+          <h2>Three things that don't change.</h2>
         </div>
         <div class="how-steps">
           <div class="how-step">
             <div class="how-step-num">01</div>
-            <h3>One script, full infrastructure</h3>
-            <p>One script. Full Azure infrastructure, ready in minutes.</p>
+            <h3>Cross-tenant from day one</h3>
+            <p>Every view, every action works across all your client tenants — not bolted on as an afterthought.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
-            <h3>Connect your client tenants</h3>
-            <p>OAuth 2.0 authentication — no passwords stored, tokens stay in your Key Vault.</p>
+            <h3>Opinionated by design</h3>
+            <p>ORCHEX doesn't expose every Microsoft setting. It focuses on what MSPs actually use every day — then makes those things excellent.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">03</div>
-            <h3>Your data, your infrastructure</h3>
-            <p>Updates deploy automatically — no maintenance on your end.</p>
+            <h3>Your infrastructure, your data</h3>
+            <p>Runs entirely in your own Azure subscription. One deployment script, automatic updates, no shared servers.</p>
           </div>
         </div>
       </div>
