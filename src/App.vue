@@ -589,20 +589,20 @@
               <span class="pricing-price">{{ billingCycle === 'annual' ? '10' : '15' }}</span>
               <span class="pricing-period">/ tenant / mo</span>
             </div>
-            <div class="pricing-per-tenant-note">minimum $99 / mo{{ billingCycle === 'annual' ? ' · billed annually' : '' }}</div>
+            <div class="pricing-per-tenant-note">First 10 tenants included · $99 / mo{{ billingCycle === 'annual' ? ' · billed annually' : '' }} · then ${{ billingCycle === 'annual' ? '10' : '15' }} / tenant up to 30 · ${{ billingCycle === 'annual' ? '8' : '12' }} / tenant after</div>
           </div>
           <div class="pricing-example">
             <div class="pricing-example-row">
               <span>10 tenants</span>
-              <span>{{ billingCycle === 'annual' ? '$100' : '$150' }} / mo</span>
+              <span>$99 / mo</span>
             </div>
             <div class="pricing-example-row">
-              <span>25 tenants</span>
-              <span>{{ billingCycle === 'annual' ? '$250' : '$375' }} / mo</span>
+              <span>20 tenants</span>
+              <span>{{ billingCycle === 'annual' ? '$199' : '$249' }} / mo</span>
             </div>
             <div class="pricing-example-row">
-              <span>50 tenants</span>
-              <span>{{ billingCycle === 'annual' ? '$500' : '$750' }} / mo</span>
+              <span>30 tenants</span>
+              <span>{{ billingCycle === 'annual' ? '$299' : '$399' }} / mo</span>
             </div>
           </div>
           <button class="btn-primary pricing-cta pricing-cta--disabled" disabled>Available after pilot phase</button>
