@@ -256,7 +256,24 @@
         </div>
       </div>
 
-      <!-- 9. Quick Actions — efficiency -->
+      <!-- 9. Assisted Sign-in — unique support feature -->
+      <div class="feature-row">
+        <div class="feature-img">
+          <img src="/images/AssistedSignin.png" alt="ORCHEX Assisted Sign-in — temporary support session with countdown and audit trail" />
+        </div>
+        <div class="feature-text">
+          <span class="feature-label">Support Access</span>
+          <h2>Sign in as a user to fix their session — safely, temporarily, and with a full audit trail.</h2>
+          <ul class="feature-list">
+            <li>Time-limited sessions — access is automatically revoked when the session expires</li>
+            <li>Full audit trail — who signed in, as whom, when, and for how long</li>
+            <li>One-click early revoke the moment the support task is done</li>
+            <li>Scoped permission — not tied to broad admin access</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 10. Quick Actions — efficiency -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Quick Actions</span>
