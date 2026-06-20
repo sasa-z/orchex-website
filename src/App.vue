@@ -30,7 +30,10 @@
         opinionated by design — focused on what you actually do every day,
         not everything Microsoft exposes.
       </p>
-      <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
+      <div class="hero-actions">
+        <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
+        <a href="#features" class="btn-ghost">See it in action →</a>
+      </div>
     </section>
 
     <!-- HOW IT WORKS -->
@@ -76,7 +79,7 @@
 
 
     <!-- FEATURES -->
-    <section class="features">
+    <section class="features" id="features">
 
       <!-- 1. User Lifecycle — biggest MSP pain point -->
       <div class="feature-wide">
@@ -839,6 +842,15 @@ const faqItems = [
   max-width: 560px;
 }
 
+/* HERO ACTIONS */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* BUTTON */
 .btn-primary {
   display: inline-block;
@@ -854,6 +866,20 @@ const faqItems = [
 .btn-primary:hover {
   background: var(--accent-hover);
   box-shadow: 0 0 24px var(--accent-glow);
+}
+
+/* GHOST BUTTON */
+.btn-ghost {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.btn-ghost:hover {
+  color: var(--text);
 }
 
 /* SHOWCASE */
