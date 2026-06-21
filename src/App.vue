@@ -32,7 +32,7 @@
       </p>
       <div class="hero-actions">
         <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
-        <a href="#features" class="btn-ghost">See it in action →</a>
+        <a href="#features" class="btn-ghost">See features →</a>
       </div>
     </section>
 
