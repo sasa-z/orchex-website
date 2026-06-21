@@ -57,7 +57,7 @@
           <div class="how-step">
             <div class="how-step-num">03</div>
             <h3>Built around how MSPs actually work</h3>
-            <p>Information-dense by design. Tasks stay in context instead of being buried three clicks away. Every screen is shaped by years of real-world Microsoft 365 administration experience.</p>
+            <p>Information dense by design. Tasks in context, not three clicks away — built by someone who spent years doing this work.</p>
           </div>
         </div>
       </div>
