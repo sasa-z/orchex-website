@@ -46,8 +46,8 @@
         <div class="how-steps">
           <div class="how-step">
             <div class="how-step-num">01</div>
-            <h3>Cross-tenant from day one</h3>
-            <p>Every view and every action works across all your client tenants — not bolted on as an afterthought.</p>
+            <h3>Problems surface. You don't hunt for them.</h3>
+            <p>Active alerts, portal health warnings, expiring credentials — all in one place, surfaced automatically. Not buried across three Microsoft portals.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
