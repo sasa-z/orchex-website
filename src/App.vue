@@ -47,7 +47,7 @@
           <div class="how-step">
             <div class="how-step-num">01</div>
             <h3>Problems surface. You don't hunt for them.</h3>
-            <p>Active alerts, portal health warnings, expiring credentials — each with a dedicated view, surfaced automatically. Not buried across three Microsoft portals.</p>
+            <p>Active alerts, portal health warnings, expiring credentials — each with a dedicated view, surfaced automatically.</p>
           </div>
           <div class="how-step">
             <div class="how-step-num">02</div>
