@@ -566,20 +566,20 @@
           <p class="pricing-pilot-note">Pilot partners commit to actively using ORCHEX and sharing feedback — a short monthly check-in and honest input on what works and what doesn't. This is a partnership, not a free trial.</p>
         </div>
 
-        <!-- Standard card — hidden during pilot; pricing to be set after pilot feedback (remove v-if="false" to restore) -->
-        <div v-if="false" class="pricing-card pricing-card--standard pricing-card--disabled">
+        <!-- Standard card — hidden during pilot; remove v-if to restore -->
+        <div class="pricing-card pricing-card--standard">
           <div class="pricing-card-top">
             <span class="pricing-plan-name">Standard</span>
-            <p class="pricing-plan-desc">Everything included. Scales with your tenant count.</p>
+            <p class="pricing-plan-desc">Everything included. Scales with your tenant count — no tier cliffs.</p>
           </div>
 
-          <!-- Billing tabs inside card -->
+          <!-- Billing tabs -->
           <div class="pricing-billing-tabs">
             <button
               class="pricing-billing-tab"
               :class="billingCycle === 'annual' && 'pricing-billing-tab--active'"
               @click="billingCycle = 'annual'"
-            >Annual <span class="pricing-save-badge">Save 33%</span></button>
+            >Annual <span class="pricing-save-badge">Save 17%</span></button>
             <button
               class="pricing-billing-tab"
               :class="billingCycle === 'monthly' && 'pricing-billing-tab--active'"
@@ -587,29 +587,40 @@
             >Monthly</button>
           </div>
 
+          <!-- Base price -->
           <div class="pricing-amount">
             <div class="pricing-amount-main">
               <span class="pricing-currency">$</span>
-              <span class="pricing-price">{{ billingCycle === 'annual' ? '10' : '15' }}</span>
-              <span class="pricing-period">/ tenant / mo</span>
+              <span class="pricing-price">{{ billingCycle === 'annual' ? '82' : '99' }}</span>
+              <span class="pricing-period">/mo</span>
             </div>
-            <div class="pricing-per-tenant-note">First 10 tenants included · $99 / mo{{ billingCycle === 'annual' ? ' · billed annually' : '' }} · then ${{ billingCycle === 'annual' ? '10' : '15' }} / tenant up to 30 · ${{ billingCycle === 'annual' ? '8' : '12' }} / tenant after</div>
+            <div class="pricing-per-tenant-note">
+              First 10 tenants included · then ${{ billingCycle === 'annual' ? '6.60' : '8.00' }}/tenant above 10{{ billingCycle === 'annual' ? ' · billed annually' : '' }}
+            </div>
           </div>
+
+          <!-- Live calculator -->
+          <div class="pricing-calc">
+            <div class="pricing-calc-header">
+              <span class="pricing-calc-label">Your estimate</span>
+              <span class="pricing-calc-tenants">{{ tenantCount }} tenants</span>
+            </div>
+            <input type="range" min="1" max="150" step="1" v-model.number="tenantCount" class="pricing-slider" />
+            <div class="pricing-calc-output">
+              <span class="pricing-calc-price">${{ calcPrice }}<span class="pricing-calc-mo">/mo</span></span>
+              <span class="pricing-calc-annual" v-if="billingCycle === 'annual'">${{ (calcPrice * 12).toLocaleString() }}/yr</span>
+            </div>
+          </div>
+
+          <!-- Example table -->
           <div class="pricing-example">
-            <div class="pricing-example-row">
-              <span>10 tenants</span>
-              <span>$99 / mo</span>
-            </div>
-            <div class="pricing-example-row">
-              <span>20 tenants</span>
-              <span>{{ billingCycle === 'annual' ? '$199' : '$249' }} / mo</span>
-            </div>
-            <div class="pricing-example-row">
-              <span>30 tenants</span>
-              <span>{{ billingCycle === 'annual' ? '$299' : '$399' }} / mo</span>
+            <div v-for="ex in pricingExamples" :key="ex.tenants" class="pricing-example-row">
+              <span>{{ ex.tenants }} tenants</span>
+              <span>${{ billingCycle === 'annual' ? ex.annual : ex.monthly }}/mo</span>
             </div>
           </div>
-          <button class="btn-primary pricing-cta pricing-cta--disabled" disabled>Available after pilot phase</button>
+
+          <button class="btn-primary pricing-cta pricing-cta--disabled" disabled>Available after pilot</button>
           <p class="pricing-pilot-note">Direct signup opens when the pilot program ends.</p>
         </div>
 
@@ -717,11 +728,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 const year = new Date().getFullYear()
 const activePage = ref('features')
 const openFaq = ref(null)
 const billingCycle = ref('annual')
+const tenantCount = ref(25)
+const calcPrice = computed(() => {
+  const base = billingCycle.value === 'annual' ? 82 : 99
+  const rate = billingCycle.value === 'annual' ? 6.6 : 8
+  const extra = Math.max(0, tenantCount.value - 10)
+  return Math.round(base + extra * rate)
+})
+const pricingExamples = [
+  { tenants: 10,  monthly: 99,  annual: 82  },
+  { tenants: 25,  monthly: 219, annual: 181 },
+  { tenants: 50,  monthly: 419, annual: 347 },
+  { tenants: 100, monthly: 819, annual: 679 },
+]
 
 const faqItems = [
   {
@@ -1452,7 +1476,8 @@ const faqItems = [
   box-shadow: 0 0 0 1px var(--accent), 0 8px 20px rgba(99,102,241,0.10);
 }
 .pricing-card--standard {
-  flex: 1;
+  flex: none;
+  width: 420px;
   border-color: var(--border);
 }
 .pricing-card--disabled {
@@ -1796,6 +1821,84 @@ const faqItems = [
 }
 .pricing-annual {
   text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* PRICING CALCULATOR */
+.pricing-calc {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.pricing-calc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing-calc-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.pricing-calc-tenants {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.pricing-slider {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 4px;
+  border-radius: 99px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+.pricing-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+}
+.pricing-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.25);
+}
+.pricing-calc-output {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+.pricing-calc-price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.pricing-calc-mo {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.pricing-calc-annual {
   font-size: 0.8rem;
   color: var(--text-muted);
 }
