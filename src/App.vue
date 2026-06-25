@@ -135,7 +135,7 @@
             <li>Scheduled enforcement or manual-only execution per template</li>
             <li>Tag and organise templates — Core, Onboarding, and custom tags</li>
             <li>Multiple standards per template, any combination of categories</li>
-            <li>One-click recommended templates — ORCHEX groups best-practice standards by schedule and creates them automatically</li>
+            <li>One-click recommended templates — ORCHEX creates a curated set of best-practice workload packs (Security Baseline, Email &amp; Defender, Identity, SharePoint, Teams), report-only on sensible schedules and ready to review</li>
             <li>Exchange Online retention policies and archive tags — provisioned and kept in sync across all tenants</li>
           </ul>
         </div>
