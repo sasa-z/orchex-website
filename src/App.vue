@@ -133,9 +133,9 @@
           <ul class="feature-list feature-list-cols">
             <li>Assign templates to individual tenants or all tenants at once</li>
             <li>Scheduled enforcement or manual-only execution per template</li>
-            <li>Tag and organise templates — Core, Onboarding, and custom tags</li>
+            <li>Tag and organise templates — Recommended, Onboarding, and custom tags</li>
             <li>Multiple standards per template, any combination of categories</li>
-            <li>One-click recommended templates — ORCHEX creates a curated set of best-practice workload packs (Security Baseline, Email &amp; Defender, Identity, SharePoint, Teams), report-only on sensible schedules and ready to review</li>
+            <li>One-click recommended templates — ORCHEX creates curated workload packs (baseline, email, identity, SharePoint, Teams), report-only and ready to review</li>
             <li>Exchange Online retention policies and archive tags — provisioned and kept in sync across all tenants</li>
           </ul>
         </div>
