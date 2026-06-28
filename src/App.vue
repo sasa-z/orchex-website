@@ -171,6 +171,7 @@
             <li>Auto-resolves stateful alerts when the issue is gone — no manual cleanup</li>
             <li>Per-alert-type thresholds, excluded tenants, admin notes, and frequency controls</li>
             <li>Per-user bell subscriptions — subscribe only to the alert types you care about</li>
+            <li>Trend view — alert volume over time, stacked by type, click any bar to drill into per-tenant breakdown</li>
           </ul>
         </div>
         <div class="feature-sub-screenshots">
@@ -184,6 +185,21 @@
             <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
             <div class="feature-sub-caption">
               <strong>Alert Configuration</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-sub-screenshots">
+          <div class="feature-sub-item">
+            <img src="/images/AlertsTrendAllAlerts.png" alt="ORCHEX Alerts Trend — all alert types stacked by day" />
+            <div class="feature-sub-caption">
+              <strong>Trend — All Types</strong>
+            </div>
+          </div>
+          <div class="feature-sub-item">
+            <img src="/images/AlertsTrend.png" alt="ORCHEX Alerts Trend — filtered by Risky Sign-In Detections over 90 days" />
+            <div class="feature-sub-caption">
+              <strong>Trend — Filtered by Type</strong>
             </div>
           </div>
         </div>
