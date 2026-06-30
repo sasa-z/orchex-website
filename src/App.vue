@@ -136,7 +136,8 @@
             <li>Tag and organise templates — Recommended, Onboarding, and custom tags</li>
             <li>Multiple standards per template, any combination of categories</li>
             <li>One-click recommended templates — ORCHEX creates curated workload packs (baseline, email, identity, SharePoint, Teams), report-only and ready to review</li>
-            <li>Exchange Online retention policies and archive tags — provisioned and kept in sync across all tenants</li>
+            <li>Automatic remediation — non-compliant settings are corrected on the next enforcement run, no manual action needed</li>
+            <li>Track compliance over time — daily % across all tenants, with per-tenant drill-down at any point in history</li>
           </ul>
         </div>
         <div class="feature-wide-img">
