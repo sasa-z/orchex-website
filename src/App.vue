@@ -679,6 +679,10 @@
             <p>There is no hard cap. Standard pricing will be announced after the pilot program. Pilot partners convert at a preferential rate — locked in for 5 years.</p>
           </div>
           <div class="faq-item">
+            <h3>Why isn't ORCHEX "unlimited tenants" for one flat price?</h3>
+            <p>Some MSP tools advertise unlimited tenants — but check what that actually covers. Often it's on-demand tools only; monitoring and alerting (the part that actually protects your clients) is metered separately per tenant once you look past the headline. ORCHEX's price already includes everything — standards enforcement, alerting, forensics — for every tenant, with no separate metered add-on to discover later.</p>
+          </div>
+          <div class="faq-item">
             <h3>What kind of support do I get?</h3>
             <p>Email and async chat — direct access to the founder. You'll get faster, more personal support than any ticket queue, and your feedback directly shapes what gets built next.</p>
           </div>
