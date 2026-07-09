@@ -574,16 +574,18 @@
             <div class="pricing-per-tenant-note">for the pilot period</div>
           </div>
 
-          <!-- Pilot conversion rate callout -->
-          <!-- PRICING TO RESTORE AFTER PILOT:
-            $6 / tenant / mo pilot rate (vs $10 standard annual) · minimum $99 / mo
-            Re-add pricing-pilot-rate-price, pricing-pilot-rate-compare, pricing-pilot-rate-min divs
-          -->
+          <!-- Pilot conversion rate callout — 30% off the standard annual rate, locked in for 5 years -->
           <div class="pricing-pilot-rate">
             <div class="pricing-pilot-rate-label">Then convert at your pilot rate</div>
-            <div class="pricing-pilot-rate-compare">
-              <span>Preferential rate — locked in for 5 years</span>
+            <div class="pricing-pilot-rate-price">
+              <span class="pricing-pilot-rate-amount">$105</span>
+              <span class="pricing-pilot-rate-period">/mo</span>
             </div>
+            <div class="pricing-pilot-rate-compare">
+              <span class="pricing-pilot-rate-strike">$150</span>
+              <span>standard rate — locked in for 5 years</span>
+            </div>
+            <div class="pricing-pilot-rate-min">First 10 tenants included · then $8/tenant above 10 (standard: $12/tenant)</div>
           </div>
           <p class="pricing-pilot-note" style="text-align:left; margin-top:-0.5rem;">A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days.</p>
 
