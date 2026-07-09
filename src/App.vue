@@ -611,7 +611,7 @@
               class="pricing-billing-tab"
               :class="billingCycle === 'annual' && 'pricing-billing-tab--active'"
               @click="billingCycle = 'annual'"
-            >Annual <span class="pricing-save-badge">Save 17%</span></button>
+            >Annual <span class="pricing-save-badge">Save 14%</span></button>
             <button
               class="pricing-billing-tab"
               :class="billingCycle === 'monthly' && 'pricing-billing-tab--active'"
@@ -623,11 +623,11 @@
           <div class="pricing-amount">
             <div class="pricing-amount-main">
               <span class="pricing-currency">$</span>
-              <span class="pricing-price">{{ billingCycle === 'annual' ? '82' : '99' }}</span>
+              <span class="pricing-price">{{ billingCycle === 'annual' ? '150' : '175' }}</span>
               <span class="pricing-period">/mo</span>
             </div>
             <div class="pricing-per-tenant-note">
-              First 10 tenants included · then ${{ billingCycle === 'annual' ? '6.60' : '8.00' }}/tenant above 10{{ billingCycle === 'annual' ? ' · billed annually' : '' }}
+              First 10 tenants included · then ${{ billingCycle === 'annual' ? '12' : '14' }}/tenant above 10{{ billingCycle === 'annual' ? ' · billed annually' : '' }}
             </div>
           </div>
 
@@ -638,7 +638,11 @@
               <span class="pricing-calc-tenants">{{ tenantCount }} tenants</span>
             </div>
             <input type="range" min="1" max="150" step="1" v-model.number="tenantCount" class="pricing-slider" />
-            <div class="pricing-calc-output">
+            <div v-if="isCustomPricing" class="pricing-calc-output pricing-calc-output--custom">
+              <span class="pricing-calc-custom-label">Custom pricing</span>
+              <a href="mailto:hello@orchex.app" class="pricing-calc-contact-link">Contact us →</a>
+            </div>
+            <div v-else class="pricing-calc-output">
               <span class="pricing-calc-price">${{ calcPrice }}<span class="pricing-calc-mo">/mo</span></span>
               <span class="pricing-calc-annual" v-if="billingCycle === 'annual'">${{ (calcPrice * 12).toLocaleString() }}/yr</span>
             </div>
@@ -651,6 +655,7 @@
               <span>${{ billingCycle === 'annual' ? ex.annual : ex.monthly }}/mo</span>
             </div>
           </div>
+          <p class="pricing-example-note">{{ CUSTOM_PRICING_THRESHOLD }}+ tenants? <a href="mailto:hello@orchex.app">Contact us</a> for custom pricing.</p>
 
           <button class="btn-primary pricing-cta pricing-cta--disabled" disabled>Available after pilot</button>
           <p class="pricing-pilot-note">Direct signup opens when the pilot program ends.</p>
@@ -766,17 +771,19 @@ const activePage = ref('features')
 const openFaq = ref(null)
 const billingCycle = ref('annual')
 const tenantCount = ref(25)
+const CUSTOM_PRICING_THRESHOLD = 100
+const isCustomPricing = computed(() => tenantCount.value > CUSTOM_PRICING_THRESHOLD)
 const calcPrice = computed(() => {
-  const base = billingCycle.value === 'annual' ? 82 : 99
-  const rate = billingCycle.value === 'annual' ? 6.6 : 8
+  const base = billingCycle.value === 'annual' ? 150 : 175
+  const rate = billingCycle.value === 'annual' ? 12 : 14
   const extra = Math.max(0, tenantCount.value - 10)
   return Math.round(base + extra * rate)
 })
 const pricingExamples = [
-  { tenants: 10,  monthly: 99,  annual: 82  },
-  { tenants: 25,  monthly: 219, annual: 181 },
-  { tenants: 50,  monthly: 419, annual: 347 },
-  { tenants: 100, monthly: 819, annual: 679 },
+  { tenants: 10,  monthly: 175,  annual: 150  },
+  { tenants: 25,  monthly: 385,  annual: 330  },
+  { tenants: 50,  monthly: 735,  annual: 630  },
+  { tenants: 100, monthly: 1435, annual: 1230 },
 ]
 
 const faqItems = [
@@ -1734,6 +1741,20 @@ const faqItems = [
   margin-top: -0.75rem;
 }
 
+.pricing-example-note {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+.pricing-example-note a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.pricing-example-note a:hover {
+  text-decoration: underline;
+}
+
 /* btn-secondary */
 .btn-secondary {
   display: inline-flex;
@@ -1933,6 +1954,25 @@ const faqItems = [
 .pricing-calc-annual {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+.pricing-calc-output--custom {
+  align-items: center;
+  justify-content: space-between;
+}
+.pricing-calc-custom-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.pricing-calc-contact-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pricing-calc-contact-link:hover {
+  text-decoration: underline;
 }
 
 /* INCLUDES */
