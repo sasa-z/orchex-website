@@ -635,14 +635,10 @@
           <div class="pricing-calc">
             <div class="pricing-calc-header">
               <span class="pricing-calc-label">Your estimate</span>
-              <span class="pricing-calc-tenants">{{ isCustomPricing ? `${CUSTOM_PRICING_THRESHOLD}+` : tenantCount }} tenants</span>
+              <span class="pricing-calc-tenants">{{ tenantCount }} tenants</span>
             </div>
-            <input type="range" min="1" max="150" step="1" v-model.number="tenantCount" class="pricing-slider" />
-            <div v-if="isCustomPricing" class="pricing-calc-output pricing-calc-output--custom">
-              <span class="pricing-calc-custom-label">Custom pricing</span>
-              <a href="mailto:hello@orchex.app" class="pricing-calc-contact-link">Contact us →</a>
-            </div>
-            <div v-else class="pricing-calc-output">
+            <input type="range" min="1" :max="CUSTOM_PRICING_THRESHOLD" step="1" v-model.number="tenantCount" class="pricing-slider" />
+            <div class="pricing-calc-output">
               <span class="pricing-calc-price">${{ calcPrice }}<span class="pricing-calc-mo">/mo</span></span>
               <span class="pricing-calc-annual" v-if="billingCycle === 'annual'">${{ (calcPrice * 12).toLocaleString() }}/yr</span>
             </div>
@@ -772,7 +768,6 @@ const openFaq = ref(null)
 const billingCycle = ref('annual')
 const tenantCount = ref(25)
 const CUSTOM_PRICING_THRESHOLD = 100
-const isCustomPricing = computed(() => tenantCount.value > CUSTOM_PRICING_THRESHOLD)
 const calcPrice = computed(() => {
   const base = billingCycle.value === 'annual' ? 150 : 175
   const rate = billingCycle.value === 'annual' ? 12 : 14
@@ -1954,25 +1949,6 @@ const faqItems = [
 .pricing-calc-annual {
   font-size: 0.8rem;
   color: var(--text-muted);
-}
-.pricing-calc-output--custom {
-  align-items: center;
-  justify-content: space-between;
-}
-.pricing-calc-custom-label {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text);
-}
-.pricing-calc-contact-link {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-  white-space: nowrap;
-}
-.pricing-calc-contact-link:hover {
-  text-decoration: underline;
 }
 
 /* INCLUDES */
