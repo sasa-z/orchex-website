@@ -642,6 +642,9 @@
               <span class="pricing-calc-price">${{ calcPrice }}<span class="pricing-calc-mo">/mo</span></span>
               <span class="pricing-calc-annual" v-if="billingCycle === 'annual'">${{ (calcPrice * 12).toLocaleString() }}/yr</span>
             </div>
+            <p v-if="tenantCount >= CUSTOM_PRICING_THRESHOLD" class="pricing-calc-max-hint">
+              More than {{ CUSTOM_PRICING_THRESHOLD }} tenants? <a href="mailto:hello@orchex.app">Contact us</a> for custom pricing.
+            </p>
           </div>
 
           <!-- Example table -->
@@ -1949,6 +1952,19 @@ const faqItems = [
 .pricing-calc-annual {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+.pricing-calc-max-hint {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+.pricing-calc-max-hint a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.pricing-calc-max-hint a:hover {
+  text-decoration: underline;
 }
 
 /* INCLUDES */
