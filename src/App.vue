@@ -668,7 +668,7 @@
         <div class="faq-list">
           <div class="faq-item">
             <h3>What does "runs in my Azure" mean?</h3>
-            <p>ORCHEX deploys to your own Azure subscription — Function App, Static Web App, and Key Vault are all provisioned in your environment. Client data never touches any shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us.</p>
+            <p>ORCHEX deploys entirely into five resources in your own Azure subscription — nothing runs on shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us. <a href="#" @click.prevent="activePage = 'faq'; scrollTo(0, 0)">See the full infrastructure breakdown in the FAQ →</a></p>
           </div>
           <div class="faq-item">
             <h3>What is the pilot program?</h3>
@@ -2040,6 +2040,14 @@ const faqItems = [
   font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.7;
+}
+.faq-item p a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.faq-item p a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
