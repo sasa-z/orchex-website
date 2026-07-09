@@ -611,7 +611,7 @@
               class="pricing-billing-tab"
               :class="billingCycle === 'annual' && 'pricing-billing-tab--active'"
               @click="billingCycle = 'annual'"
-            >Annual <span class="pricing-save-badge">Save 14%</span></button>
+            >Annual <span class="pricing-save-badge">2 months free</span></button>
             <button
               class="pricing-billing-tab"
               :class="billingCycle === 'monthly' && 'pricing-billing-tab--active'"
@@ -623,7 +623,7 @@
           <div class="pricing-amount">
             <div class="pricing-amount-main">
               <span class="pricing-currency">$</span>
-              <span class="pricing-price">{{ billingCycle === 'annual' ? '150' : '175' }}</span>
+              <span class="pricing-price">{{ billingCycle === 'annual' ? '150' : '180' }}</span>
               <span class="pricing-period">/mo</span>
             </div>
             <div class="pricing-per-tenant-note">
@@ -776,16 +776,16 @@ const billingCycle = ref('annual')
 const tenantCount = ref(25)
 const CUSTOM_PRICING_THRESHOLD = 100
 const calcPrice = computed(() => {
-  const base = billingCycle.value === 'annual' ? 150 : 175
+  const base = billingCycle.value === 'annual' ? 150 : 180
   const rate = billingCycle.value === 'annual' ? 12 : 14
   const extra = Math.max(0, tenantCount.value - 10)
   return Math.round(base + extra * rate)
 })
 const pricingExamples = [
-  { tenants: 10,  monthly: 175,  annual: 150  },
-  { tenants: 25,  monthly: 385,  annual: 330  },
-  { tenants: 50,  monthly: 735,  annual: 630  },
-  { tenants: 100, monthly: 1435, annual: 1230 },
+  { tenants: 10,  monthly: 180,  annual: 150  },
+  { tenants: 25,  monthly: 390,  annual: 330  },
+  { tenants: 50,  monthly: 740,  annual: 630  },
+  { tenants: 100, monthly: 1440, annual: 1230 },
 ]
 
 const faqItems = [
