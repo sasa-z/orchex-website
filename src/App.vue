@@ -635,7 +635,7 @@
           <div class="pricing-calc">
             <div class="pricing-calc-header">
               <span class="pricing-calc-label">Your estimate</span>
-              <span class="pricing-calc-tenants">{{ tenantCount }} tenants</span>
+              <span class="pricing-calc-tenants">{{ isCustomPricing ? `${CUSTOM_PRICING_THRESHOLD}+` : tenantCount }} tenants</span>
             </div>
             <input type="range" min="1" max="150" step="1" v-model.number="tenantCount" class="pricing-slider" />
             <div v-if="isCustomPricing" class="pricing-calc-output pricing-calc-output--custom">
