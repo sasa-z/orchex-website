@@ -6,10 +6,10 @@
       <div class="nav-inner">
         <span class="wordmark">ORCHEX</span>
         <div class="nav-tabs">
-          <button class="nav-tab" :class="activePage === 'features' && 'nav-tab-active'" @click="activePage = 'features'">Features</button>
-          <button class="nav-tab" :class="activePage === 'pricing' && 'nav-tab-active'" @click="activePage = 'pricing'">Pricing</button>
-          <button class="nav-tab" :class="activePage === 'faq' && 'nav-tab-active'" @click="activePage = 'faq'">FAQ</button>
-          <button class="nav-tab" :class="activePage === 'about' && 'nav-tab-active'" @click="activePage = 'about'">About</button>
+          <button class="nav-tab" :class="activePage === 'features' && 'nav-tab-active'" @click="setActivePage('features')">Features</button>
+          <button class="nav-tab" :class="activePage === 'pricing' && 'nav-tab-active'" @click="setActivePage('pricing')">Pricing</button>
+          <button class="nav-tab" :class="activePage === 'faq' && 'nav-tab-active'" @click="setActivePage('faq')">FAQ</button>
+          <button class="nav-tab" :class="activePage === 'about' && 'nav-tab-active'" @click="setActivePage('about')">About</button>
         </div>
         <a href="https://tally.so/r/dWABZA" target="_blank" class="nav-cta">Get in touch</a>
       </div>
@@ -670,7 +670,7 @@
         <div class="faq-list">
           <div class="faq-item">
             <h3>What does "runs in my Azure" mean?</h3>
-            <p>ORCHEX deploys entirely into five resources in your own Azure subscription — nothing runs on shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us. <a href="#" @click.prevent="activePage = 'faq'; scrollTo(0, 0)">See the full infrastructure breakdown in the FAQ →</a></p>
+            <p>ORCHEX deploys entirely into five resources in your own Azure subscription — nothing runs on shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us. <a href="#" @click.prevent="setActivePage('faq')">See the full infrastructure breakdown in the FAQ →</a></p>
           </div>
           <div class="faq-item">
             <h3>What is the pilot program?</h3>
@@ -773,6 +773,10 @@
 import { ref, computed } from 'vue'
 const year = new Date().getFullYear()
 const activePage = ref('features')
+function setActivePage(page) {
+  activePage.value = page
+  window.scrollTo(0, 0)
+}
 const openFaq = ref(null)
 const billingCycle = ref('annual')
 const tenantCount = ref(25)
@@ -827,6 +831,15 @@ const faqItems = [
     q: 'How does the setup work? Do I need to do it myself?',
     a: `<p>During the pilot phase, setup is handled together with the founder — you won't be left to figure it out alone. As ORCHEX moves toward general availability, full self-service documentation will be available.</p>
         <p>Either way, setup typically takes <strong>under an hour</strong> once the prerequisites are in place.</p>`
+  },
+  {
+    q: 'What counts as a "tenant," and what happens if I cancel?',
+    a: `<p>A "tenant" is one client Microsoft 365 organization you manage — regardless of how many users, mailboxes, or licenses exist inside it. There's no per-user metering; add as many users as you want within a tenant at no extra cost.</p>
+        <p>Your Azure infrastructure and data always live in your own subscription, not ours. If you cancel or a license lapses, portal functionality is disabled once the license expires — but the underlying resources remain yours.</p>`
+  },
+  {
+    q: 'What kind of support do I get?',
+    a: `<p>Support during the pilot is direct and async, via email — you're reaching the founder, not a ticket queue. Typical response time is within one business day. As ORCHEX grows, a more formal support channel and SLA will be introduced.</p>`
   },
 ]
 </script>
