@@ -20,7 +20,7 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-badge">In Pilot</div>
+      <div class="hero-badge">Limited Pilot Spots</div>
       <h1 class="hero-title">
         Manage, monitor and secure<br />
         <span class="accent">every Microsoft 365 tenant from one place.</span>
@@ -32,8 +32,14 @@
       </p>
       <div class="hero-actions">
         <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
-        <a href="#features" class="btn-ghost">See features →</a>
+        <a href="#features" class="btn-ghost">Explore features →</a>
       </div>
+      <ul class="hero-checklist">
+        <li>Active alerts across all tenants</li>
+        <li>Standards enforcement &amp; remediation</li>
+        <li>User forensics and investigations</li>
+      </ul>
+      <p class="hero-trust">A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days.</p>
     </section>
 
     <!-- HOW IT WORKS -->
@@ -914,6 +920,34 @@ const faqItems = [
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.hero-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.75rem;
+}
+.hero-checklist li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding-left: 1.3rem;
+  position: relative;
+}
+.hero-checklist li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.hero-trust {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  opacity: 0.75;
 }
 
 /* BUTTON */
