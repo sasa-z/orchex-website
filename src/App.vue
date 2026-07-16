@@ -26,8 +26,8 @@
         <span class="accent">every Microsoft 365 tenant from one place.</span>
       </h1>
       <p class="hero-sub">
-        Built after 8 years inside MSP environments. Cross-tenant from day one,
-        opinionated by design — focused on what you actually do every day,
+        Built after 8 years inside MSPs — cross-tenant from day one,
+        opinionated by design, focused on what you actually do every day,
         not everything Microsoft exposes.
       </p>
       <div class="hero-actions">
