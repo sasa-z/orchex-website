@@ -22,8 +22,8 @@
     <section class="hero">
       <div class="hero-badge">In Pilot</div>
       <h1 class="hero-title">
-        The M365 portal<br />
-        <span class="accent">I always wished existed.</span>
+        Manage every Microsoft 365 tenant from one place.<br />
+        <span class="accent">Catch problems before your clients do.</span>
       </h1>
       <p class="hero-sub">
         Built after 8 years inside MSP environments. Cross-tenant from day one,
