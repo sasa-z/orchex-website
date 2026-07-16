@@ -258,7 +258,30 @@
         </div>
       </div>
 
-      <!-- 6. CA Health — security continues -->
+      <!-- 6. Security Assessment — tenant security posture -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Security Assessment</span>
+          <h2>Every tenant's security posture. One scheduled scan.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Read-only checks across Exchange Online and Entra ID — email protection, authentication, guest access, privileged identity, audit readiness, data sharing</li>
+            <li>Grounded in recognised baselines — CISA SCuBA, CIS Microsoft 365, Microsoft Zero Trust — each check links to its source</li>
+            <li>Application attack surface covered: expired app credentials, high-privilege Graph permissions, risky OAuth consent grants — with the exact apps listed and App IDs ready to copy</li>
+            <li>Failing check with a matching ORCHEX standard? A badge shows whether automation already covers it — or is one click away</li>
+            <li>Runs on a schedule across all tenants, or on demand for a single one</li>
+            <li>Fully configurable — enable exactly the checks you want, exclude your own management apps by App ID</li>
+            <li>Compact triage view — the whole list at a glance, anything red stands out immediately</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/SecurityAssesment.png" alt="ORCHEX Security Assessment — Exchange Online checks grouped by category with risk levels, baseline sources and standard badges" />
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/SecurityAssesmentConfig.png" alt="ORCHEX Security Assessment Config — toggle checks per category, with app exclusion lists for the application-security checks" />
+        </div>
+      </div>
+
+      <!-- 7. CA Health — security continues -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Conditional Access Health</span>
