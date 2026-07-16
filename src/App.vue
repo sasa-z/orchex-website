@@ -39,7 +39,7 @@
         <li>Standards enforcement &amp; remediation</li>
         <li>User forensics and investigations</li>
       </ul>
-      <p class="hero-trust">A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days.</p>
+      <p class="hero-trust">A US-based MSP with a 10-person team managing ~100 tenants has been running ORCHEX in production for 60+ days.</p>
     </section>
 
     <!-- HOW IT WORKS -->
@@ -560,7 +560,7 @@
       <!-- Header -->
       <div class="pricing-header">
         <h1>Early access program.</h1>
-        <p>The pilot is live. A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days. A few additional slots are open — everything included, preferential pricing locked in for 5 years.</p>
+        <p>The pilot is live. A US-based MSP with a 10-person team managing ~100 tenants has been running ORCHEX in production for 60+ days. A few additional slots are open — everything included, preferential pricing locked in for 5 years.</p>
       </div>
 
 
@@ -593,7 +593,7 @@
             </div>
             <div class="pricing-pilot-rate-min">First 10 tenants included · then $8/tenant above 10 (standard: $12/tenant)</div>
           </div>
-          <p class="pricing-pilot-note" style="text-align:left; margin-top:-0.5rem;">A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for 30 days.</p>
+          <p class="pricing-pilot-note" style="text-align:left; margin-top:-0.5rem;">A US-based MSP with a 10-person team managing ~100 tenants has been running ORCHEX in production for 60+ days.</p>
 
           <ul class="pricing-pilot-list">
             <li>All features fully unlocked</li>
@@ -752,7 +752,7 @@
     <!-- CONTACT -->
     <section class="contact">
       <h2>If this is the portal you've been looking for —</h2>
-      <p>The pilot is live. A US-based MSP with a 10-person team managing 100+ tenants has been running ORCHEX in production for the past 30 days. A few slots are still open.</p>
+      <p>The pilot is live. A US-based MSP with a 10-person team managing ~100 tenants has been running ORCHEX in production for the past 60+ days. A few slots are still open.</p>
       <a href="https://tally.so/r/dWABZA" target="_blank" class="btn-primary">Apply for Pilot</a>
     </section>
 
