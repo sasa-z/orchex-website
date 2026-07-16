@@ -578,7 +578,7 @@
           <div class="pricing-pilot-rate">
             <div class="pricing-pilot-rate-label">Then convert at your pilot rate</div>
             <div class="pricing-pilot-rate-price">
-              <span class="pricing-pilot-rate-amount">$105</span>
+              <span class="pricing-pilot-rate-amount">$99</span>
               <span class="pricing-pilot-rate-period">/mo</span>
             </div>
             <div class="pricing-pilot-rate-compare">
@@ -628,7 +628,7 @@
               <span class="pricing-price">{{ billingCycle === 'annual' ? '150' : '180' }}</span>
               <span class="pricing-period">/mo</span>
             </div>
-            <div class="pricing-per-tenant-note">
+            <div class="pricing-per-tenant-note pricing-per-tenant-note--emphasis">
               First 10 tenants included · then ${{ billingCycle === 'annual' ? '12' : '14' }}/tenant above 10{{ billingCycle === 'annual' ? ' · billed annually' : '' }}
             </div>
           </div>
@@ -648,15 +648,6 @@
               More than {{ CUSTOM_PRICING_THRESHOLD }} tenants? <a href="mailto:hello@orchex.app">Contact us</a> for custom pricing.
             </p>
           </div>
-
-          <!-- Example table -->
-          <div class="pricing-example">
-            <div v-for="ex in pricingExamples" :key="ex.tenants" class="pricing-example-row">
-              <span>{{ ex.tenants }} tenants</span>
-              <span>${{ billingCycle === 'annual' ? ex.annual : ex.monthly }}/mo</span>
-            </div>
-          </div>
-          <p class="pricing-example-note">{{ CUSTOM_PRICING_THRESHOLD }}+ tenants? <a href="mailto:hello@orchex.app">Contact us</a> for custom pricing.</p>
 
           <button class="btn-primary pricing-cta pricing-cta--disabled" disabled>Available after pilot</button>
           <p class="pricing-pilot-note">Direct signup opens when the pilot program ends.</p>
@@ -787,13 +778,6 @@ const calcPrice = computed(() => {
   const extra = Math.max(0, tenantCount.value - 10)
   return Math.round(base + extra * rate)
 })
-const pricingExamples = [
-  { tenants: 10,  monthly: 180,  annual: 150  },
-  { tenants: 25,  monthly: 390,  annual: 330  },
-  { tenants: 50,  monthly: 740,  annual: 630  },
-  { tenants: 100, monthly: 1440, annual: 1230 },
-]
-
 const faqItems = [
   {
     q: 'Is ORCHEX right for my business?',
@@ -1679,6 +1663,11 @@ const faqItems = [
   color: var(--text-muted);
   font-weight: 400;
 }
+.pricing-per-tenant-note--emphasis {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 600;
+}
 .pricing-pilot-rate {
   background: rgba(99,102,241,0.08);
   border: 1px solid rgba(99,102,241,0.2);
@@ -1756,20 +1745,6 @@ const faqItems = [
   color: var(--text-muted);
   text-align: center;
   margin-top: -0.75rem;
-}
-
-.pricing-example-note {
-  font-size: 0.775rem;
-  color: var(--text-muted);
-  text-align: center;
-}
-.pricing-example-note a {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-}
-.pricing-example-note a:hover {
-  text-decoration: underline;
 }
 
 /* btn-secondary */
@@ -1864,26 +1839,6 @@ const faqItems = [
   font-size: 1.1rem;
   color: var(--text-muted);
   font-weight: 500;
-}
-
-.pricing-example {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.875rem 1rem;
-}
-.pricing-example-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-.pricing-example-row span:last-child {
-  font-weight: 600;
-  color: var(--text);
 }
 
 .pricing-cta {
