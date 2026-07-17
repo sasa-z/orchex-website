@@ -273,11 +273,13 @@
             <li>Compact triage view — the whole list at a glance, anything red stands out immediately</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/SecurityAssesment.png" alt="ORCHEX Security Assessment — Exchange Online checks grouped by category with risk levels, baseline sources and standard badges" />
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/SecurityAssesmentConfig.png" alt="ORCHEX Security Assessment Config — toggle checks per category, with app exclusion lists for the application-security checks" />
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img">
+            <img src="/images/SecurityAssesment.png" alt="ORCHEX Security Assessment — Exchange Online checks grouped by category with risk levels, baseline sources and standard badges" />
+          </div>
+          <div class="feature-wide-img">
+            <img src="/images/SecurityAssesmentConfig.png" alt="ORCHEX Security Assessment Config — toggle checks per category, with app exclusion lists for the application-security checks" />
+          </div>
         </div>
       </div>
 
@@ -1236,6 +1238,14 @@ const faqItems = [
   border-radius: 10px;
   border: 1px solid var(--border);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+.feature-wide-img-row {
+  display: flex;
+  gap: 1.5rem;
+}
+.feature-wide-img-row .feature-wide-img {
+  flex: 1;
+  min-width: 0;
 }
 .features-more {
   text-align: center;
