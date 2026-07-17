@@ -1242,6 +1242,11 @@ const faqItems = [
 .feature-wide-img-row {
   display: flex;
   gap: 1.5rem;
+  /* Break out wider than the 1100px text column so two side-by-side shots
+     don't read as tiny next to the full-width single images elsewhere. */
+  width: min(1400px, 94vw);
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .feature-wide-img-row .feature-wide-img {
   flex: 1;
@@ -1397,6 +1402,12 @@ const faqItems = [
   .feature-row-reverse .feature-text {
     grid-column: auto;
     grid-row: auto;
+  }
+  .feature-wide-img-row {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    transform: none;
   }
 }
 
