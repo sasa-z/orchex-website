@@ -321,7 +321,7 @@
             </div>
           </div>
           <div class="feature-wide-img" style="flex: 1.89">
-            <img src="/images/Licenses_v1.png" alt="ORCHEX License Management — usage, availability and seats per SKU" />
+            <img src="/images/Licenses.png" alt="ORCHEX License Management — usage, availability and seats per SKU" />
             <div class="feature-sub-caption">
               <strong>Licenses — usage, availability and seats per SKU</strong>
             </div>
