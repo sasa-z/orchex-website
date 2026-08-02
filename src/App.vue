@@ -99,14 +99,14 @@
             <li>Copy settings from an existing user to match their setup instantly</li>
           </ul>
         </div>
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.21">
             <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
             <div class="feature-sub-caption">
               <strong>Onboarding — Results</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 1.34">
             <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
             <div class="feature-sub-caption">
               <strong>Offboarding — Configure Actions</strong>
@@ -150,14 +150,14 @@
           <img src="/images/Standards.png" alt="ORCHEX Standards Templates — enforce settings across all tenants" />
         </div>
 
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 2.22">
             <img src="/images/StandardsCompliance.png" alt="ORCHEX Standards Compliance — track compliance across all tenants" />
             <div class="feature-sub-caption">
               <strong>Standards Compliance</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 2.27">
             <img src="/images/EffectiveStandards.png" alt="ORCHEX Effective Standards — inspect what is applied to a tenant" />
             <div class="feature-sub-caption">
               <strong>Effective Standards</strong>
@@ -165,14 +165,14 @@
           </div>
         </div>
 
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 2.26">
             <img src="/images/StandardsTrendAllTenants.png" alt="ORCHEX Standards Compliance Trend — aggregate compliance % across all tenants over time" />
             <div class="feature-sub-caption">
               <strong>Compliance Trend — All Tenants</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 2.26">
             <img src="/images/StandardsTrendSingleTenant.png" alt="ORCHEX Standards Compliance Trend — per-tenant compliant vs non-compliant standards over time" />
             <div class="feature-sub-caption">
               <strong>Compliance Trend — Per Tenant</strong>
@@ -196,14 +196,14 @@
             <li>Trend view — alert volume over time, stacked by type, click any bar to drill into per-tenant breakdown</li>
           </ul>
         </div>
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.80">
             <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — active alerts across all tenants" />
             <div class="feature-sub-caption">
               <strong>Active Alerts</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 1.58">
             <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
             <div class="feature-sub-caption">
               <strong>Alert Configuration</strong>
@@ -211,14 +211,14 @@
           </div>
         </div>
 
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.87">
             <img src="/images/AlertsTrendAllAlerts.png" alt="ORCHEX Alerts Trend — all alert types stacked by day" />
             <div class="feature-sub-caption">
               <strong>Trend — All Types</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 1.87">
             <img src="/images/AlertsTrend.png" alt="ORCHEX Alerts Trend — filtered by Risky Sign-In Detections over 90 days" />
             <div class="feature-sub-caption">
               <strong>Trend — Filtered by Type</strong>
@@ -242,14 +242,14 @@
             <li>Mailbox activity — Exchange events and access patterns</li>
           </ul>
         </div>
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.95">
             <img src="/images/Forensic-impossible_travel.png" alt="ORCHEX User Forensics — sign-in timeline with impossible travel detection" />
             <div class="feature-sub-caption">
               <strong>Sign-In Analysis</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 1.71">
             <img src="/images/Forensic.png" alt="ORCHEX User Forensics — structured investigation checklist" />
             <div class="feature-sub-caption">
               <strong>Forensic Checklist</strong>
@@ -1342,22 +1342,6 @@ const faqItems = [
   margin: 0 auto;
 }
 
-.feature-sub-screenshots {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-}
-.feature-sub-item {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.feature-sub-item img {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
-}
 .feature-sub-caption {
   display: block;
   font-size: 0.85rem;
