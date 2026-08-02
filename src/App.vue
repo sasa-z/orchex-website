@@ -399,19 +399,19 @@
       </div>
 
       <!-- 10. Quick Actions — efficiency -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
+      <div class="feature-row">
+        <div class="feature-text">
           <span class="feature-label">Quick Actions</span>
           <h2>Every action, one keystroke away.</h2>
           <p>A command palette for M365 management — 50+ actions, instantly searchable.</p>
-          <ul class="feature-list feature-list-cols">
+          <ul class="feature-list">
             <li>Context-aware — auto-fills tenant and user when opened in context</li>
             <li>Pinnable quick action bar with your most-used actions</li>
             <li>Configurable — show, hide and reorder actions to fit your workflow</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/QuickActionsv1.png" alt="ORCHEX Quick Actions command palette" />
+        <div class="feature-img">
+          <img src="/images/QuickActions.png" alt="ORCHEX Quick Actions command palette" />
         </div>
       </div>
 
@@ -445,14 +445,16 @@
             <li>Scheduled background checks — always up to date without manual refresh</li>
           </ul>
         </div>
-        <div class="feature-sub-screenshots">
-          <div class="feature-sub-item">
+        <!-- The sidebar shot is portrait and the matrix is landscape, so equal
+             columns would render it nearly three times taller. -->
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 2.13">
             <img src="/images/TenantCapabilities.png" alt="ORCHEX Tenant Capabilities — license matrix across all tenants" />
             <div class="feature-sub-caption">
               <strong>Capability Matrix</strong>
             </div>
           </div>
-          <div class="feature-sub-item">
+          <div class="feature-wide-img" style="flex: 0.79">
             <img src="/images/TenantCapabilitiesSidebar.png" alt="ORCHEX License Details — source SKUs and recommendations per tenant" />
             <div class="feature-sub-caption">
               <strong>License Details</strong>
