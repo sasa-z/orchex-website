@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "npm run check:images && vite build",
+    "preview": "vite preview",
+    "check:images": "node scripts/check-image-ratios.mjs"
   },
   "dependencies": {
     "vue": "^3.5.25"

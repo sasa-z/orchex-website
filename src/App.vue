@@ -548,7 +548,7 @@
           </ul>
         </div>
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.63">
+          <div class="feature-wide-img" style="flex: 1.90">
             <img src="/images/TeamsOverview.png" alt="ORCHEX Teams Overview — tenant storage, visibility split and storage per team" />
             <div class="feature-sub-caption">
               <strong>Overview — storage per team, largest first</strong>
