@@ -417,6 +417,9 @@
 
       <!-- 10. Bulk Operations — efficiency -->
       <div class="feature-row">
+        <div class="feature-img">
+          <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — live per-item results with inline copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
+        </div>
         <div class="feature-text">
           <span class="feature-label">Bulk Operations</span>
           <h2>Act on many records at once — safely.</h2>
@@ -426,9 +429,6 @@
             <li>Admin-configurable guardrails — type-to-confirm threshold and a hard maximum on selected items</li>
             <li>Runs in single-tenant and All Tenants mode</li>
           </ul>
-        </div>
-        <div class="feature-img">
-          <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — live per-item results with inline copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
         </div>
       </div>
 
