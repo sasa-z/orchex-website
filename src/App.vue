@@ -315,7 +315,7 @@
         </div>
         <div class="feature-wide-img-row">
           <div class="feature-wide-img" style="flex: 1.81">
-            <img src="/images/OverviewLicenses.png" alt="ORCHEX License Overview — unused licenses, idle seats, distribution and expiring subscriptions" />
+            <img src="/images/LicensesOverview.png" alt="ORCHEX License Overview — unused licenses, idle seats, distribution and expiring subscriptions" />
             <div class="feature-sub-caption">
               <strong>Overview — click any card to filter the table</strong>
             </div>
@@ -350,7 +350,7 @@
              at the same height despite different source dimensions. -->
         <div class="feature-wide-img-row">
           <div class="feature-wide-img" style="flex: 1.73">
-            <img src="/images/Overview.png" alt="ORCHEX Users Overview — clickable stat cards, MFA coverage, mailbox storage and user growth" />
+            <img src="/images/UsersOverview.png" alt="ORCHEX Users Overview — clickable stat cards, MFA coverage, mailbox storage and user growth" />
             <div class="feature-sub-caption">
               <strong>Overview — click a card to filter the table</strong>
             </div>
@@ -534,23 +534,65 @@
         </div>
       </div>
 
-      <!-- 18. Teams & SharePoint — niche -->
+      <!-- 18. Teams -->
       <div class="feature-wide">
         <div class="feature-wide-header">
-          <span class="feature-label">Teams & SharePoint</span>
-          <h2>Full visibility across all tenants</h2>
+          <span class="feature-label">Teams</span>
+          <h2>Every team, and the storage it is actually using.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>Storage usage per team with file count</li>
-            <li>Smart filters: inactive, new, multiple owners, has guests</li>
-            <li>Export to CSV with one click</li>
+            <li>Storage and file count per team — the figure Microsoft makes you open each team to find</li>
+            <li>Smart filters: has guests, private or shared channels, multiple owners, inactive 90+ days, new</li>
+            <li>Tenant storage measured against its real quota, not an estimate</li>
+            <li>Click a team in the storage breakdown to open it, or a stat card to filter the table</li>
+            <li>Per tenant or across every tenant at once, and the filtered list exports to CSV</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/Teams.png" alt="Teams management across all tenants" />
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.63">
+            <img src="/images/TeamsOverview.png" alt="ORCHEX Teams Overview — tenant storage, visibility split and storage per team" />
+            <div class="feature-sub-caption">
+              <strong>Overview — storage per team, largest first</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 1.78">
+            <img src="/images/Teams.png" alt="ORCHEX Teams — members, owners, guests, channels and storage per team" />
+            <div class="feature-sub-caption">
+              <strong>Teams — owners, guests and channels in one row</strong>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- 19. Portal Health — internal ops -->
+      <!-- 19. SharePoint -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">SharePoint</span>
+          <h2>Where the storage went — and what the capacity is made of.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Capacity broken into its parts: base allocation, licence contribution and purchased add-ons</li>
+            <li>Top storage consumers ranked, next to the sites nobody has opened in a year</li>
+            <li>Quick filters: large sites &gt;50 GB, high file count, inactive &gt;90 days, storage critical &gt;90%</li>
+            <li>Teams and system sites counted separately, so a site count means what you expect</li>
+            <li>Per-site usage against quota, file count and last activity in a single row</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.74">
+            <img src="/images/SharePointOverview.png" alt="ORCHEX SharePoint Overview — storage used against capacity, storage breakdown, site types and top consumers" />
+            <div class="feature-sub-caption">
+              <strong>Overview — what the capacity is made of</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 1.73">
+            <img src="/images/SharePoint.png" alt="ORCHEX SharePoint Sites — usage against quota, file counts and last activity per site" />
+            <div class="feature-sub-caption">
+              <strong>Sites — usage, files and last activity</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 20. Portal Health — internal ops -->
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Portal Health</span>
@@ -566,7 +608,7 @@
         </div>
       </div>
 
-      <!-- 20. User Actions — UI detail -->
+      <!-- 21. User Actions — UI detail -->
       <div class="feature-row">
         <div class="feature-text">
           <span class="feature-label">User Actions</span>
@@ -583,7 +625,7 @@
         </div>
       </div>
 
-      <!-- 21. Dual-mode Modals — UI detail -->
+      <!-- 22. Dual-mode Modals — UI detail -->
       <div class="feature-row feature-row-reverse">
         <div class="feature-text">
           <span class="feature-label">Dual-mode Modals</span>
