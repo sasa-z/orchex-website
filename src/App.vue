@@ -308,13 +308,24 @@
           <h2>Spot wasted spend at a glance.</h2>
           <ul class="feature-list feature-list-cols">
             <li>Smart filters: Unused, Expiring &lt;30d, Has Expired, Fully Suspended</li>
-            <li>Toggle between table view and analytics view per page</li>
-            <li>License distribution and status charts across all tenants</li>
-            <li>Tenant-level warnings surfaced instantly</li>
+            <li>Click any overview card — unused, expiring, with warnings — to filter the table to exactly those licenses</li>
+            <li>Idle seats, license distribution and usage bands, per tenant or across all tenants</li>
+            <li>Overutilised SKUs surfaced next to unused ones — both sides of the waste, before renewal</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/Licenses.png" alt="ORCHEX License Management — table view" />
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.81">
+            <img src="/images/OverviewLicenses.png" alt="ORCHEX License Overview — unused licenses, idle seats, distribution and expiring subscriptions" />
+            <div class="feature-sub-caption">
+              <strong>Overview — click any card to filter the table</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 1.89">
+            <img src="/images/Licenses_v1.png" alt="ORCHEX License Management — usage, availability and seats per SKU" />
+            <div class="feature-sub-caption">
+              <strong>Licenses — usage, availability and seats per SKU</strong>
+            </div>
+          </div>
         </div>
       </div>
 
