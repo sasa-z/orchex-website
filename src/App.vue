@@ -274,10 +274,10 @@
           </ul>
         </div>
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img">
+          <div class="feature-wide-img" style="flex: 2.48">
             <img src="/images/SecurityAssesment.png" alt="ORCHEX Security Assessment — Exchange Online checks grouped by category with risk levels, baseline sources and standard badges" />
           </div>
-          <div class="feature-wide-img">
+          <div class="feature-wide-img" style="flex: 2.27">
             <img src="/images/SecurityAssesmentConfig.png" alt="ORCHEX Security Assessment Config — toggle checks per category, with app exclusion lists for the application-security checks" />
           </div>
         </div>

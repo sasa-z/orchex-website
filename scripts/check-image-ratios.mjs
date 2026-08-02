@@ -21,26 +21,63 @@ function pngSize(path) {
 }
 
 const app = readFileSync(join(root, 'src/App.vue'), 'utf8')
-const pattern = /style="flex: ([\d.]+)">\s*\n\s*<img src="\/images\/([^"]+)"/g
+
+// Only images inside a paired row. A lone full-width shot uses the same cell class
+// and needs no flex — it has no neighbour to line up with. The row's extent is found
+// by counting div openings and closings: a lazy regex stops at the first </div>,
+// which is the end of the row's first cell, and silently checks half of each pair.
+function pairedRows(html) {
+  const rows = []
+  const opening = /<div class="feature-wide-img-row[^"]*">/g
+  const tag = /<div\b|<\/div>/g
+
+  for (const start of html.matchAll(opening)) {
+    let depth = 0
+    tag.lastIndex = start.index
+    for (let t = tag.exec(html); t; t = tag.exec(html)) {
+      depth += t[0] === '</div>' ? -1 : 1
+      if (depth === 0) {
+        rows.push(html.slice(start.index, t.index))
+        break
+      }
+    }
+  }
+  return rows
+}
+
+const cellPattern =
+  /<div class="feature-wide-img"(?: style="flex: (?<flex>[\d.]+)")?>\s*\n\s*<img src="\/images\/(?<image>[^"]+)"/g
 
 let checked = 0
 const problems = []
 
-for (const [, flex, image] of app.matchAll(pattern)) {
-  checked++
-  const { width, height } = pngSize(join(root, 'public/images', image))
-  const actual = width / height
-  if (Math.abs(actual - Number(flex)) > TOLERANCE) {
-    problems.push({ image, flex, actual: actual.toFixed(2), size: `${width}x${height}` })
+for (const row of pairedRows(app)) {
+  for (const { groups } of row.matchAll(cellPattern)) {
+    checked++
+    const { width, height } = pngSize(join(root, 'public/images', groups.image))
+    const actual = width / height
+    const size = `${width}x${height}`
+
+    if (!groups.flex) {
+      problems.push({
+        image: groups.image,
+        detail: `is ${size} (ratio ${actual.toFixed(2)}) but declares no flex, so it falls back to 1`,
+      })
+    } else if (Math.abs(actual - Number(groups.flex)) > TOLERANCE) {
+      problems.push({
+        image: groups.image,
+        detail: `is ${size} (ratio ${actual.toFixed(2)}) but the markup says flex: ${groups.flex}`,
+      })
+    }
   }
 }
 
 if (problems.length) {
-  console.error(`\n${problems.length} of ${checked} paired images no longer match their flex value:\n`)
+  console.error(`\n${problems.length} of ${checked} paired images are not sized from their shape:\n`)
   for (const p of problems) {
-    console.error(`  ${p.image} is ${p.size} (ratio ${p.actual}) but the markup says flex: ${p.flex}`)
+    console.error(`  ${p.image} ${p.detail}`)
   }
-  console.error('\nUpdate the flex value to the ratio, or the pair renders at two different heights.\n')
+  console.error('\nSet flex to the ratio, or the pair renders at two different heights.\n')
   process.exit(1)
 }
 
