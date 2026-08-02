@@ -99,7 +99,7 @@
             <li>Copy settings from an existing user to match their setup instantly</li>
           </ul>
         </div>
-        <div class="feature-wide-img-row">
+        <div class="feature-wide-img-row feature-wide-img-row--compact">
           <div class="feature-wide-img" style="flex: 1.21">
             <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
             <div class="feature-sub-caption">
@@ -1323,6 +1323,13 @@ const faqItems = [
 .feature-wide-img-row .feature-wide-img {
   flex: 1;
   min-width: 0;
+}
+/* Two upright shots side by side grow much taller than a landscape pair does —
+   540px against the 300-400px everywhere else — because height is what the row's
+   width buys when both images are portrait. Hold the row nearer the text column
+   so the section keeps the page's rhythm. */
+.feature-wide-img-row--compact {
+  width: min(1050px, 94vw);
 }
 .feature-wide-img .feature-sub-caption {
   margin-top: 1rem;
