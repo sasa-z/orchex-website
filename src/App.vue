@@ -322,17 +322,34 @@
       <div class="feature-wide">
         <div class="feature-wide-header">
           <span class="feature-label">Identity Management</span>
-          <h2>One row. Complete picture.</h2>
-          <p>Most M365 portals split user details, mailbox, and MFA across three separate pages. ORCHEX consolidates it all in one row.</p>
+          <h2>One row. Complete picture. Every number a filter.</h2>
+          <p>Most M365 portals split user details, mailbox, and MFA across three separate pages. ORCHEX consolidates it all in one row — under an overview that doubles as your filter.</p>
           <ul class="feature-list feature-list-cols">
             <li>User identity, mailbox and MFA status in a single view</li>
             <li>Cross-tenant user search and filtering</li>
             <li>License assignment and usage tracking</li>
             <li>Sign-in activity and last active status</li>
+            <li>Overview mode on every major page — one toggle switches between a single tenant and all tenants</li>
+            <li>Click any stat card and the table below is filtered and scrolled into view — no manual filtering</li>
+            <li>In All Tenants mode, click a tenant in any breakdown to scope everything to it</li>
+            <li>Click a user or group in the overview to open their full detail view — Reset restores your own filters</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
+        <!-- flex grows track each shot's aspect ratio so the two images render
+             at the same height despite different source dimensions. -->
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.73">
+            <img src="/images/Overview.png" alt="ORCHEX Users Overview — clickable stat cards, MFA coverage, mailbox storage and user growth" />
+            <div class="feature-sub-caption">
+              <strong>Overview — click a card to filter the table</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 2.37">
+            <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
+            <div class="feature-sub-caption">
+              <strong>Users — the filtered result, one row per identity</strong>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1251,6 +1268,9 @@ const faqItems = [
 .feature-wide-img-row .feature-wide-img {
   flex: 1;
   min-width: 0;
+}
+.feature-wide-img .feature-sub-caption {
+  margin-top: 1rem;
 }
 .features-more {
   text-align: center;
