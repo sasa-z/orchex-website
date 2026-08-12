@@ -764,7 +764,7 @@
         <div class="faq-list">
           <div class="faq-item">
             <h3>What does "runs in my Azure" mean?</h3>
-            <p>ORCHEX deploys entirely into five resources in your own Azure subscription — nothing runs on shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us. <a href="#" @click.prevent="setActivePage('faq')">See the full infrastructure breakdown in the FAQ →</a></p>
+            <p>ORCHEX deploys entirely into your own Azure subscription — nothing runs on shared or third-party servers. You pay your own Azure costs (typically $20–60/mo depending on usage), not us. <a href="#" @click.prevent="setActivePage('faq')">See the full infrastructure breakdown in the FAQ →</a></p>
           </div>
           <div class="faq-item">
             <h3>What is the pilot program?</h3>
@@ -881,6 +881,11 @@ const calcPrice = computed(() => {
   const extra = Math.max(0, tenantCount.value - 10)
   return Math.round(base + extra * rate)
 })
+// Deliberately describes the deployment by category (compute/storage/secrets), not by
+// specific Azure product name — the underlying resources have already changed shape once
+// this year, and buyers care that it's self-contained and theirs, not which SKU it is.
+// $/mo figures are order-of-magnitude estimates; re-verify after the current architecture
+// migration settles before treating them as precise.
 const faqItems = [
   {
     q: 'Is ORCHEX right for my business?',
@@ -894,24 +899,23 @@ const faqItems = [
   },
   {
     q: 'What infrastructure does ORCHEX deploy?',
-    a: `<p>ORCHEX deploys five Azure resources into your own Azure subscription using a single ARM/Bicep script:</p>
+    a: `<p>ORCHEX deploys as a small set of standard Azure resources into your own Azure subscription, provisioned in a single guided deployment:</p>
         <ul>
-          <li><strong>Static Web App</strong> — hosts the ORCHEX portal, connected directly to the ORCHEX frontend repository. Updates deploy automatically whenever a new version is released.</li>
-          <li><strong>Function App</strong> — the ORCHEX backend, connected directly to the ORCHEX API repository. Updates deploy automatically alongside the frontend.</li>
-          <li><strong>Storage Account</strong> — used by the Function App and for portal data (Azure Table Storage)</li>
-          <li><strong>Key Vault</strong> — stores all secrets: app credentials and refresh tokens. Only your Function App has access.</li>
-          <li><strong>Application Insights</strong> — telemetry and logging for the Function App</li>
+          <li><strong>Compute</strong> — runs the ORCHEX application, portal and backend together. Updates arrive automatically as new versions are released — nothing for you to build or connect.</li>
+          <li><strong>Storage</strong> — holds your portal data.</li>
+          <li><strong>Secrets vault</strong> — stores app credentials and refresh tokens, accessible only to your own deployment.</li>
+          <li><strong>Monitoring</strong> — telemetry and logging for your deployment.</li>
         </ul>
         <p>Everything runs in your environment. Client data never touches our servers or any shared infrastructure. Your Azure costs for these resources are typically <strong>$20–60/month</strong> depending on the number of tenants and usage.</p>`
   },
   {
     q: 'Is my data secure?',
-    a: `<p>Yes — and the architecture is designed so you don't have to take our word for it. ORCHEX runs entirely in <strong>your own Azure subscription</strong>. Client data never touches our servers or any shared infrastructure. All secrets and refresh tokens are stored in <strong>your Key Vault</strong>, accessible only to your own Function App.</p>
+    a: `<p>Yes — and the architecture is designed so you don't have to take our word for it. ORCHEX runs entirely in <strong>your own Azure subscription</strong>. Client data never touches our servers or any shared infrastructure. All secrets and refresh tokens are stored in your own secrets vault, accessible only to your own deployment.</p>
         <p>The ORCHEX codebase — both the API and frontend — is maintained in a private repository and goes through regular security reviews. The founder spent several years working exclusively in security architecture and holds a Certified Ethical Hacker certification — the codebase is reviewed with the same mindset: looking for what an attacker would.</p>`
   },
   {
     q: 'Do I need GitHub or developer knowledge to run ORCHEX?',
-    a: `<p>No. ORCHEX does not require you to fork any repositories or manage a GitHub pipeline. Your Static Web App and Function App connect directly to the ORCHEX repositories — updates deploy automatically whenever a new version is released.</p>
+    a: `<p>No. ORCHEX does not require you to fork any repositories, manage a deployment pipeline, or write any code. Your deployment receives new versions automatically — there's nothing for you to build, connect, or maintain.</p>
         <p>The only technical requirement on your side is an <strong>Azure subscription</strong>.</p>`
   },
   {
