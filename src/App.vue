@@ -163,20 +163,6 @@
           </div>
         </div>
 
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 2.26">
-            <img src="/images/StandardsTrendAllTenants.png" alt="ORCHEX Standards Compliance Trend — aggregate compliance % across all tenants over time" />
-            <div class="feature-sub-caption">
-              <strong>Compliance Trend — All Tenants</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 2.26">
-            <img src="/images/StandardsTrendSingleTenant.png" alt="ORCHEX Standards Compliance Trend — per-tenant compliant vs non-compliant standards over time" />
-            <div class="feature-sub-caption">
-              <strong>Compliance Trend — Per Tenant</strong>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- 6. License Management — cost savings -->
