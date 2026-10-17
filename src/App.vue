@@ -285,7 +285,7 @@
             <li>Quick status cards for mailbox usage, MFA, privileged roles, and license count</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
+        <div class="feature-wide-img feature-wide-img--narrow">
           <img src="/images/UserDetails.png" alt="ORCHEX User Details — tabbed per-user view with inline editing" />
         </div>
       </div>
@@ -356,7 +356,7 @@
             <li>P2-dependent checks (sign-in risk, user risk) auto-skipped on non-P2 tenants — no false positives</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
+        <div class="feature-wide-img feature-wide-img--narrow">
           <img src="/images/CAHealth.png" alt="ORCHEX CA Health — 27 checks grouped by severity with How to Fix guides and Sign-in Coverage" />
         </div>
       </div>
@@ -373,7 +373,7 @@
             <li>Drill into credentials or owners directly from any row</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
+        <div class="feature-wide-img feature-wide-img--narrow">
           <img src="/images/EnterpriseApps.png" alt="ORCHEX Enterprise Applications — credential expiry across all tenants" />
         </div>
       </div>
@@ -446,38 +446,6 @@
         </div>
       </div>
 
-      <!-- 2. Client Requests — extends lifecycle story -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">User Lifecycle</span>
-          <h2>Let clients submit requests. You stay in control.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Pre-fills the wizard — name, job title, tenant, copy-from user, notes</li>
-            <li>API-key authentication — one key per client portal, revocable instantly</li>
-            <li>Human in the loop — no automatic tenant changes, ever</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/ClientRequests.png" alt="ORCHEX Client Requests — onboarding and offboarding intake queue" />
-        </div>
-      </div>
-
-      <!-- 20. Portal Health — internal ops -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Portal Health</span>
-          <h2>A dedicated page for what's happening inside your portal.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Critical and Warning severity — at a glance</li>
-            <li>30-day trend chart for incident history</li>
-            <li>Auto-resolves when the system recovers</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/Health.png" alt="ORCHEX Portal Health — system task monitoring" />
-        </div>
-      </div>
-
       <!-- 21. User Actions — UI detail -->
       <div class="feature-row">
         <div class="feature-text">
@@ -509,6 +477,23 @@
         </div>
         <div class="feature-img">
           <img src="/images/Modal.png" alt="ORCHEX dual-mode modal — Mailbox Permissions" style="max-width: 420px; margin: 0 auto; display: block;" />
+        </div>
+      </div>
+
+
+      <!-- 20. Portal Health — internal ops -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Portal Health</span>
+          <h2>A dedicated page for what's happening inside your portal.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Critical and Warning severity — at a glance</li>
+            <li>30-day trend chart for incident history</li>
+            <li>Auto-resolves when the system recovers</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Health.png" alt="ORCHEX Portal Health — system task monitoring" />
         </div>
       </div>
 
@@ -1184,6 +1169,14 @@ const faqItems = [
   border-radius: 10px;
   border: 1px solid var(--border);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+/* A lone shot that is dense but not wide: full column width made it larger than its
+   content earns, so it is held narrower and centred under the text. */
+.feature-wide-img--narrow {
+  max-width: 820px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .feature-wide-img-row {
   display: flex;
