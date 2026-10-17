@@ -100,34 +100,18 @@
           </ul>
         </div>
         <div class="feature-wide-img-row feature-wide-img-row--compact">
-          <div class="feature-wide-img" style="flex: 1.21">
+          <div class="feature-wide-img" style="flex: 1.18">
             <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
             <div class="feature-sub-caption">
               <strong>Onboarding — Results</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.34">
+          <div class="feature-wide-img" style="flex: 1.30">
             <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
             <div class="feature-sub-caption">
               <strong>Offboarding — Configure Actions</strong>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- 2. Client Requests — extends lifecycle story -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">User Lifecycle</span>
-          <h2>Let clients submit requests. You stay in control.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Pre-fills the wizard — name, job title, tenant, copy-from user, notes</li>
-            <li>API-key authentication — one key per client portal, revocable instantly</li>
-            <li>Human in the loop — no automatic tenant changes, ever</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/ClientRequests.png" alt="ORCHEX Client Requests — onboarding and offboarding intake queue" />
         </div>
       </div>
 
@@ -146,21 +130,17 @@
             <li>Track compliance over time — daily % across all tenants, with per-tenant drill-down at any point in history</li>
           </ul>
         </div>
-        <div class="feature-wide-img">
-          <img src="/images/Standards.png" alt="ORCHEX Standards Templates — enforce settings across all tenants" />
-        </div>
-
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 2.22">
+          <div class="feature-wide-img" style="flex: 2.35">
+            <img src="/images/Standards.png" alt="ORCHEX Standards Templates — enforce settings across all tenants" />
+            <div class="feature-sub-caption">
+              <strong>Standards Templates</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 2.32">
             <img src="/images/StandardsCompliance.png" alt="ORCHEX Standards Compliance — track compliance across all tenants" />
             <div class="feature-sub-caption">
               <strong>Standards Compliance</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 2.27">
-            <img src="/images/EffectiveStandards.png" alt="ORCHEX Effective Standards — inspect what is applied to a tenant" />
-            <div class="feature-sub-caption">
-              <strong>Effective Standards</strong>
             </div>
           </div>
         </div>
@@ -197,13 +177,13 @@
           </ul>
         </div>
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.80">
+          <div class="feature-wide-img" style="flex: 1.63">
             <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — active alerts across all tenants" />
             <div class="feature-sub-caption">
               <strong>Active Alerts</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.58">
+          <div class="feature-wide-img" style="flex: 1.63">
             <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
             <div class="feature-sub-caption">
               <strong>Alert Configuration</strong>
@@ -274,10 +254,10 @@
           </ul>
         </div>
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 2.48">
+          <div class="feature-wide-img" style="flex: 1.93">
             <img src="/images/SecurityAssesment.png" alt="ORCHEX Security Assessment — Exchange Online checks grouped by category with risk levels, baseline sources and standard badges" />
           </div>
-          <div class="feature-wide-img" style="flex: 2.27">
+          <div class="feature-wide-img" style="flex: 1.82">
             <img src="/images/SecurityAssesmentConfig.png" alt="ORCHEX Security Assessment Config — toggle checks per category, with app exclusion lists for the application-security checks" />
           </div>
         </div>
@@ -320,7 +300,7 @@
               <strong>Overview — click any card to filter the table</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.89">
+          <div class="feature-wide-img" style="flex: 1.86">
             <img src="/images/Licenses.png" alt="ORCHEX License Management — usage, availability and seats per SKU" />
             <div class="feature-sub-caption">
               <strong>Licenses — usage, availability and seats per SKU</strong>
@@ -355,7 +335,7 @@
               <strong>Overview — click a card to filter the table</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 2.37">
+          <div class="feature-wide-img" style="flex: 2.43">
             <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
             <div class="feature-sub-caption">
               <strong>Users — the filtered result, one row per identity</strong>
@@ -432,37 +412,6 @@
         </div>
       </div>
 
-      <!-- 11. Tenant Capabilities — visibility -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Tenant Capabilities</span>
-          <h2>Know exactly which tenants have what — before it becomes a problem.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>License matrix across all tenants: Entra P1/P2, MDO, Intune P1/P2, Defender XDR</li>
-            <li>Smart filters: Missing Entra P1, Missing Entra P2, Fully covered</li>
-            <li>Per-tenant capability drill-down with source SKUs and unit counts</li>
-            <li>Purchase recommendations for missing capabilities</li>
-            <li>Scheduled background checks — always up to date without manual refresh</li>
-          </ul>
-        </div>
-        <!-- The sidebar shot is portrait and the matrix is landscape, so equal
-             columns would render it nearly three times taller. -->
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 2.13">
-            <img src="/images/TenantCapabilities.png" alt="ORCHEX Tenant Capabilities — license matrix across all tenants" />
-            <div class="feature-sub-caption">
-              <strong>Capability Matrix</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 0.79">
-            <img src="/images/TenantCapabilitiesSidebar.png" alt="ORCHEX License Details — source SKUs and recommendations per tenant" />
-            <div class="feature-sub-caption">
-              <strong>License Details</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- 12. Enterprise Applications — credential management -->
       <div class="feature-wide">
         <div class="feature-wide-header">
@@ -515,22 +464,19 @@
         </div>
       </div>
 
-      <!-- 17. Tenant Management — setup/admin -->
+      <!-- 2. Client Requests — extends lifecycle story -->
       <div class="feature-wide">
         <div class="feature-wide-header">
-          <span class="feature-label">Tenant Management</span>
-          <h2>Full control over every tenant connection.</h2>
+          <span class="feature-label">User Lifecycle</span>
+          <h2>Let clients submit requests. You stay in control.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>CPV tab — consent status per tenant, re-run consent directly from the portal</li>
-            <li>Permissions tab — verify all app registration roles and delegated scopes are assigned</li>
-            <li>Access Check tab — verify portal access to each tenant on demand or on a schedule</li>
-            <li>GDAP Health tab — relationship status, expiry dates, and assigned roles per tenant</li>
-            <li>Daily automated checks — expiring GDAP, stale CPV consent, and access failures surface as Portal Health warnings</li>
-            <li>Schedule Apply Permissions — push updated app permissions to all tenants with one click</li>
+            <li>Pre-fills the wizard — name, job title, tenant, copy-from user, notes</li>
+            <li>API-key authentication — one key per client portal, revocable instantly</li>
+            <li>Human in the loop — no automatic tenant changes, ever</li>
           </ul>
         </div>
         <div class="feature-wide-img">
-          <img src="/images/Tenants.png" alt="ORCHEX Tenant Management — permissions, CPV, GDAP and access check" />
+          <img src="/images/ClientRequests.png" alt="ORCHEX Client Requests — onboarding and offboarding intake queue" />
         </div>
       </div>
 
@@ -548,45 +494,16 @@
           </ul>
         </div>
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.90">
+          <div class="feature-wide-img" style="flex: 1.79">
             <img src="/images/TeamsOverview.png" alt="ORCHEX Teams Overview — tenant storage, visibility split and storage per team" />
             <div class="feature-sub-caption">
               <strong>Overview — storage per team, largest first</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.78">
+          <div class="feature-wide-img" style="flex: 1.70">
             <img src="/images/Teams.png" alt="ORCHEX Teams — members, owners, guests, channels and storage per team" />
             <div class="feature-sub-caption">
               <strong>Teams — owners, guests and channels in one row</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 19. SharePoint -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">SharePoint</span>
-          <h2>Where the storage went — and what the capacity is made of.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Capacity broken into its parts: base allocation, licence contribution and purchased add-ons</li>
-            <li>Top storage consumers ranked, next to the sites nobody has opened in a year</li>
-            <li>Quick filters: large sites &gt;50 GB, high file count, inactive &gt;90 days, storage critical &gt;90%</li>
-            <li>Teams and system sites counted separately, so a site count means what you expect</li>
-            <li>Per-site usage against quota, file count and last activity in a single row</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.74">
-            <img src="/images/SharePointOverview.png" alt="ORCHEX SharePoint Overview — storage used against capacity, storage breakdown, site types and top consumers" />
-            <div class="feature-sub-caption">
-              <strong>Overview — what the capacity is made of</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 1.73">
-            <img src="/images/SharePoint.png" alt="ORCHEX SharePoint Sites — usage against quota, file counts and last activity per site" />
-            <div class="feature-sub-caption">
-              <strong>Sites — usage, files and last activity</strong>
             </div>
           </div>
         </div>
