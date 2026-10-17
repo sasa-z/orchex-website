@@ -87,29 +87,47 @@
     <!-- FEATURES -->
     <section class="features" id="features">
 
-      <!-- 1. User Lifecycle — biggest MSP pain point -->
+      <!-- 4. Security Alerting — urgent for MSPs -->
       <div class="feature-wide">
         <div class="feature-wide-header">
-          <span class="feature-label">User Lifecycle</span>
-          <h2>Onboard a new user in minutes. Offboard safely with one guided flow.</h2>
+          <span class="feature-label">Security Alerting</span>
+          <h2>Detect it. Investigate it. Fix it. All in one place.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>Full review screen before any changes are applied</li>
-            <li>Assign licenses, groups, Teams and Distribution Lists in one flow</li>
-            <li>Offboarding checklist — mailbox reassignment, license reclaim, access removal</li>
-            <li>Copy settings from an existing user to match their setup instantly</li>
+            <li>Snooze for 7, 14, or 30 days — auto-re-activates if the issue persists</li>
+            <li>Email and webhook on first detection — one summary per tenant, not per individual alert</li>
+            <li>Contextual row actions: resolve, view sign-ins, manage MFA — right from the alert row</li>
+            <li>Auto-resolves stateful alerts when the issue is gone — no manual cleanup</li>
+            <li>Per-alert-type thresholds, excluded tenants, admin notes, and frequency controls</li>
+            <li>Per-user bell subscriptions — subscribe only to the alert types you care about</li>
+            <li>Trend view — alert volume over time, stacked by type, click any bar to drill into per-tenant breakdown</li>
           </ul>
         </div>
-        <div class="feature-wide-img-row feature-wide-img-row--compact">
-          <div class="feature-wide-img" style="flex: 1.18">
-            <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.63">
+            <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — active alerts across all tenants" />
             <div class="feature-sub-caption">
-              <strong>Onboarding — Results</strong>
+              <strong>Active Alerts</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.30">
-            <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
+          <div class="feature-wide-img" style="flex: 1.63">
+            <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
             <div class="feature-sub-caption">
-              <strong>Offboarding — Configure Actions</strong>
+              <strong>Alert Configuration</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.87">
+            <img src="/images/AlertsTrendAllAlerts.png" alt="ORCHEX Alerts Trend — all alert types stacked by day" />
+            <div class="feature-sub-caption">
+              <strong>Trend — All Types</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 1.87">
+            <img src="/images/AlertsTrend.png" alt="ORCHEX Alerts Trend — filtered by Risky Sign-In Detections over 90 days" />
+            <div class="feature-sub-caption">
+              <strong>Trend — Filtered by Type</strong>
             </div>
           </div>
         </div>
@@ -161,47 +179,64 @@
         </div>
       </div>
 
-      <!-- 4. Security Alerting — urgent for MSPs -->
+      <!-- 6. License Management — cost savings -->
       <div class="feature-wide">
         <div class="feature-wide-header">
-          <span class="feature-label">Security Alerting</span>
-          <h2>Detect it. Investigate it. Fix it. All in one place.</h2>
+          <span class="feature-label">License Management</span>
+          <h2>Spot wasted spend at a glance.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>Snooze for 7, 14, or 30 days — auto-re-activates if the issue persists</li>
-            <li>Email and webhook on first detection — one summary per tenant, not per individual alert</li>
-            <li>Contextual row actions: resolve, view sign-ins, manage MFA — right from the alert row</li>
-            <li>Auto-resolves stateful alerts when the issue is gone — no manual cleanup</li>
-            <li>Per-alert-type thresholds, excluded tenants, admin notes, and frequency controls</li>
-            <li>Per-user bell subscriptions — subscribe only to the alert types you care about</li>
-            <li>Trend view — alert volume over time, stacked by type, click any bar to drill into per-tenant breakdown</li>
+            <li>Smart filters: Unused, Expiring &lt;30d, Has Expired, Fully Suspended</li>
+            <li>Click any overview card — unused, expiring, with warnings — to filter the table to exactly those licenses</li>
+            <li>Idle seats, license distribution and usage bands, per tenant or across all tenants</li>
+            <li>Overutilised SKUs surfaced next to unused ones — both sides of the waste, before renewal</li>
           </ul>
         </div>
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.63">
-            <img src="/images/AlertsTable.png" alt="ORCHEX Security Alerts — active alerts across all tenants" />
+          <div class="feature-wide-img" style="flex: 1.97">
+            <img src="/images/LicensesOverview.png" alt="ORCHEX License Overview — unused licenses, idle seats, distribution and expiring subscriptions" />
             <div class="feature-sub-caption">
-              <strong>Active Alerts</strong>
+              <strong>Overview — click any card to filter the table</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.63">
-            <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
+          <div class="feature-wide-img" style="flex: 1.86">
+            <img src="/images/Licenses.png" alt="ORCHEX License Management — usage, availability and seats per SKU" />
             <div class="feature-sub-caption">
-              <strong>Alert Configuration</strong>
+              <strong>Licenses — usage, availability and seats per SKU</strong>
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- 7. Identity Management — day-to-day -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Identity Management</span>
+          <h2>One row. Complete picture. Every number a filter.</h2>
+          <p>Most M365 portals split user details, mailbox, and MFA across three separate pages. ORCHEX consolidates it all in one row — under an overview that doubles as your filter.</p>
+          <ul class="feature-list feature-list-cols">
+            <li>User identity, mailbox and MFA status in a single view</li>
+            <li>Cross-tenant user search and filtering</li>
+            <li>License assignment and usage tracking</li>
+            <li>Sign-in activity and last active status</li>
+            <li>Overview mode on every major page — one toggle switches between a single tenant and all tenants</li>
+            <li>Click any stat card and the table below is filtered and scrolled into view — no manual filtering</li>
+            <li>In All Tenants mode, click a tenant in any breakdown to scope everything to it</li>
+            <li>Click a user or group in the overview to open their full detail view — Reset restores your own filters</li>
+          </ul>
+        </div>
+        <!-- flex grows track each shot's aspect ratio so the two images render
+             at the same height despite different source dimensions. -->
         <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.87">
-            <img src="/images/AlertsTrendAllAlerts.png" alt="ORCHEX Alerts Trend — all alert types stacked by day" />
+          <div class="feature-wide-img" style="flex: 1.90">
+            <img src="/images/UsersOverview.png" alt="ORCHEX Users Overview — clickable stat cards, MFA coverage, mailbox storage and user growth" />
             <div class="feature-sub-caption">
-              <strong>Trend — All Types</strong>
+              <strong>Overview — click a card to filter the table</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.87">
-            <img src="/images/AlertsTrend.png" alt="ORCHEX Alerts Trend — filtered by Risky Sign-In Detections over 90 days" />
+          <div class="feature-wide-img" style="flex: 2.43">
+            <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
             <div class="feature-sub-caption">
-              <strong>Trend — Filtered by Type</strong>
+              <strong>Users — the filtered result, one row per identity</strong>
             </div>
           </div>
         </div>
@@ -233,6 +268,80 @@
             <img src="/images/Forensic.png" alt="ORCHEX User Forensics — structured investigation checklist" />
             <div class="feature-sub-caption">
               <strong>Forensic Checklist</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18. Teams -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Teams</span>
+          <h2>Every team, and the storage it is actually using.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Storage and file count per team — the figure Microsoft makes you open each team to find</li>
+            <li>Smart filters: has guests, private or shared channels, multiple owners, inactive 90+ days, new</li>
+            <li>Tenant storage measured against its real quota, not an estimate</li>
+            <li>Click a team in the storage breakdown to open it, or a stat card to filter the table</li>
+            <li>Per tenant or across every tenant at once, and the filtered list exports to CSV</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img-row">
+          <div class="feature-wide-img" style="flex: 1.79">
+            <img src="/images/TeamsOverview.png" alt="ORCHEX Teams Overview — tenant storage, visibility split and storage per team" />
+            <div class="feature-sub-caption">
+              <strong>Overview — storage per team, largest first</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 1.70">
+            <img src="/images/Teams.png" alt="ORCHEX Teams — members, owners, guests, channels and storage per team" />
+            <div class="feature-sub-caption">
+              <strong>Teams — owners, guests and channels in one row</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. User Details -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">User Details</span>
+          <h2>Every detail about a user, in one place.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Tabbed layout: Overview, Mailbox, MFA, Licenses, Sign-Ins, Roles, and more</li>
+            <li>Per-user tab preferences — auto-load or on-demand, per tab</li>
+            <li>Inline editing for display name, job title, department, phone, and office</li>
+            <li>Quick status cards for mailbox usage, MFA, privileged roles, and license count</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/UserDetails.png" alt="ORCHEX User Details — tabbed per-user view with inline editing" />
+        </div>
+      </div>
+
+      <!-- 1. User Lifecycle — biggest MSP pain point -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">User Lifecycle</span>
+          <h2>Onboard a new user in minutes. Offboard safely with one guided flow.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>Full review screen before any changes are applied</li>
+            <li>Assign licenses, groups, Teams and Distribution Lists in one flow</li>
+            <li>Offboarding checklist — mailbox reassignment, license reclaim, access removal</li>
+            <li>Copy settings from an existing user to match their setup instantly</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img-row feature-wide-img-row--compact">
+          <div class="feature-wide-img" style="flex: 1.18">
+            <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
+            <div class="feature-sub-caption">
+              <strong>Onboarding — Results</strong>
+            </div>
+          </div>
+          <div class="feature-wide-img" style="flex: 1.30">
+            <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
+            <div class="feature-sub-caption">
+              <strong>Offboarding — Configure Actions</strong>
             </div>
           </div>
         </div>
@@ -281,83 +390,20 @@
         </div>
       </div>
 
-      <!-- 6. License Management — cost savings -->
+      <!-- 12. Enterprise Applications — credential management -->
       <div class="feature-wide">
         <div class="feature-wide-header">
-          <span class="feature-label">License Management</span>
-          <h2>Spot wasted spend at a glance.</h2>
+          <span class="feature-label">Enterprise Applications</span>
+          <h2>Every app credential, across every tenant.</h2>
           <ul class="feature-list feature-list-cols">
-            <li>Smart filters: Unused, Expiring &lt;30d, Has Expired, Fully Suspended</li>
-            <li>Click any overview card — unused, expiring, with warnings — to filter the table to exactly those licenses</li>
-            <li>Idle seats, license distribution and usage bands, per tenant or across all tenants</li>
-            <li>Overutilised SKUs surfaced next to unused ones — both sides of the waste, before renewal</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.81">
-            <img src="/images/LicensesOverview.png" alt="ORCHEX License Overview — unused licenses, idle seats, distribution and expiring subscriptions" />
-            <div class="feature-sub-caption">
-              <strong>Overview — click any card to filter the table</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 1.86">
-            <img src="/images/Licenses.png" alt="ORCHEX License Management — usage, availability and seats per SKU" />
-            <div class="feature-sub-caption">
-              <strong>Licenses — usage, availability and seats per SKU</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 7. Identity Management — day-to-day -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Identity Management</span>
-          <h2>One row. Complete picture. Every number a filter.</h2>
-          <p>Most M365 portals split user details, mailbox, and MFA across three separate pages. ORCHEX consolidates it all in one row — under an overview that doubles as your filter.</p>
-          <ul class="feature-list feature-list-cols">
-            <li>User identity, mailbox and MFA status in a single view</li>
-            <li>Cross-tenant user search and filtering</li>
-            <li>License assignment and usage tracking</li>
-            <li>Sign-in activity and last active status</li>
-            <li>Overview mode on every major page — one toggle switches between a single tenant and all tenants</li>
-            <li>Click any stat card and the table below is filtered and scrolled into view — no manual filtering</li>
-            <li>In All Tenants mode, click a tenant in any breakdown to scope everything to it</li>
-            <li>Click a user or group in the overview to open their full detail view — Reset restores your own filters</li>
-          </ul>
-        </div>
-        <!-- flex grows track each shot's aspect ratio so the two images render
-             at the same height despite different source dimensions. -->
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.73">
-            <img src="/images/UsersOverview.png" alt="ORCHEX Users Overview — clickable stat cards, MFA coverage, mailbox storage and user growth" />
-            <div class="feature-sub-caption">
-              <strong>Overview — click a card to filter the table</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 2.43">
-            <img src="/images/Users.png" alt="ORCHEX Users — unified identity view" />
-            <div class="feature-sub-caption">
-              <strong>Users — the filtered result, one row per identity</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 8. User Details -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">User Details</span>
-          <h2>Every detail about a user, in one place.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Tabbed layout: Overview, Mailbox, MFA, Licenses, Sign-Ins, Roles, and more</li>
-            <li>Per-user tab preferences — auto-load or on-demand, per tab</li>
-            <li>Inline editing for display name, job title, department, phone, and office</li>
-            <li>Quick status cards for mailbox usage, MFA, privileged roles, and license count</li>
+            <li>Certificate and secret counts per app, per tenant</li>
+            <li>Next expiry date with expired / expiring-soon indicators</li>
+            <li>Quick filters: All Creds Expired, Has Creds Expired</li>
+            <li>Drill into credentials or owners directly from any row</li>
           </ul>
         </div>
         <div class="feature-wide-img">
-          <img src="/images/UserDetails.png" alt="ORCHEX User Details — tabbed per-user view with inline editing" />
+          <img src="/images/EnterpriseApps.png" alt="ORCHEX Enterprise Applications — credential expiry across all tenants" />
         </div>
       </div>
 
@@ -375,6 +421,24 @@
             <li>One-click early revoke the moment the support task is done</li>
             <li>Scoped permission — not tied to broad admin access</li>
           </ul>
+        </div>
+      </div>
+
+      <!-- 13. Analytics — change tracking -->
+      <div class="feature-wide">
+        <div class="feature-wide-header">
+          <span class="feature-label">Analytics</span>
+          <h2>See what changed between two points in time.</h2>
+          <ul class="feature-list feature-list-cols">
+            <li>License increases and decreases across all tenants</li>
+            <li>Users onboarded and offboarded per period</li>
+            <li>Per-tenant drill-down: Subscription Changes and User Changes</li>
+            <li>Filter tenants instantly to show only those with activity</li>
+            <li>Built-in chart view in every section — switch between table and analytics without leaving the page</li>
+          </ul>
+        </div>
+        <div class="feature-wide-img">
+          <img src="/images/Analytics.png" alt="ORCHEX Analytics — cross-tenant change tracking" />
         </div>
       </div>
 
@@ -412,41 +476,6 @@
         </div>
       </div>
 
-      <!-- 12. Enterprise Applications — credential management -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Enterprise Applications</span>
-          <h2>Every app credential, across every tenant.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Certificate and secret counts per app, per tenant</li>
-            <li>Next expiry date with expired / expiring-soon indicators</li>
-            <li>Quick filters: All Creds Expired, Has Creds Expired</li>
-            <li>Drill into credentials or owners directly from any row</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/EnterpriseApps.png" alt="ORCHEX Enterprise Applications — credential expiry across all tenants" />
-        </div>
-      </div>
-
-      <!-- 13. Analytics — change tracking -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Analytics</span>
-          <h2>See what changed between two points in time.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>License increases and decreases across all tenants</li>
-            <li>Users onboarded and offboarded per period</li>
-            <li>Per-tenant drill-down: Subscription Changes and User Changes</li>
-            <li>Filter tenants instantly to show only those with activity</li>
-            <li>Built-in chart view in every section — switch between table and analytics without leaving the page</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img">
-          <img src="/images/Analytics.png" alt="ORCHEX Analytics — cross-tenant change tracking" />
-        </div>
-      </div>
-
       <!-- 16. AI Integration — advanced/future -->
       <div class="feature-wide">
         <div class="feature-wide-header">
@@ -477,35 +506,6 @@
         </div>
         <div class="feature-wide-img">
           <img src="/images/ClientRequests.png" alt="ORCHEX Client Requests — onboarding and offboarding intake queue" />
-        </div>
-      </div>
-
-      <!-- 18. Teams -->
-      <div class="feature-wide">
-        <div class="feature-wide-header">
-          <span class="feature-label">Teams</span>
-          <h2>Every team, and the storage it is actually using.</h2>
-          <ul class="feature-list feature-list-cols">
-            <li>Storage and file count per team — the figure Microsoft makes you open each team to find</li>
-            <li>Smart filters: has guests, private or shared channels, multiple owners, inactive 90+ days, new</li>
-            <li>Tenant storage measured against its real quota, not an estimate</li>
-            <li>Click a team in the storage breakdown to open it, or a stat card to filter the table</li>
-            <li>Per tenant or across every tenant at once, and the filtered list exports to CSV</li>
-          </ul>
-        </div>
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.79">
-            <img src="/images/TeamsOverview.png" alt="ORCHEX Teams Overview — tenant storage, visibility split and storage per team" />
-            <div class="feature-sub-caption">
-              <strong>Overview — storage per team, largest first</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 1.70">
-            <img src="/images/Teams.png" alt="ORCHEX Teams — members, owners, guests, channels and storage per team" />
-            <div class="feature-sub-caption">
-              <strong>Teams — owners, guests and channels in one row</strong>
-            </div>
-          </div>
         </div>
       </div>
 
