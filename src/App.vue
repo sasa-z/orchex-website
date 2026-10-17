@@ -116,21 +116,6 @@
             </div>
           </div>
         </div>
-
-        <div class="feature-wide-img-row">
-          <div class="feature-wide-img" style="flex: 1.87">
-            <img src="/images/AlertsTrendAllAlerts.png" alt="ORCHEX Alerts Trend — all alert types stacked by day" />
-            <div class="feature-sub-caption">
-              <strong>Trend — All Types</strong>
-            </div>
-          </div>
-          <div class="feature-wide-img" style="flex: 1.87">
-            <img src="/images/AlertsTrend.png" alt="ORCHEX Alerts Trend — filtered by Risky Sign-In Detections over 90 days" />
-            <div class="feature-sub-caption">
-              <strong>Trend — Filtered by Type</strong>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- 3. Standards — cross-tenant automation, key differentiator -->
