@@ -744,13 +744,13 @@ const calcPrice = computed(() => {
 const faqItems = [
   {
     q: 'Is ORCHEX right for my business?',
-    a: `<p>ORCHEX is built specifically for <strong>Microsoft CSP (Cloud Solution Provider) partners</strong> who manage multiple client Microsoft 365 tenants. To use ORCHEX you need:</p>
+    a: `<p>ORCHEX is built for MSPs and Microsoft partners who manage multiple client Microsoft 365 tenants. How you connect a tenant depends on how you manage it:</p>
         <ul>
-          <li>An active Microsoft Partner Center account</li>
-          <li>GDAP (Granular Delegated Admin Privileges) relationships established with each client tenant you want to manage</li>
-          <li>An Azure subscription to host the ORCHEX infrastructure</li>
+          <li><strong>Through Partner Center (GDAP)</strong> — the main path. You need an active Microsoft Partner Center account and a GDAP (Granular Delegated Admin Privileges) relationship with each client tenant.</li>
+          <li><strong>Directly</strong> — for a tenant outside your Partner Center, such as your own second tenant, a client's tenant before GDAP is in place, or any tenant if you are not a CSP partner. Its Global Administrator signs in once to connect it.</li>
         </ul>
-        <p>If you manage only your own organization's tenant, or you are not a Microsoft CSP partner, ORCHEX is not the right fit.</p>`
+        <p>Either way you need an Azure subscription to host the ORCHEX infrastructure.</p>
+        <p>A few features rely on GDAP's delegated access, so in a directly connected tenant some device standards report without changing settings, and Autopilot device actions are not available.</p>`
   },
   {
     q: 'What infrastructure does ORCHEX deploy?',
