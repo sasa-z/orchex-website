@@ -109,7 +109,7 @@
               <strong>Active Alerts</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.63">
+          <div class="feature-wide-img" style="flex: 1.69">
             <img src="/images/TenantAlertConfig.png" alt="ORCHEX Alert Configuration — per-alert-type settings and active checks" />
             <div class="feature-sub-caption">
               <strong>Alert Configuration</strong>
