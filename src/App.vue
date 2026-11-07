@@ -602,6 +602,10 @@
               <span class="pricing-calc-price">${{ calcPrice }}<span class="pricing-calc-mo">/mo</span></span>
               <span class="pricing-calc-annual" v-if="billingCycle === 'annual'">${{ (calcPrice * 12).toLocaleString() }}/yr</span>
             </div>
+            <p class="pricing-calc-equiv">
+              That is the revenue of about <strong>{{ equivalentUsers }}</strong> managed {{ equivalentUsers === '1' ? 'user' : 'users' }}
+              at $<input type="number" min="1" max="1000" step="5" v-model.number="pricePerUser" class="pricing-calc-input" aria-label="What you charge per user per month" /> a user a month.
+            </p>
             <p v-if="tenantCount >= CUSTOM_PRICING_THRESHOLD" class="pricing-calc-max-hint">
               More than {{ CUSTOM_PRICING_THRESHOLD }} tenants? <a href="mailto:hello@orchex.app">Contact us</a> for custom pricing.
             </p>
@@ -738,6 +742,15 @@ const PRICING = {
   monthly: { base: 180, tiers: [{ upTo: 50, rate: 14 }, { upTo: CUSTOM_PRICING_THRESHOLD, rate: 11 }] },
 }
 const tiers = computed(() => PRICING[billingCycle.value].tiers)
+// What the price is in the MSP's own revenue: the managed users it takes to pay for it. The default is a typical
+// per-user rate for managed services, and the visitor can set their own.
+const pricePerUser = ref(125)
+const equivalentUsers = computed(() => {
+  const rate = Number(pricePerUser.value)
+  if (!rate || rate < 1) return '—'
+  const users = calcPrice.value / rate
+  return users < 10 ? (Math.round(users * 10) / 10).toString() : Math.round(users).toString()
+})
 const calcPrice = computed(() => {
   const { base, tiers: bands } = PRICING[billingCycle.value]
   let total = base
@@ -1945,6 +1958,24 @@ const faqItems = [
 .pricing-calc-annual {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+.pricing-calc-equiv {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+}
+.pricing-calc-equiv strong {
+  color: var(--text);
+}
+.pricing-calc-input {
+  width: 3.6rem;
+  padding: 0.1rem 0.3rem;
+  font: inherit;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-align: right;
 }
 .pricing-calc-max-hint {
   font-size: 0.775rem;
