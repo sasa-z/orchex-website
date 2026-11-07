@@ -413,8 +413,8 @@
         </div>
       </div>
 
-      <!-- 10. Bulk Operations — efficiency. Hidden for now (2026-11-08), see Quick Actions above. -->
-      <div v-if="false" class="feature-row">
+      <!-- 10. Bulk Operations — efficiency -->
+      <div class="feature-row">
         <div class="feature-img">
           <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — live per-item results with inline copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
         </div>
