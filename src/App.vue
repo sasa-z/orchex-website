@@ -1976,6 +1976,14 @@ const faqItems = [
   border: 1px solid var(--border);
   border-radius: 4px;
   text-align: right;
+  /* The browser draws the spin arrows in its own colours, which do not follow the site's dark theme */
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.pricing-calc-input::-webkit-outer-spin-button,
+.pricing-calc-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .pricing-calc-max-hint {
   font-size: 0.775rem;
