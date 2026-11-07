@@ -447,8 +447,8 @@
         </div>
       </div>
 
-      <!-- 21. User Actions — UI detail -->
-      <div class="feature-row">
+      <!-- 21. User Actions — UI detail. Hidden for now (2026-11-08), not removed: removing v-if="false" shows it again. -->
+      <div v-if="false" class="feature-row">
         <div class="feature-text">
           <span class="feature-label">User Actions</span>
           <h2>All user actions, one panel.</h2>
@@ -464,8 +464,8 @@
         </div>
       </div>
 
-      <!-- 22. Dual-mode Modals — UI detail -->
-      <div class="feature-row feature-row-reverse">
+      <!-- 22. Dual-mode Modals — UI detail. Hidden for now (2026-11-08), see User Actions above. -->
+      <div v-if="false" class="feature-row feature-row-reverse">
         <div class="feature-text">
           <span class="feature-label">Dual-mode Modals</span>
           <h2>Context-aware actions, everywhere.</h2>
