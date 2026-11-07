@@ -587,7 +587,7 @@
               <span class="pricing-period">/mo</span>
             </div>
             <div class="pricing-per-tenant-note pricing-per-tenant-note--emphasis">
-              First 10 tenants included · then ${{ billingCycle === 'annual' ? '12' : '14' }}/tenant above 10{{ billingCycle === 'annual' ? ' · billed annually' : '' }}
+              First {{ INCLUDED_TENANTS }} tenants included · then ${{ tiers[0].rate }}/tenant up to {{ tiers[0].upTo }}, ${{ tiers[1].rate }}/tenant from {{ tiers[0].upTo + 1 }} to {{ tiers[1].upTo }}{{ billingCycle === 'annual' ? ' · billed annually' : '' }}
             </div>
           </div>
 
@@ -730,11 +730,24 @@ const openFaq = ref(null)
 const billingCycle = ref('annual')
 const tenantCount = ref(25)
 const CUSTOM_PRICING_THRESHOLD = 100
+const INCLUDED_TENANTS = 10
+// Stepped: the first tenants are in the base price, each further band has its own per-tenant rate, and the
+// rate falls as the count grows. The pilot rate ($8 above 10) stays below every band.
+const PRICING = {
+  annual:  { base: 150, tiers: [{ upTo: 50, rate: 12 }, { upTo: CUSTOM_PRICING_THRESHOLD, rate: 9 }] },
+  monthly: { base: 180, tiers: [{ upTo: 50, rate: 14 }, { upTo: CUSTOM_PRICING_THRESHOLD, rate: 11 }] },
+}
+const tiers = computed(() => PRICING[billingCycle.value].tiers)
 const calcPrice = computed(() => {
-  const base = billingCycle.value === 'annual' ? 150 : 180
-  const rate = billingCycle.value === 'annual' ? 12 : 14
-  const extra = Math.max(0, tenantCount.value - 10)
-  return Math.round(base + extra * rate)
+  const { base, tiers: bands } = PRICING[billingCycle.value]
+  let total = base
+  let from = INCLUDED_TENANTS
+  for (const band of bands) {
+    const inBand = Math.max(0, Math.min(tenantCount.value, band.upTo) - from)
+    total += inBand * band.rate
+    from = Math.max(from, band.upTo)
+  }
+  return Math.round(total)
 })
 // Deliberately describes the deployment by category (compute/storage/secrets), not by
 // specific Azure product name — the underlying resources have already changed shape once
@@ -756,7 +769,7 @@ const faqItems = [
     q: 'What infrastructure does ORCHEX deploy?',
     a: `<p>ORCHEX deploys as a small set of standard Azure resources into your own Azure subscription, provisioned in a single guided deployment:</p>
         <ul>
-          <li><strong>Compute</strong> — runs the ORCHEX application, portal and backend together. Updates arrive automatically as new versions are released — nothing for you to build or connect.</li>
+          <li><strong>Compute</strong> — runs the ORCHEX application, portal and backend together. New versions are offered inside the portal and installed with one click — nothing for you to build or connect.</li>
           <li><strong>Storage</strong> — holds your portal data.</li>
           <li><strong>Secrets vault</strong> — stores app credentials and refresh tokens, accessible only to your own deployment.</li>
           <li><strong>Monitoring</strong> — telemetry and logging for your deployment.</li>
@@ -767,11 +780,6 @@ const faqItems = [
     q: 'Is my data secure?',
     a: `<p>Yes — and the architecture is designed so you don't have to take our word for it. ORCHEX runs entirely in <strong>your own Azure subscription</strong>. Client data never touches our servers or any shared infrastructure. All secrets and refresh tokens are stored in your own secrets vault, accessible only to your own deployment.</p>
         <p>The ORCHEX codebase — both the API and frontend — is maintained in a private repository and goes through regular security reviews. The founder spent several years working exclusively in security architecture and holds a Certified Ethical Hacker certification — the codebase is reviewed with the same mindset: looking for what an attacker would.</p>`
-  },
-  {
-    q: 'Do I need GitHub or developer knowledge to run ORCHEX?',
-    a: `<p>No. ORCHEX does not require you to fork any repositories, manage a deployment pipeline, or write any code. Your deployment receives new versions automatically — there's nothing for you to build, connect, or maintain.</p>
-        <p>The only technical requirement on your side is an <strong>Azure subscription</strong>.</p>`
   },
   {
     q: 'How does the setup work? Do I need to do it myself?',
