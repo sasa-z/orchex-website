@@ -62,8 +62,8 @@
           </div>
           <div class="how-step">
             <div class="how-step-num">03</div>
-            <h3>Designed for daily use</h3>
-            <p>Information dense by design. Tasks in context, not three clicks away — built by someone who spent years doing this work.</p>
+            <h3>Built with care for the details</h3>
+            <p>Every screen is made to answer the question you came with. Fewer clicks, fewer surprises, nothing to decode.</p>
           </div>
         </div>
       </div>
