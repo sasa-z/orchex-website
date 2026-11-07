@@ -303,13 +303,13 @@
           </ul>
         </div>
         <div class="feature-wide-img-row feature-wide-img-row--compact">
-          <div class="feature-wide-img" style="flex: 1.18">
+          <div class="feature-wide-img" style="flex: 1.264">
             <img src="/images/UserOnboard.png" alt="ORCHEX User Onboarding — results" />
             <div class="feature-sub-caption">
               <strong>Onboarding — Results</strong>
             </div>
           </div>
-          <div class="feature-wide-img" style="flex: 1.30">
+          <div class="feature-wide-img" style="flex: 1.348">
             <img src="/images/UserOffboard.png" alt="ORCHEX User Offboarding — configure actions" />
             <div class="feature-sub-caption">
               <strong>Offboarding — Configure Actions</strong>
