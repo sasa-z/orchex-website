@@ -395,8 +395,9 @@
         </div>
       </div>
 
-      <!-- 10. Quick Actions — efficiency -->
-      <div class="feature-row">
+      <!-- 10. Quick Actions — efficiency. Hidden for now (2026-11-08), not removed: v-if="false" keeps the
+           markup and the screenshot, and removing the attribute shows it again. -->
+      <div v-if="false" class="feature-row">
         <div class="feature-text">
           <span class="feature-label">Quick Actions</span>
           <h2>Every action, one keystroke away.</h2>
@@ -412,8 +413,8 @@
         </div>
       </div>
 
-      <!-- 10. Bulk Operations — efficiency -->
-      <div class="feature-row">
+      <!-- 10. Bulk Operations — efficiency. Hidden for now (2026-11-08), see Quick Actions above. -->
+      <div v-if="false" class="feature-row">
         <div class="feature-img">
           <img src="/images/BulkMode.png" alt="ORCHEX bulk operations — live per-item results with inline copy and CSV export" style="max-width: 420px; margin: 0 auto; display: block;" />
         </div>
